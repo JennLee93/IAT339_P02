@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+		<title>Brand Components</title>
+		<meta charset="utf-8"> <!-- character set, no matter what language it will make sure the characters are correct -->
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+	<body>
+		<!-- I learned this in lecture -->
+		<nav> <!-- put it on the top and sets it to navigation -->
+			<a class="nav-main" href="index.html">Home</a>
+			<a class="nav-main" href="brandcomponents.html">Brand Components</a>
+			
+			<!-- code from https://www.w3schools.com/css/css_dropdowns.asp -->			
+			<div class="dropdown">
+				<a class="nav-main" href="wireframes.html">Wireframes</a>
+
+				<div class="dropdown-content">
+      			<a href="wireframe_watch.html">Smartwatch</a>
+      			<a href="wireframe_phone.html">Smartphone</a>
+      			<a href="wireframe_console.html">Gaming Console</a>
+    			</div>
+    		</div>			
+
+    		<a class="nav-main" href="citations.html">Citations</a>
+		</nav>
+
+		<h1>Brand Components</h1>
+
+<!-- Section for fonts -->
+
+		<section>
+			<h2 class="bc-sub-ex">Typography: Verdana</h2>
+			
+			<h1 class="bc-head1-ex">Main Heading</h1>
+			<p class="example-des"> Font-Weight: 700 | Size: 2.5rem | Letter-spacing: 0.02rem</p>
+
+			<h2 class="bc-head2-ex">Sub-heading</h2>
+			<p class="example-des"> Font-Weight: 500 | Size: 1.5rem | Letter-spacing: 0.01rem</p>
+
+			<h3 class="bc-head3-ex">Another Sub-heading</h3>
+			<p class="example-des"> Font-Weight: 300 | Size: 1rem | Letter-spacing: 0.005rem</p>
+
+			<p class="bc-para-ex">Detail/paragraph text</p>
+			<p class="example-des"> Font-Weight: 100 | Size: 1rem | Letter-spacing: 0.007rem</p>
+
+		</section>
+
+<!-- Section for colour palette -->
+
+		<section>
+			<h2>Colour Palettes</h2>
+			
+			<!-- code from https://www.w3schools.com/css/css_table.asp -->
+			<table class="colors">
+			  <tr>
+			    <td class="gray1">rgb: 92, 92, 92 | hex: #5c5c5c</td> 			 
+			    <td class="gray2">rgb: 115, 115, 115 | hex: #737373</td>
+				<td class="gray3">rgb: 140, 140, 140 | hex: #8c8c8c</td>
+			  </tr>
+
+			  <tr>
+			    <td class="purple1">rgb: 76,0,76 | hex: #5D195D</td> 			 
+			    <td class="red1">rgb: 64,0,25 | hex: #400019</td>
+				<td class="red2">rgb: 162, 1, 64 | hex: #A20140</td>
+			  </tr>
+
+			  <tr>
+			    <td class="orange1">rgb: 229,148,0 | hex: #E59400</td> 			 
+			    <td class="orange2">rgb: 255,165,0 | hex: #FFA500</td>
+				<td class="orange3">rgb: 243,229,173 | hex: #F3E5AD</td>
+			  </tr>
+			</table>
+		</section>
+
+<!-- Section for icons -->
+
+		<section>
+			<h2>Icons</h2>
+			
+			<!-- code from https://www.w3schools.com/css/css_image_gallery.asp -->
+
+			<table>
+				<tr>
+    				<td class="user-icon"><span class="lnr lnr-user"></span><div class="desc">Profile</div></td>
+
+    				<td class="heart-icon"><span class="lnr lnr-heart"></span><div class="desc">Favourite</div></td>
+
+    				<td class="cart-icon"><span class="lnr lnr-cart"></span><div class="desc">Cart</div></td>
+
+    				<td class="search-icon"><span class="lnr lnr-magnifier"></span><div class="desc">Search</div></td>
+
+    				<td class="menu-icon"><span class="lnr lnr-menu"></span><div class="desc">Menu</div></td>
+
+    				<td class="up-icon"><span class="lnr lnr-chevron-up"></span><div class="desc">Up</div></td>
+
+    				<td class="down-icon"><span class="lnr lnr-chevron-down"></span><div class="desc">Down</div></td>
+
+    				<td class="left-icon"><span class="lnr lnr-chevron-left"></span><div class="desc">Left</div></td>
+
+    				<td class="right-icon"><span class="lnr lnr-chevron-right"></span><div class="desc">Right</div></td>
+
+    				<td class="exit-icon"><span class="lnr lnr-cross-circle"></span><div class="desc">Exit</div></td>
+  				</tr>
+  			</table>
+		</section>
+
+<!-- Section for buttons -->
+<!-- code from https://www.w3schools.com/css/css3_buttons.asp -->		
+		<section>
+			<h2>Buttons</h2>
+
+			<button class="button1">Add to Cart</button>
+			<button class="button1 disabled1">Add to Cart</button>
+
+			<button class="button2">Add to Cart</button>
+			<button class="button2 disabled2">Add to Cart</button>
+
+			<button class="button3">Add to Cart</button>
+			<button class="button3 disabled3">Add to Cart</button>
+		</section>
+
+<!-- Section for imagery -->
+
+		<section>
+			<h2>Potential Imagery</h2>
+
+			<h3>Style Inspiration</h3>
+			<img class="landing" src="http://ppc.org/wp-content/uploads/2012/10/Analysing-A-Real-PPC-Campaign-Nike.png" alt="Style 1">
+			
+			<img class="browse" src="http://static.open-open.com/news/uploadImg/20131027/20131027160728_984.jpg" alt="Style 2">
+			
+			<img class="customization" src="http://payload112.cargocollective.com/1/0/4976/4541623/Mobilebuilder_12_1260.png" alt="Style 3">
+			
+			<img class="product" src="https://s-media-cache-ak0.pinimg.com/originals/6e/08/17/6e08171a2374a923a64024ae3ad4abdf.jpg" alt="Style 4">
+
+			<img class="mobile" src="https://cdn.dribbble.com/users/174370/screenshots/1516233/nike-id-process.gif" alt="Style 5">
+
+			<h3>Compound Bows</h3>
+			<img class="compound1" src="http://thebestcompoundbows.com/wp-content/uploads/2014/03/compound-bow-specs.png" alt="Compound Bow 1">
+			<img class="compound2" src="http://ep.yimg.com/ay/airgundepot/crosman-elkhorn-jr-compound-bow-11.gif" alt="Compound Bow 2">
+
+			<h3>Longbows</h3>
+			<img class="longbow1" src="https://www.hunter-ed.com/images/drawings/bow_parts_longbow.jpg" alt="Longbow 1">
+			<img class="longbow2" src="https://media1.britannica.com/eb-media/00/10200-004-ACAC533C.jpg" alt="Longbow 2">
+
+			<h3>Recurve Bows</h3>
+			<img class="recurve1" src="http://www.archeryresource.com/images/RecurveBow.jpg" alt="Recurve 1">
+			<img class="recurve2" src="http://www.talkarchery.co.uk/images/d9d301/1299_recurve-bow.gif?1219136668" alt="Recurve 2">
+
+			<h3>Crossbows</h3>
+			<img class="crossbow1" src="http://www.crossbowmen.com/2-compound-crossbow.jpg" alt="Cross 1">
+			<img class="crossbow2" src="https://userscontent2.emaze.com/images/1643b91b-ca4a-45be-85a4-a30a03f2fcf8/4d066da1ad112cb2e313b738bf205bc1.png" alt="Cross 2">
+		</section>		
+		
+	</body>
+
+</html>

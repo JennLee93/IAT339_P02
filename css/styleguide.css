@@ -1,0 +1,363 @@
+/* 
+  STYLE GUIDE only for styleguide.html -------------------
+*/
+
+/* sizes things based on the extent of margins borders and everything */
+/* code obtained from class */
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif; /* citation: https://www.w3schools.com/css/css_font.asp */
+    padding: 1rem;
+}
+
+section:not([id]) {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgb(140, 140, 140);
+}
+
+section h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.005rem;
+}
+
+section p {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.007rem;
+}
+
+section code {
+    background-color: #EEE;
+    padding: 0.5rem 0.75rem;
+}
+
+h1 {
+  color: rgb(52,73,94);
+  font-size: 2.5rem; /* em is a proportional unit but proportional to its parent size */
+  font-weight: 700;
+  letter-spacing: 0.02rem; /*code from https://www.w3schools.com/cssref/pr_text_letter-spacing.asp*/
+  margin-bottom: 0; /* 0 doesnt require units because it will always be 0 */
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: #FFF;
+    background-color: #333;
+    border-radius: 0.25em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+    background-color: #999;
+}
+
+/* Styling for the Submit/Reset Button */
+.submit-button {
+    background-color: white;
+    border: 0.5px solid rgb(140, 140, 140);
+    border-radius: 3px;
+    color: rgb(124,147,157);
+    padding: 6px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+/* ////////// code from https://www.w3schools.com/css/css3_buttons.asp ////////// */
+.submit-button:active, .submit-button:focus, .submit-button:hover {
+    background-color: rgb(140, 140, 140);
+    border: 0.5px solid rgb(140, 140, 140);
+    color: white;
+    padding: 6px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.disabled-submit-button {
+    opacity: 0.6;
+    padding: 6px 45px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(92, 92, 92);
+    cursor: not-allowed;
+    font-weight: lighter;
+}
+
+.nav-main { /* . means class */
+    text-align: center;
+    color: rgb(163,190,202); /* grey-blue */
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    text-decoration: none; /* gets rid of the underline */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    transition: background-color 0.5s;
+    border-right: 0.5px solid rgb(214,214,214); /* light grey */
+  }
+
+.nav-main:active, .nav-main:focus, .nav-main:hover {
+    color: rgb(52,73,94); /* darker blue */
+}
+
+/*code from https://codepen.io/secondfret/pen/GoqLK*/
+.nav-main:last-child {
+    border-right: none;
+}
+
+/*code from https://www.w3schools.com/howto/howto_css_animated_search.asp*/
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 20%;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+.content-h1 {
+    color: rgb(52,73,94);
+    font-size: 2.5rem; /* em is a proportional unit but proportional to its parent size */
+    font-weight: 700;
+    letter-spacing: 0.02rem; /*code from https://www.w3schools.com/cssref/pr_text_letter-spacing.asp*/
+}
+
+.content-h2 {
+    color: rgb(140, 140, 140);
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+}
+
+.content-h3 {
+    color: rgb(124,147,157);
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.005rem;
+}
+
+/*code from https://www.w3schools.com/css/css_list.asp*/
+.bullet-list {
+    list-style-type: circle;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* code obtained from the inspector of this example 
+https://css-tricks.com/examples/NumberedFAQ/ */
+.faq {
+  counter-reset: my-counter;
+}
+
+.faq dt {
+  position: relative;
+  font: bold 16px Verdana;
+  padding: 4px 0 3px 0;
+}
+
+.faq dt:before {
+  content: counter(my-counter, decimal-leading-zero);
+  counter-increment: my-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: bold 50px/1 Sans-Serif;
+}
+
+.faq dd {
+  margin: 0 0 40px 0;
+} 
+
+.faq dt, .faq dd {
+  padding-left: 65px;
+}
+
+/*code from https://www.w3schools.com/css/css3_images.asp*/
+.box-item-gallery {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.box-item-gallery-compound {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    height: 60%;
+    margin: 0.5rem;
+}
+
+.box-item-gallery-arrows {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    height: 60%;
+    margin: 0.5rem;
+}
+
+.box-item-gallery-crossbow {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    height: 60%;
+    margin: 0.5rem;
+}
+
+.box-item-gallery-quiver {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    height: 60%;
+    margin: 0.5rem;
+}
+
+.box-item-gallery:hover .box-item-gallery-compound {
+    border: 1px solid #777;
+}
+
+.box-item-gallery:hover .box-item-gallery-arrows {
+    border: 1px solid #777;
+}
+
+.box-item-gallery:hover .box-item-gallery-crossbow {
+    border: 1px solid #777;
+}
+
+.box-item-gallery:hover .box-item-gallery-quiver {
+    border: 1px solid #777;
+}
+
+.box-item-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.box-item-gallery-compound img {
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 1px solid #ccc;
+}
+
+.box-item-gallery-arrows img {
+    width: 100%;
+    height: auto;
+}
+
+.box-item-gallery-crossbow img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.box-item-gallery-quiver img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 10px;
+    text-align: left;
+}
+
+.desc span:hover {
+    color: red;
+}
+
+/* ////////// colour properties begins ////////// */
+.box-item-icons {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid rgb(140, 140, 140);
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* ////////// colour properties ends ////////// */
+.box-item-colours {
+  color: white;
+  text-align: center;
+  display: block;
+  width: 119px;
+  height: 119px;
+  padding-top: 2rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.box-item-colours p {
+  font-size: 0.8rem;
+}
+
+.gray1 {
+  background-color: rgb(200,200,200);
+}
+
+.gray2 {
+  background-color: rgb(140, 140, 140);
+}
+
+.gray3 {
+  background-color: rgb(92, 92, 92);
+}
+
+.tinted1 {
+  background-color: rgb(149,165,166);
+}
+
+.tinted2 {
+  background-color: rgb(127,140,141);
+}
+
+.tinted3 {
+  background-color: rgb(124,147,157);
+}
+
+.blue1 {
+  background-color: rgb(163,190,202);
+}
+
+.blue2 {
+  background-color: rgb(92,109,126);
+}
+
+.blue3 {
+  background-color: rgb(52,73,94);
+}
+/* ////////// icon properties begins ////////// */
+.box-item-icons {
+  padding: .5rem;
+  margin: 0.5rem;
+  border: 1px solid rgb(140, 140, 140);
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* ////////// icon properties ends ////////// */
+
