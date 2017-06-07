@@ -83,6 +83,9 @@ h1 {
     font-size: 16px;
     font-weight: lighter;
     cursor: pointer;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
 /* ////////// code from https://www.w3schools.com/css/css3_buttons.asp ////////// */
@@ -96,6 +99,9 @@ h1 {
     display: inline-block;
     font-size: 16px;
     font-weight: lighter;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
 .disabled-submit-button {

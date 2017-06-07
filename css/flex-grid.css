@@ -52,6 +52,10 @@
   	flex: 1 1 auto;
 }
 
+.box-item-sitemap {
+    flex: 1 1 auto;
+}
+
 .box-item-citations {
   	flex: 1 1 auto;
 }
@@ -62,8 +66,8 @@
   	/*rule to change the behaviour*/
   	.box-item-nav, .box-item-home, .box-item-code, .box-item-gallery, 
   	.box-item-gallery-compound, .box-item-gallery-arrows, .box-item-gallery-crossbow, 
-  	.box-item-gallery-quiver, .box-item-colours, .box-item-icons, 
-  	.box-item-wireframes, .box-item-larger-wireframes, .box-item-citations {
+  	.box-item-gallery-quiver, .box-item-colours, .box-item-icons, .box-item-wireframes, 
+    .box-item-larger-wireframes, .box-item-sitemap, .box-item-citations {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
