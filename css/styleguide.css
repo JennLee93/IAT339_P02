@@ -56,16 +56,18 @@ h1 {
 .button-nav {
     display: inline-block;
     padding: 0.5em 0.75em;
-    color: #FFF;
-    background-color: #333;
-    border-radius: 0.25em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
     text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
 }
 
 .button-nav:hover, .button-nav:focus {
-    background-color: #999;
+    background-color: #5E6C72;
 }
 
 /* Styling for the Submit/Reset Button */
@@ -351,6 +353,20 @@ https://css-tricks.com/examples/NumberedFAQ/ */
 .blue3 {
   background-color: rgb(52,73,94);
 }
+
+.map-container img{
+  height:80%;
+  width: auto;  
+}
+
+.map-container{
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin:0;
+}
+
+
 /* ////////// icon properties begins ////////// */
 .box-item-icons {
   padding: .5rem;
