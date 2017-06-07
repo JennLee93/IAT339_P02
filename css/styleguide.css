@@ -360,17 +360,33 @@ https://css-tricks.com/examples/NumberedFAQ/ */
   background-color: rgb(52,73,94);
 }
 
-.map-container img{
-  height:80%;
-  width: auto;  
+/* ////////// image mapping properties begins ////////// */
+
+.box-item-map-container img{
+  width: 50%;  
+  height: auto;
 }
 
-.map-container{
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  margin:0;
+/*code from https://codepen.io/CreativeJuiz/pen/BiHzp*/
+/* checkbox aspect */
+#switch:not(:checked) {
+  content: '';
+  position: absolute;
+  left: 110px;
+  width: 4em; 
+  height: 3.25em;
+  cursor: pointer;
+  opacity: 0;
 }
+
+#switch:checked {
+ position: absolute;
+ content: url('http://www.sfu.ca/~jal32/IAT339/Wireframe%20Images/P02/crossbow.jpg'); 
+ width: 50%;
+ height: 23rem;
+ left: 1rem;
+}
+/* ////////// image mapping properties ends ////////// */
 
 
 /* ////////// icon properties begins ////////// */

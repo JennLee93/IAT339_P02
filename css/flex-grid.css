@@ -60,6 +60,10 @@
   	flex: 1 1 auto;
 }
 
+.box-item-map-container {
+    flex: 1 1 auto;
+}
+
 /*allows css to request information about the web browser*/
 /*if the width of the web browser is less than 30em then we add new rules*/
 @media (max-width: 30em) {
@@ -67,7 +71,8 @@
   	.box-item-nav, .box-item-home, .box-item-code, .box-item-gallery, 
   	.box-item-gallery-compound, .box-item-gallery-arrows, .box-item-gallery-crossbow, 
   	.box-item-gallery-quiver, .box-item-colours, .box-item-icons, .box-item-wireframes, 
-    .box-item-larger-wireframes, .box-item-sitemap, .box-item-citations {
+    .box-item-larger-wireframes, .box-item-sitemap, .box-item-citations, 
+    .box-item-map-container {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
