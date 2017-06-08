@@ -78,7 +78,7 @@ section {
     text-decoration: none; /* gets rid of the underline */
     transition: background-color 0.5s;
  	position: relative;
- 	top: 0.5rem;
+ 	top: 0.4rem;
   }
 
 .nav-home:active, .nav-home:focus, .nav-home:hover {
@@ -186,7 +186,33 @@ section {
 	width: 100%;
 	padding: 0.5rem;
 }
-/* ////////// wireframe properties begin ////////// */
+/* ////////// wireframe properties ends ////////// */
+
+.box-item-icons {
+	color: white;
+}
+
+.lnr-user {
+	position: absolute;
+	top: 2.7rem;
+	right: 2rem;
+	font-size: 1.4rem;
+}
+
+.lnr-cart {
+	position: absolute;
+	top: 2.7rem;
+	right: 5rem;
+	font-size: 1.4rem;
+}
+
+.lnr-magnifier {
+	position: absolute;
+	top: 2.7rem;
+	right: 8rem;
+	font-size: 1.4rem;
+}
+
 
 /* ////////// dropdown menu properties begin ////////// */
 /* code from https://www.w3schools.com/css/css_dropdowns.asp */
