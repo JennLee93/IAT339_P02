@@ -8,8 +8,16 @@
 	flex: 1 1 auto;
 }
 
-.box-item-home {
+.box-item-nav-home {
 	flex: 1 1 auto;
+}
+
+.box-item-profile {
+  flex: 1 1 auto;
+}
+
+.box-item-home-placeholder {
+  flex: 1 1 100%;
 }
 
 .box-item-code {
@@ -68,11 +76,11 @@
 /*if the width of the web browser is less than 30em then we add new rules*/
 @media (max-width: 30em) {
   	/*rule to change the behaviour*/
-  	.box-item-nav, .box-item-home, .box-item-code, .box-item-gallery, 
-  	.box-item-gallery-compound, .box-item-gallery-arrows, .box-item-gallery-crossbow, 
-  	.box-item-gallery-quiver, .box-item-colours, .box-item-icons, .box-item-wireframes, 
-    .box-item-larger-wireframes, .box-item-sitemap, .box-item-citations, 
-    .box-item-map-container {
+  	.box-item-nav, .box-item-nav-home, .box-item-profile, .box-item-home-placeholder, 
+    .box-item-code, .box-item-gallery, .box-item-gallery-compound, .box-item-gallery-arrows, 
+    .box-item-gallery-crossbow, .box-item-gallery-quiver, .box-item-colours, .box-item-icons, 
+    .box-item-wireframes, .box-item-larger-wireframes, .box-item-sitemap, 
+    .box-item-citations, .box-item-map-container {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
@@ -81,8 +89,11 @@
     	width: 50%;
 	}
 
-	.nav-main { /* . means class */
+/*	.nav-main {  . means class 
     	border-right: none;
-  }
+  }*/
+/*  .nav-home {
+    display: none;
+  }*/
 }
 
