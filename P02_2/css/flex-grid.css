@@ -72,6 +72,11 @@
     flex: 1 1 auto;
 }
 
+.box-shape-container {
+    flex: 1 1 auto;
+}
+
+
 /*allows css to request information about the web browser*/
 /*if the width of the web browser is less than 30em then we add new rules*/
 @media (max-width: 30em) {
@@ -80,7 +85,7 @@
     .box-item-code, .box-item-gallery, .box-item-gallery-compound, .box-item-gallery-arrows, 
     .box-item-gallery-crossbow, .box-item-gallery-quiver, .box-item-colours, .box-item-icons, 
     .box-item-wireframes, .box-item-larger-wireframes, .box-item-sitemap, 
-    .box-item-citations, .box-item-map-container {
+    .box-item-citations, .box-item-map-container, .box-shape-container {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
@@ -88,6 +93,23 @@
 	input[type=text]:focus {
     	width: 50%;
 	}
+
+  .lnr-magnifier, .lnr-user, .lnr-cart {
+    position: absolute;
+    margin-top: 2rem;
+  }
+
+  .box-item-icons {
+    margin-right: 6.96rem;
+  }
+
+  .box-shape-container {
+    margin: 0;
+  }
+
+/*  .lnr-user {
+    padding-right: 2rem;
+  }*/
 
 /*	.nav-main {  . means class 
     	border-right: none;

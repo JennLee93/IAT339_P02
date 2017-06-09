@@ -147,7 +147,14 @@ section {
 }
 
 .profile p {
-	color: black;
+	color: rgb(124,147,157);
+	padding-top: 1rem;
+	font-size: 0.8rem;
+}
+
+.profile span {
+	border-bottom: 0.5px solid rgb(214,214,214); /* light grey */ 
+	padding-bottom: 1rem;
 }
 
 .lnr-store {
@@ -188,6 +195,8 @@ section {
 }
 /* ////////// wireframe properties ends ////////// */
 
+
+/* ////////// icon properties begin ////////// */
 .box-item-icons {
 	color: white;
 }
@@ -212,9 +221,92 @@ section {
 	right: 8rem;
 	font-size: 1.4rem;
 }
+/* ////////// icon properties ends ////////// */
 
 
-/* ////////// dropdown menu properties begin ////////// */
+/* ////////// about us page properties begin ////////// */
+.box-shape-container {
+	display: inline-block;
+}
+
+.square-form {
+	width: 45rem;
+	height: 50rem;
+	border: 0.5px solid rgb(124,147,157); /* light grey */ 
+	background-color: rgb(245,245,245);
+	margin-left: 7rem;
+	margin-top: 7rem;
+	padding-top: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-bottom: 3rem;
+}
+
+.square-form h3 {
+	font-size: 1rem;
+	color: rgb(92, 92, 92);
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	letter-spacing: 0.15rem;
+}
+
+.square-form h4 {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: rgb(92, 92, 92);
+	margin-left: 1rem;
+	letter-spacing: 0.15rem;
+}
+
+.square-form p {
+	color: rgb(140, 140, 140);
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	font-size: 0.8rem;
+}
+
+.rect-form {
+	text-align: center;
+	margin-top: 7rem;
+	margin-right: 7rem;
+
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	width: 20rem;
+	height: 50rem;
+	border: 0.5px solid rgb(124,147,157); /* light grey */ 
+	background-color: rgb(245,245,245);
+}
+
+.rect-form h3 {
+	font-size: 1rem;
+	color: rgb(92, 92, 92);
+	margin-top: 3rem;
+	margin-bottom: 2.7rem;
+	letter-spacing: 0.15rem;
+}
+
+.lnr-phone-handset {
+	font-size: 0.8rem;
+	padding-right: 0.5rem; 
+}
+
+.rect-form p {
+	color: rgb(140, 140, 140);
+	font-size: 0.8rem;
+	line-height: 0.3rem;
+}
+
+
+/* ////////// about us page properties ends ////////// */
+
+
+
+
+
+
+
 /* code from https://www.w3schools.com/css/css_dropdowns.asp */
 /*.dropdown {
     position: relative;
