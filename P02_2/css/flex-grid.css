@@ -20,28 +20,16 @@
   flex: 1 1 100%;
 }
 
-.box-item-code {
-  	flex: 1 1 auto;
+.box-item-create-placeholder {
+  flex: 1 1 auto;
 }
 
-.box-item-gallery {
-	flex: 1 1 20%;
+.create-nav {
+  flex: 1 1 auto;
 }
 
-.box-item-gallery-compound {
-	flex: 1 1 20%;
-}
-
-.box-item-gallery-arrows {
-	flex: 1 1 20%;
-}
-
-.box-item-gallery-crossbow {
-	flex: 1 1 20%;
-}
-
-.box-item-gallery-quiver {
-	flex: 1 1 20%;
+.create-nav-item {
+  flex: 1 1 auto;
 }
 
 .box-item-colours {
@@ -82,10 +70,11 @@
 @media (max-width: 30em) {
   	/*rule to change the behaviour*/
   	.box-item-nav, .box-item-nav-home, .box-item-profile, .box-item-home-placeholder, 
-    .box-item-code, .box-item-gallery, .box-item-gallery-compound, .box-item-gallery-arrows, 
-    .box-item-gallery-crossbow, .box-item-gallery-quiver, .box-item-colours, .box-item-icons, 
-    .box-item-wireframes, .box-item-larger-wireframes, .box-item-sitemap, 
-    .box-item-citations, .box-item-map-container, .box-shape-container {
+    .box-item-create-placeholder, .create-nav, .create-nav-item, .box-item-code, .box-item-gallery, 
+    .box-item-gallery-compound, .box-item-gallery-arrows, .box-item-gallery-crossbow, 
+    .box-item-gallery-quiver, .box-item-colours, .box-item-icons, .box-item-wireframes, 
+    .box-item-larger-wireframes, .box-item-sitemap, .box-item-citations, 
+    .box-item-map-container, .box-shape-container {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
@@ -107,15 +96,101 @@
     margin: 0;
   }
 
-/*  .lnr-user {
-    padding-right: 2rem;
-  }*/
+  .square-form {
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: 0.5rem;
+  }
 
-/*	.nav-main {  . means class 
-    	border-right: none;
-  }*/
-/*  .nav-home {
-    display: none;
-  }*/
+  .square-form h3 {
+    font-size: 0.79rem;
+  }
+
+  .square-form h4 {
+    font-size: 0.75rem;
+  }
+
+  .rect-form {
+    height: auto;
+    padding-bottom: 5rem;
+  }
+
+  #create-nav h1 {
+    margin-left: 5rem;
+    padding: 0;
+  }
+
+  .create-nav, .create-nav-item {
+    margin-left: 4rem;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .box-item-create-placeholder {
+    margin: 0;
+    width: 100%;
+  }
+
+  .caption-compound figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-longbow figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-recurve figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-crossbow figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-broadhead figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-field figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-fixed figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-mech figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
 }
+
+
+@media (max-width: 79em) {
+    /*rule to change the behaviour*/
+    .square-form {
+      margin: 0;
+    }
+
+    .rect-form {
+      margin: 0;
+    }
+  }
 
