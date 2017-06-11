@@ -108,10 +108,10 @@ section {
     color: rgb(52,73,94); /* darker blue */
 }
 
-/*code from https://codepen.io/secondfret/pen/GoqLK*/
-/*.nav-main:last-child {
-  border-right: none;
-}*/
+/* _________________________________________________________________________________
+
+	code from https://codepen.io/secondfret/pen/GoqLK
+_________________________________________________________________________________ */
 
 .logo_place {
 	position: relative;
@@ -120,17 +120,17 @@ section {
 	height: 2.7rem;
 	padding: 0;
 }
-/* ////////// nav properties ends ////////// */
+/* _________________________________________________________________________________
+
+	nav properties ends 
+_________________________________________________________________________________ */
 
 
-/* ////////// citations properties begin ////////// */
-.citations {
-	padding-top: 1rem;
-}
-/* ////////// citations properties ends ////////// */
+/* _________________________________________________________________________________
 
+	home page icon properties begins 
+_________________________________________________________________________________ */
 
-/* ////////// home page icon properties begins ////////// */
 .profile {
 	font-size: 1.5rem;
 	color: rgb(124,147,157);
@@ -171,31 +171,33 @@ section {
 	font-size: 1.3rem;
 	color: rgb(140,140,140);
 }
-/* ////////// home page icon properties ends ////////// */
+/* _________________________________________________________________________________
+	
+	home page icon properties ends 
+_________________________________________________________________________________ */
 
 
-/* ////////// home events properties begin ////////// */
+/* _________________________________________________________________________________
+
+	home events properties begin 
+_________________________________________________________________________________*/
+
 .new-place {
 	display: block;
    	border: 0.3px solid black;
    	height: 25rem;
 }
-/* ////////// home events properties ends ////////// */
+/* _________________________________________________________________________________
+
+	home events properties ends 
+_________________________________________________________________________________ */
 
 
-/* ////////// wireframe properties begin ////////// */
-.box-item-wireframes {
-	padding: 0.5rem;
-}
+/* _________________________________________________________________________________
 
-.box-item-larger-wireframes img {
-	width: 100%;
-	padding: 0.5rem;
-}
-/* ////////// wireframe properties ends ////////// */
+	icon properties begin 
+_________________________________________________________________________________ */
 
-
-/* ////////// icon properties begin ////////// */
 .box-item-icons {
 	color: white;
 }
@@ -220,15 +222,22 @@ section {
 	right: 8rem;
 	font-size: 1.4rem;
 }
-/* ////////// icon properties ends ////////// */
+/* _________________________________________________________________________________
+
+	icon properties ends 
+_________________________________________________________________________________ */
 
 
-/* ////////// about us page properties begin ////////// */
+/* _________________________________________________________________________________
+
+	about us page properties begin 
+_________________________________________________________________________________ */
+
 .square-form {
 	display: inline-block;
 	width: 45rem;
 	height: 50rem;
-	border: 0.5px solid rgb(124,147,157); /* light grey */ 
+	border: 0.5px solid rgb(124,147,157);
 	background-color: rgb(245,245,245);
 	margin-left: 7rem;
 	margin-top: 7rem;
@@ -273,7 +282,7 @@ section {
 
 	width: 20rem;
 	height: 50rem;
-	border: 0.5px solid rgb(124,147,157); /* light grey */ 
+	border: 0.5px solid rgb(124,147,157);
 	background-color: rgb(245,245,245);
 }
 
@@ -295,10 +304,17 @@ section {
 	font-size: 0.8rem;
 	line-height: 0.3rem;
 }
-/* ////////// about us page properties ends ////////// */
+/* _________________________________________________________________________________
+
+	about us page properties ends 
+_________________________________________________________________________________ */
 
 
-/* ////////// create bow page properties begins ////////// */
+/* _________________________________________________________________________________
+
+	create bow page properties begins 
+_________________________________________________________________________________ */
+
 #create-nav h1 {
 	color: rgb(52,73,94);
 	font-size: 1.5rem; 
@@ -350,10 +366,12 @@ section {
     margin-right: 2rem;
 }
 
-/*
+/* ________________________________________________________________________________
+
 	compound begins 
 	code obtained from week 5 lecture example on positioning and responsive images
-*/
+__________________________________________________________________________________ */
+
 .caption-compound {
 	position: relative;
 	margin: 0;
@@ -398,13 +416,21 @@ section {
 .bow-compound {
 	margin-left: 12rem;
 }
-/*
-	compound ends
-*/
 
-/*
+.compound {
+	padding: 0;
+	margin: 0;
+}
+/* _________________________________________________________________________________
+
+	compound ends
+_________________________________________________________________________________ */
+
+/* _________________________________________________________________________________
+	
 	longbow begins
-*/
+_________________________________________________________________________________ */
+
 .caption-longbow {
 	position: relative;
 	margin: 0;
@@ -432,14 +458,17 @@ section {
     width: 100%;
     height: auto;
 }
-/*
+/* _________________________________________________________________________________
+
 	longbow ends
-*/
+_________________________________________________________________________________ */
 
 
-/*
+/* _________________________________________________________________________________
+
 	recurve begins
-*/
+_________________________________________________________________________________ */
+
 .caption-recurve {
 	position: relative;
 	margin: 0;
@@ -468,14 +497,17 @@ section {
     width: 100%;
     height: auto;
 }
-/*
+/* _________________________________________________________________________________
+
 	recurve ends
-*/
+_________________________________________________________________________________ */
 
 
-/*
+/* _________________________________________________________________________________
+
 	crossbow begins
-*/
+_________________________________________________________________________________ */
+
 .caption-crossbow {
 	position: relative;
 	margin: 0;
@@ -502,13 +534,23 @@ section {
     width: 100%;
     height: auto;
 }
-/*
+
+.crossbow {
+	padding: 0;
+	margin: 0;
+}
+/* _________________________________________________________________________________
+
 	crossbow ends
-*/
-/* ////////// create bow page properties ends ////////// */
+	create bow page properties ends
+_________________________________________________________________________________ */
 
 
-/* ////////// create arrows page properties begins ////////// */
+/* _________________________________________________________________________________
+
+	create arrows page properties begins
+_________________________________________________________________________________ */
+
 .box-item-create-placeholder {
 	display: inline-block;
     border: 0.5px solid #ccc;
@@ -519,10 +561,12 @@ section {
     margin-right: 2rem;
 }
 
-/*
+/* _________________________________________________________________________________
+
 	broadhead begins 
 	code obtained from week 5 lecture example on positioning and responsive images
-*/
+_________________________________________________________________________________ */
+
 .caption-broadhead {
 	position: relative;
 	margin: 0;
@@ -567,13 +611,16 @@ section {
 .arrows-broadhead {
 	margin-left: 12rem;
 }
-/*
-	broadhead ends
-*/
+/* _________________________________________________________________________________
 
-/*
+	broadhead ends
+_________________________________________________________________________________ */
+
+/* _________________________________________________________________________________
+
 	field begins
-*/
+_________________________________________________________________________________ */
+
 .caption-field {
 	position: relative;
 	margin: 0;
@@ -601,14 +648,17 @@ section {
     width: 100%;
     height: auto;
 }
-/*
+/* _________________________________________________________________________________
+
 	field ends
-*/
+_________________________________________________________________________________ */
 
 
-/*
-	fiexed begins
-*/
+/* _________________________________________________________________________________
+
+	fixed begins
+_________________________________________________________________________________ */
+
 .caption-fixed {
 	position: relative;
 	margin: 0;
@@ -637,14 +687,17 @@ section {
     width: 100%;
     height: auto;
 }
-/*
+/* _________________________________________________________________________________
+
 	fixed ends
-*/
+_________________________________________________________________________________ */
 
 
-/*
+/* _________________________________________________________________________________
+
 	mech begins
-*/
+_________________________________________________________________________________ */
+
 .caption-mech {
 	position: relative;
 	margin: 0;
@@ -671,7 +724,182 @@ section {
     width: 100%;
     height: auto;
 }
-/*
+/* _________________________________________________________________________________
+
 	mech ends
-*/
-/* ////////// create bow page properties ends ////////// */
+	create bow page properties ends
+_________________________________________________________________________________ */
+
+
+/* _________________________________________________________________________________
+
+	image mapping properties begins
+_________________________________________________________________________________ */
+
+.create-crossbow-container img {
+  width: 50%;  
+  height: auto;
+  margin-left: 12rem;
+  padding: 0.5rem;
+  border: 0.5px solid rgb(124,147,157);
+}
+
+/*code from https://codepen.io/CreativeJuiz/pen/BiHzp*/
+/* checkbox aspect */
+#crossbow-switch:not(:checked) {
+  content: '';
+  position: absolute;
+  margin-top: 0.8rem;
+  left: 299px;
+  width: 2.9em; 
+  height: 2.3em;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#crossbow-switch:checked {
+  position: absolute;
+  content: url('http://www.sfu.ca/~jal32/IAT339/Wireframe%20Images/P02/crossbow.jpg'); 
+  width: 48.6%;
+  height: 23rem;
+  left: 12.58rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 0.5px solid rgb(124,147,157);
+}
+
+#crossbow-switch:not(:checked) {
+  content: '';
+  position: absolute;
+  margin-top: 0.8rem;
+  left: 299px;
+  width: 2.9em; 
+  height: 2.3em;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+/*code from https://codepen.io/shahbokhari/pen/uDahz*/
+#crossbow-switch:checked ~ .custom-panel { 
+	position: absolute; 
+	left: 192px;
+	top: 501.5px;
+	opacity: 1;
+}
+
+
+.custom-panel {
+	position: absolute;
+	top: 680px;
+	left: 192px;
+
+	opacity: 0;
+
+	padding: 1.5rem;
+
+	width: 39.93rem;
+	height: 11rem;
+	border: 0.5px solid rgb(92, 92, 92);
+	background-color: rgba(92, 92, 92, 0.6);
+	
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.custom-panel h3 {
+	font-size: 1rem;
+	color: white;
+	padding-bottom: 1rem;
+}
+
+.custom-panel h4 {
+	position: relative;
+	margin-top: -2.4rem;
+	font-size: 0.7rem;
+	color: white;
+	float: right;
+	margin-right: 1rem;
+}
+
+.colour-selector-1 {
+	margin-left: 1rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-2 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-3 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-4 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-5 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-6 {
+	margin-left: 1rem;
+	margin-top: 1rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-7 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-8 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+.colour-selector-9 {
+	margin-top: -1px;
+	margin-left: 3rem;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+/* _________________________________________________________________________________
+
+	image mapping properties ends 
+_________________________________________________________________________________ */
+
+
+
