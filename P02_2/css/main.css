@@ -815,6 +815,20 @@ ________________________________________________________________________________
 	-o-transition: all .5s ease-in-out;
 }
 
+.hidden-box {
+	position: absolute;
+	top: 679px;
+	left: 192px;
+
+	z-index: 2;
+	padding: 1.5rem;
+
+	width: 39.93rem;
+	height: 11rem;
+	border: 0.5px solid white;
+	background-color: white;
+}
+
 .custom-panel h3 {
 	font-size: 1rem;
 	color: white;
