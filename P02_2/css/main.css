@@ -43,6 +43,7 @@ p {
 	font-weight: 100;
 	letter-spacing: 0.007rem;
 	padding-left: 1rem;
+
 }
 
 a {
@@ -312,6 +313,120 @@ ________________________________________________________________________________
 /* _________________________________________________________________________________
 
 	about us page properties ends 
+_________________________________________________________________________________ */
+
+/* _________________________________________________________________________________
+
+	account pages properties begin 
+_________________________________________________________________________________ */
+
+.container .bloc{
+background-color: #ffffff;
+border-color: #d6d6d6;
+border-width:1.0px;
+border-style: solid;
+border-right-width: 0;
+border-left-width: 0;
+position: absolute;
+
+}
+
+.container .bloc .small{
+min-height:auto;
+min-width:auto;
+width:10%;
+height:100%;
+}
+
+.container .info-button-block{
+
+position:relative;
+
+}
+
+.container .button-block{
+border-width: 0;
+position: absolute;
+right: 0;
+bottom: 0;
+}
+
+.order-details{ 
+  overflow:hidden;
+  display:block;
+  background-color: #ffffff;
+  border-color: #d6d6d6;
+  border-width:2px;
+  border-style: solid;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom: none;
+}
+
+.info-block {
+  overflow:hidden;
+  display:block;
+  background-color: #ffffff;
+  border-color: #d6d6d6;
+  border-width:2px;
+  border-style: solid;
+  border-right-width: 0;
+  border-left-width: 0;
+  position: relative;
+    
+}
+
+
+.info-block img{
+  width:100px;
+  height:100px;
+  margin:15px;
+  float:left;
+  display: flex;
+  box-shadow: 0 4px 9px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+  border-width: 2px;
+  
+}
+
+.edit-button{
+	background-color: white;
+    border: 0.5px solid rgb(140, 140, 140);
+    border-radius: 3px;
+    color: rgb(124,147,157);
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+    cursor: pointer;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    float:right;
+    margin-top: 20%;
+    margin-right: 20%;
+    
+}
+
+.edit-button:active, .edit-button:focus, .edit-button:hover {
+    background-color: rgb(140, 140, 140);
+    border: 0.5px solid rgb(140, 140, 140);
+    color: white;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+/* _________________________________________________________________________________
+
+	account pages properties ends 
 _________________________________________________________________________________ */
 
 
