@@ -435,7 +435,6 @@ ________________________________________________________________________________
 _________________________________________________________________________________ */
 .shop-titles{
 	width: 100%;
-
 }
 
 .shop-titles h4 {
@@ -443,97 +442,39 @@ ________________________________________________________________________________
     color: rgb(92, 92, 92);
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     letter-spacing: 0.15rem;
     font-weight: normal;
 }
 
 /*code from https://www.w3schools.com/css/css3_images.asp*/
-.box-item-gallery {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    margin: 0.5rem;
+#shop-bow {
+    margin: 1rem;
 }
 
 .box-item-gallery-compound {
     border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 18rem;
-    width: 18rem;
-    margin: 2.5rem;
-    margin-top: 1rem;
-}
-.box-item-gallery-arrows {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;  
-}
+    margin: 1rem;
 
-.box-item-gallery-crossbow {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;
-}
-
-.box-item-gallery-quiver {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;
 }
 
 .box-item-gallery:hover .box-item-gallery-compound {
     border: 1px solid #777;
 }
 
-.box-item-gallery:hover .box-item-gallery-arrows {
-    border: 1px solid #777;
-}
-
-.box-item-gallery:hover .box-item-gallery-crossbow {
-    border: 1px solid #777;
-}
-
-.box-item-gallery:hover .box-item-gallery-quiver {
-    border: 1px solid #777;
-}
-
-.box-item-gallery img {
-    width: 100%;
-    height: auto;
-}
-
 .box-item-gallery-compound img {
     width: 100%;
     height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border: 1px solid #ccc;
-    float:left;
-    margin-bottom: 0.5rem;
-
-}
-
-.box-item-gallery-arrows img {
-    width: 100%;
-    height: auto;
-}
-
-.box-item-gallery-crossbow img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-}
-
-.box-item-gallery-quiver img {
-    width: 100%;
-    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0;
+    float: left;
 }
 
 .desc {
-    padding: 10px;
+    padding: 0.5rem;
+    padding-bottom: 0;
     text-align: center;
 }
 
