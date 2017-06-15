@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+		<title>Create</title>
+		
+		<meta charset="utf-8"> <!-- character set, no matter what language it will make sure the characters are correct -->
+	    
+	    <!-- viewport code from downloaded class examples -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+	<body>
+		<!-- I learned this in lecture -->
+		<section id="home">
+			<nav class="box">
+				<div class="box-item-nav-home">
+					<a href="index.html">
+					
+					<img class="logo_place" src="http://www.sfu.ca/~jal32/IAT339/Placeholder%20Images/placeholder-square.jpg" alt="logo"></a>
+					
+					<a class="nav-home" href="index.html">THE ARCHER</a>
+
+					<a class="account" href="account.html">
+						<span class="lnr lnr-user box-item-icons"></span>
+					</a>
+
+					<span class="lnr lnr-cart box-item-icons"></span>
+
+					<span class="lnr lnr-magnifier box-item-icons"></span>
+				</div>
+			</nav>
+		</section>
+
+		<nav class="box"> <!-- put it on the top and sets it to navigation -->
+			<a class="nav-main box-item-nav" href="about.html">ABOUT US</a>
+			<a class="nav-main box-item-nav" href="shop.html">SHOP</a>	
+    		<a class="nav-main box-item-nav" href="create.html">CREATE</a>
+		</nav>
+
+		<div class="box">
+			<section id="create-nav">
+				<h1>CREATE YOUR OWN | crossbow</h1>
+				<a class="create-nav" href="create.html">BOWS</a>
+				<a class="create-nav-item" href="create-arrows.html">ARROWS</a>
+				<a class="create-nav-item" href="#">QUIVERS</a>
+				<a class="create-nav-item" href="#">DISPLAY CASES</a>
+			</section>
+		</div>
+			
+		<!-- Section for sitemap -->
+		<section>
+	      	<div class="box">
+	      		<div class="create-crossbow-container">
+	      			<!-- code from https://www.w3schools.com/tags/tag_area.asp -->
+	      			<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map">
+<!-- 	      			<map name="crossbow-map">
+		      			<area class="rect" shape="rect" coords="155, 3, 100, 50">	
+		      		</map>	 -->	
+		      		
+		      		<!-- code from https://codepen.io/CreativeJuiz/pen/BiHzp and https://codepen.io/shahbokhari/pen/uDahz-->
+		      		<input type="checkbox" id="crossbow-switch" /> 	
+
+		      		<div class="hidden-box"></div>
+					<nav class="custom-panel">
+			      		<div class="create-form create-form-container">
+							<h3>Scope | Colour</h3>
+							<h4>Next ></h4>
+								<div class="colour-selector-1">
+									<div class="colour-selector-2">
+										<div class="colour-selector-3">
+											<div class="colour-selector-4">
+												<div class="colour-selector-5"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="colour-selector-6">
+									<div class="colour-selector-7">
+										<div class="colour-selector-8">
+											<div class="colour-selector-9"></div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</nav>
+	      		</div>
+	      	</div>
+		</section>
+		
+	</body>
+
+</html>
