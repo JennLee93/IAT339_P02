@@ -61,6 +61,12 @@ section {
 	margin-bottom: 2rem;
 }
 
+.footer {
+	width: 100%;
+	height: 10rem;
+	background-color: rgba(200,200,200, 0.6);
+}
+
 #home {
 	margin-bottom: 0rem;
 	padding-top: 1rem;
@@ -321,35 +327,68 @@ ________________________________________________________________________________
 	account pages properties begin 
 _________________________________________________________________________________ */
 
-.container .bloc{
-background-color: #ffffff;
-border-color: #d6d6d6;
-border-width:1.0px;
-border-style: solid;
-border-right-width: 0;
-border-left-width: 0;
-position: absolute;
+#account-nav h1 {
+	color: rgb(52,73,94);
+	font-size: 1.5rem; 
+	font-weight: 500;
+	letter-spacing: 0.05rem; 
+	text-align: center;
+}
 
+/*.account-nav {
+	display: inline-block;
+	color: rgb(124,147,157);
+	text-decoration: none;
+	font-size: 1.1rem; 
+	font-weight: 500;
+	letter-spacing: 0.05rem; 
+	margin-right: 0;
+	padding: 0;
+	text-align: center;
+
+}*/
+
+.account-nav-item {
+	display: inline-block;
+	color: rgb(124,147,157);
+	text-decoration: none;
+	font-size: 1.1rem; 
+	font-weight: 500;
+	letter-spacing: 0.05rem; 
+	padding: 0;
+	text-align: center;
+}
+
+.account-nav-item:hover, .account-nav-item:active {
+    color: rgb(52,73,94); /* darker blue */
+}
+
+.container .bloc{
+	background-color: #ffffff;
+	border-color: #d6d6d6;
+	border-width:1.0px;
+	border-style: solid;
+	border-right-width: 0;
+	border-left-width: 0;
+	position: absolute;
 }
 
 .container .bloc .small{
-min-height:auto;
-min-width:auto;
-width:10%;
-height:100%;
+	min-height:auto;
+	min-width:auto;
+	width:10%;
+	height:100%;
 }
 
 .container .info-button-block{
-
-position:relative;
-
+	position:relative;
 }
 
 .container .button-block{
-border-width: 0;
-position: absolute;
-right: 0;
-bottom: 0;
+	border-width: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 .order-details{ 
@@ -357,11 +396,21 @@ bottom: 0;
   display:block;
   background-color: #ffffff;
   border-color: #d6d6d6;
-  border-width:2px;
+  border-width: 2px;
   border-style: solid;
   border-right-width: 0;
   border-left-width: 0;
   border-bottom: none;
+}
+
+.order-details h4 { 
+	text-align: left;
+	font-size: 0.8rem;
+}
+
+.order-details a { 
+	margin: 0;
+	padding: 0;
 }
 
 .info-block {
@@ -376,7 +425,6 @@ bottom: 0;
   position: relative;
     
 }
-
 
 .info-block img{
   width:100px;
@@ -458,7 +506,7 @@ ________________________________________________________________________________
 
 }
 
-.box-item-gallery:hover .box-item-gallery-compound {
+.box-item-gallery:hover, .box-item-gallery-compound:hover {
     border: 1px solid #777;
 }
 
@@ -473,14 +521,29 @@ ________________________________________________________________________________
 }
 
 .desc {
-    padding: 0.5rem;
+	display: inline-block;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
     padding-bottom: 0;
-    text-align: center;
+    float: left;
 }
 
-.desc span:hover {
-    color: red;
+.desc span {
+	display: inline-block;
+	float: absolute right;
+	margin-left: 6.5rem;
+	margin-right: 1rem;
 }
+
+.desc span:hover, .desc span:active {
+    color: red;
+    cursor: pointer;
+}
+
+/*#red-desc {
+	color:red;
+}*/
+
 /* _________________________________________________________________________________
 
 	shop pages properties ends 
@@ -920,6 +983,10 @@ ________________________________________________________________________________
   border: 0.5px solid rgb(124,147,157);
 }
 
+/*.create-crossbow-container p {
+	margin-left: 11rem;
+}*/
+
 /*code from https://codepen.io/CreativeJuiz/pen/BiHzp*/
 /* checkbox aspect */
 #crossbow-switch:not(:checked) {
@@ -1091,3 +1158,124 @@ ________________________________________________________________________________
 	image mapping properties ends 
 _________________________________________________________________________________ */
 
+
+/* _________________________________________________________________________________
+
+	pop-up properties begins 
+_________________________________________________________________________________ */
+.box-shopping-nav {
+	display: inline-block;
+}
+
+.quick-view-nav {
+	display: inline-block;
+	margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 0.93rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.quick-view-nav:hover, .quick-view-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+.cart-nav {
+	display: inline-block;
+	margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.cart-nav:hover, .cart-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+/*  .box{
+    width: 70%;
+  }*/
+  .popup{
+    width: 70%;
+  }
+}
+
+/* _________________________________________________________________________________
+
+	pop-up properties ends
+_________________________________________________________________________________ */

@@ -32,6 +32,14 @@
   flex: 1 1 auto;
 }
 
+.account-nav {
+  flex: 1 1 auto;
+}
+
+.account-nav-item {
+  flex: 1 1 auto;
+}
+
 .box-item-icons {
   	flex: 1 1 auto;
 }
@@ -66,9 +74,9 @@
 @media (max-width: 30em) {
   	/*rule to change the behaviour*/
   	.box-item-nav, .box-item-nav-home, .box-item-profile, .box-item-home-placeholder, 
-    .box-item-create-placeholder, .create-nav, .create-nav-item, .box-item-icons, 
-    .box-item-sitemap, .create-crossbow-container, .box-shape-container, 
-    .create-form-container, .hidden-box, .box-item-gallery-compound {
+    .box-item-create-placeholder, .create-nav, .create-nav-item, .account-nav, 
+    .account-nav-item, .box-item-icons, .box-item-sitemap, .create-crossbow-container, 
+    .box-shape-container, .create-form-container, .hidden-box, .box-item-gallery-compound {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
