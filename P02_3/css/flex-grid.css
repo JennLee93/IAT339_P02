@@ -69,7 +69,7 @@
 }
 
 .box-item-gallery-compound {
-  flex: 1 1 15%;
+    flex: 1 1 15%;
 }
 
 
@@ -98,9 +98,19 @@
     margin-right: 6.96rem;
   }
 
-/*  .box-shape-container {
+  .box-item-footer-nav {
+    width: auto;
+    height:auto;
+    text-align: center;
     margin: 0;
-  }*/
+  }
+
+  .footer p {
+    width: auto;
+    left: 0;
+    margin-left: 2.7rem;
+    margin-right: 2.7rem;
+  }
 
   .create-form-container {
     margin: 0;
