@@ -12,6 +12,10 @@
 	flex: 1 1 auto;
 }
 
+.box-item-footer-nav {
+  flex: 1 1 auto;
+}
+
 .box-item-profile {
   flex: 1 1 auto;
 }
@@ -73,7 +77,7 @@
 /*if the width of the web browser is less than 30em then we add new rules*/
 @media (max-width: 30em) {
   	/*rule to change the behaviour*/
-  	.box-item-nav, .box-item-nav-home, .box-item-profile, .box-item-home-placeholder, 
+  	.box-item-nav, .box-item-nav-home, .box-item-footer-nav, .box-item-profile, .box-item-home-placeholder, 
     .box-item-create-placeholder, .create-nav, .create-nav-item, .account-nav, 
     .account-nav-item, .box-item-icons, .box-item-sitemap, .create-crossbow-container, 
     .box-shape-container, .create-form-container, .hidden-box, .box-item-gallery-compound {
@@ -94,9 +98,9 @@
     margin-right: 6.96rem;
   }
 
-  .box-shape-container {
+/*  .box-shape-container {
     margin: 0;
-  }
+  }*/
 
   .create-form-container {
     margin: 0;
@@ -106,7 +110,8 @@
     text-align: center;
     height: auto;
     width: auto;
-    margin: 0.5rem;
+    margin: 0;
+    margin-bottom: 0;
   }
 
   .square-form h3 {
@@ -115,11 +120,6 @@
 
   .square-form h4 {
     font-size: 0.75rem;
-  }
-
-  .rect-form {
-    height: auto;
-    padding-bottom: 5rem;
   }
 
   .create-form {
@@ -196,15 +196,6 @@
 
 @media (max-width: 79em) {
     /*rule to change the behaviour*/
-    .square-form {
-      margin: 0;
-    }
-
-    .rect-form {
-      margin: 0;
-    }
-
-
     .create-form {
       margin: 0;
     }
