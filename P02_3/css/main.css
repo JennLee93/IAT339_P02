@@ -164,14 +164,150 @@ ________________________________________________________________________________
 	home events properties begin 
 _________________________________________________________________________________*/
 
-.new-place {
+.new {
+	position: relative;
 	display: block;
-   	border: 0.3px solid black;
-   	height: 25rem;
+   	height: 408px;
 }
 
 #updates {
 	margin-bottom: 0;
+}
+
+#bow-title, #arrow-title, #quiver-title {
+	position: absolute;
+	margin-left: 5rem;
+	color: white;
+	width: 15rem;
+	line-height: 1.5rem;
+	font-size: 1.5rem;
+}
+
+#bow-title {
+	margin-top: 5rem;
+}
+
+#arrow-title {
+	margin-top: 15rem;
+}
+
+#quiver-title {
+	margin-top: 12rem;
+}
+
+.learn-bow-nav {
+	display: inline-block;
+	position: absolute;
+	margin-top: 9rem;
+    margin-left: 6.05rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #333333;
+    background-color: #F2F2F2;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.learn-arrow-nav {
+	display: inline-block;
+	position: absolute;
+	margin-top: 17.5rem;
+    margin-left: 6.05rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #333333;
+    background-color: #F2F2F2;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.learn-quiver-nav {
+	display: inline-block;
+	position: absolute;
+	margin-top: 17.5rem;
+    margin-left: 6.05rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #333333;
+    background-color: #F2F2F2;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.learn-bow-nav:hover, .learn-bow-nav:focus, 
+.learn-arrow-nav:hover, .learn-arrow-nav:focus,
+.learn-quiver-nav:hover, .learn-quiver-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+#learn-bow h3, #learn-bow p, #learn-arrow h3, #learn-arrow p, 
+#learn-quiver h3, #learn-quiver p {
+	margin-top: 8rem;
+	margin-bottom: 2rem;
+	padding: 0;
+}
+
+#learn-bow h3, #learn-arrow h3, #learn-quiver h3 {
+	color: rgb(92, 92, 92);
+	line-height: 1.5rem;
+	font-size: 1.2rem;
+	width: 11.2rem;
+	margin-left: 5rem;
+	text-align: right;
+}
+
+#learn-bow p, #learn-arrow p, #learn-quiver p {
+	text-align: left;
+	margin-right: 5rem;
+	color: rgb(124,147,157);
+	font-size: 0.8rem;
+	padding-left: 0.5rem;
+}
+
+.shop-now-nav {
+	display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 8rem;
+    margin-left: 46.5%;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.shop-now-nav:hover, .shop-now-nav:focus {
+    background-color: #5E6C72;
+    color: white;
 }
 
 /* _________________________________________________________________________________
@@ -343,19 +479,6 @@ ________________________________________________________________________________
 	text-align: center;
 }
 
-/*.account-nav {
-	display: inline-block;
-	color: rgb(124,147,157);
-	text-decoration: none;
-	font-size: 1.1rem; 
-	font-weight: 500;
-	letter-spacing: 0.05rem; 
-	margin-right: 0;
-	padding: 0;
-	text-align: center;
-
-}*/
-
 .account-nav-item {
 	display: inline-block;
 	color: rgb(124,147,157);
@@ -399,7 +522,7 @@ ________________________________________________________________________________
 	bottom: 0;
 }
 
-.order-details{ 
+.order-details { 
   overflow:hidden;
   display:block;
   background-color: #ffffff;
