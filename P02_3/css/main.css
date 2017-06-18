@@ -620,10 +620,14 @@ ________________________________________________________________________________
 
 	account pages properties ends 
 _________________________________________________________________________________ */
+
+
+
 /* _________________________________________________________________________________
 
 	shop pages properties begins 
 _________________________________________________________________________________ */
+
 .shop-titles{
 	width: 100%;
 }
@@ -644,53 +648,68 @@ ________________________________________________________________________________
 }
 
 .box-item-gallery-compound {
-    border: 1px solid #ccc;
     margin: 1rem;
-
-}
-
-.box-item-gallery:hover, .box-item-gallery-compound:hover {
-    border: 1px solid #777;
 }
 
 .box-item-gallery-compound img {
     width: 100%;
     height: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 0;
+	padding: 0;
     float: left;
+    margin-left: 0;
+    border: 0.5px solid #ccc;
 }
 
-.desc {
-	display: inline-block;
-    padding-top: 0.5rem;
-    margin-left: 1rem;
-    padding-bottom: 0;
-    float: left;
+
+/* ________________________________________________________________________________
+
+	shop compound begins 
+	code obtained from week 5 lecture example on positioning and responsive images
+__________________________________________________________________________________ */
+
+.shop-caption {
+	position: relative;
+	margin: 0;
 }
 
-.desc span {
-	display: inline-block;
-	float: absolute right;
-	margin-left: 6.5rem;
-	margin-right: 1rem;
-}
+/*
+	A reminder that a space between the two selectors below '.caption-inside' and 'figcaption' indicates only 'figcaptions' that are children of '.caption-inside' elements will be styled as specified
+*/
+.shop-caption figcaption {
+	/*
+		Positioning an element as 'absolute' sets it to be positioned absolutely to the last parent element with a positioning set (other then static).
 
-.desc span:hover, .desc span:active {
-    color: red;
-    cursor: pointer;
-}
+		As <figcaption> is the child of .caption-inside, which is positioned relative, <figcaption> is then positioned absolutely to .caption-inside based on the top, right, bottom, and left values set.
+	*/
+	position: absolute;
+	/*
+		By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
+	*/
+	bottom: 0.5rem;
+	top: 12.5rem;
+	padding-top: 0.75rem;
+	padding-right: 0.25rem;
+	/*
+		To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
+	*/
+	width: 200px;
+	height: 30px;
+	color: white;
+	text-align: right;
+	font-size: 0.8rem;
+	background-color: rgb(92, 92, 92);
 
-/*#red-desc {
-	color:red;
-}*/
+	margin-right: 3rem;
+	margin-bottom: 3rem;
+}
 
 /* _________________________________________________________________________________
 
+	shop compound ends
 	shop pages properties ends 
 _________________________________________________________________________________ */
+
+
 
 /* _________________________________________________________________________________
 
@@ -702,40 +721,56 @@ ________________________________________________________________________________
 	font-size: 1.5rem; 
 	font-weight: 500;
 	letter-spacing: 0.05rem; 
-	margin-left: 10.9rem;
 	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+#create-nav {
+	width: 100%;
+	text-align: center;
 }
 
 .create-nav {
 	display: inline-block;
 	color: rgb(124,147,157);
 	text-decoration: none;
-	font-size: 1.1rem; 
+	font-size: 0.8rem; 
 	font-weight: 500;
 	letter-spacing: 0.05rem; 
-	margin-left: 12rem;
 	margin-right: 0;
 	padding: 0;
-}
+	padding-right: 2rem;
 
-.create-nav-item {
-	display: inline-block;
-	color: rgb(124,147,157);
-	text-decoration: none;
-	font-size: 1.1rem; 
-	font-weight: 500;
-	letter-spacing: 0.05rem; 
-	margin-left: 2rem;
-	margin-right: 0;
-	padding: 0;
+	border-right: 2px solid rgb(200,200,200); /* light grey */
 }
 
 .create-nav:hover, .create-nav:active {
     color: rgb(52,73,94); /* darker blue */
 }
 
+.create-nav-item {
+	display: inline-block;
+	color: rgb(124,147,157);
+	text-decoration: none;
+	font-size: 0.8rem; 
+	font-weight: 500;
+	letter-spacing: 0.05rem; 
+	margin-left: 2rem;
+	margin-right: 0;
+	padding: 0;
+	padding-right: 2rem;
+
+	border-right: 2px solid rgb(200,200,200); /* light grey */
+}
+
 .create-nav-item:hover, .create-nav-item:active {
     color: rgb(52,73,94); /* darker blue */
+}
+
+/*code from https://codepen.io/secondfret/pen/GoqLK*/
+.create-nav-item:last-child {
+    border-right: none;
+    padding-right: 0;
 }
 
 .box-item-create-placeholder {
@@ -747,6 +782,17 @@ ________________________________________________________________________________
     margin-top: 2rem;
     margin-right: 2rem;
 }
+
+.shop-compound img {
+    width: 100%;
+    height: auto;
+	padding: 0;
+}
+/* _________________________________________________________________________________
+
+	create bow page properties ends
+_________________________________________________________________________________ */
+
 
 /* ________________________________________________________________________________
 
@@ -1305,9 +1351,16 @@ ________________________________________________________________________________
 /* _________________________________________________________________________________
 
 	pop-up properties begins 
+	code from https://codepen.io/imprakash/pen/GgNMXO
 _________________________________________________________________________________ */
 .box-shopping-nav {
 	display: inline-block;
+}
+
+.quickview-nav {
+	display: inline-block;
+	float: right;
+	margin-right: 1.6rem;
 }
 
 .quick-view-nav {
@@ -1376,46 +1429,240 @@ ________________________________________________________________________________
   opacity: 1;
 }
 
-.popup {
+.quick-view {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  height: 75%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.quickview-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quick-view .close {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  transition: all 200ms;
+  font-size: 30px;
+  text-decoration: none;
+  color: #333;
+  padding: 0;
+}
+
+.quick-view .close:hover {
+  color: rgb(124,147,157);
+}
+
+.quick-view .quickview-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
+.quickview-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.added-view {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
   width: 30%;
+  height: 25%;
   position: relative;
   transition: all 5s ease-in-out;
+  text-align: center;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+.added-view h2 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
 }
-.popup .close {
+
+.added-view .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0;
+  right: 0.5rem;
   transition: all 200ms;
   font-size: 30px;
-  font-weight: bold;
   text-decoration: none;
   color: #333;
+  padding: 0;
 }
-.popup .close:hover {
-  color: #06D85F;
+
+.added-view .close:hover {
+  color: rgb(124,147,157);
 }
-.popup .content {
+
+.added-view .added-content {
   max-height: 30%;
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
-/*  .box{
-    width: 70%;
-  }*/
-  .popup{
+.added-content {
+	font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .quick-view {
     width: 70%;
   }
+
+  .added-view {
+    width: 70%;
+  }
+}
+
+/* -------------------- Select Box Styles: stackoverflow.com Method */
+/* -------------------- Source: http://stackoverflow.com/a/5809186 */
+/*https://codepen.io/ericrasch/pen/zjDBx*/
+
+.selectors {
+	display: inline-block;
+}
+
+#quantity-selector {
+   -webkit-appearance: button;
+   -webkit-border-radius: 1px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), 
+   -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: 0.7rem;
+   margin: 1rem;
+   margin-top: 0.2rem;
+   margin-left: 0;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 7rem;
+}
+
+#size-selector {
+   -webkit-appearance: button;
+   -webkit-border-radius: 1px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), 
+   -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: 0.7rem;
+   margin: 1rem;
+   margin-top: 0.2rem;
+   margin-left: 0;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 7rem;
+}
+
+label {
+	display: block;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.quickview-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  background: rgb(52,73,94); 
+  padding: 0.35rem; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  color: white;
+}
+
+.tab [type=radio] {
+  display: none;   
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 0.8rem;
+  padding-top: 0.5rem;
+  border: 1px solid #ccc; 
+
+  color: #333;
+  font-size: 0.8rem;
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  color: black;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
 }
 
 /* _________________________________________________________________________________
