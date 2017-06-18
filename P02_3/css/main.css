@@ -278,9 +278,21 @@ ________________________________________________________________________________
 	text-align: right;
 }
 
+#learn-arrow h3 {
+	margin-left: 2rem;
+}
+
 #learn-bow p, #learn-arrow p, #learn-quiver p {
 	text-align: left;
 	margin-right: 5rem;
+	color: rgb(124,147,157);
+	font-size: 0.8rem;
+	padding-left: 0.5rem;
+}
+
+#learn-arrow p {
+	text-align: left;
+	margin-right: 8rem;
 	color: rgb(124,147,157);
 	font-size: 0.8rem;
 	padding-left: 0.5rem;
