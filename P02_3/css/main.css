@@ -647,6 +647,10 @@ ________________________________________________________________________________
     margin: 1rem;
 }
 
+.shop-bow {
+	padding: 0;
+}
+
 .box-item-gallery-compound {
     margin: 1rem;
 }
@@ -660,6 +664,9 @@ ________________________________________________________________________________
     border: 0.5px solid #ccc;
 }
 
+.box-item-gallery-compound img:hover  {
+    border: 0.5px solid black;
+}
 
 /* ________________________________________________________________________________
 
@@ -697,7 +704,7 @@ ________________________________________________________________________________
 	color: white;
 	text-align: right;
 	font-size: 0.8rem;
-	background-color: rgb(92, 92, 92);
+	background-color: rgba(92, 92, 92, 0.8);
 
 	margin-right: 3rem;
 	margin-bottom: 3rem;
@@ -1422,6 +1429,7 @@ ________________________________________________________________________________
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 2;
 }
 
 .overlay:target {
@@ -1440,7 +1448,7 @@ ________________________________________________________________________________
   transition: all 5s ease-in-out;
 }
 
-.quickview-content h2 {
+.quickview-mathews-content h2 {
   margin-top: 0;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
@@ -1450,7 +1458,57 @@ ________________________________________________________________________________
   font-weight: normal;
 }
 
-.quickview-content h3 {
+.quickview-bowtech-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-fortitude-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-prime-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-predator-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-quiver-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-mathews-content h3 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -1460,7 +1518,87 @@ ________________________________________________________________________________
   font-weight: normal;
 }
 
-.quickview-content p {
+.quickview-bowtech-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-fortitude-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-prime-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-predator-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-quiver-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.quickview-mathews-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quickview-bowtech-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quickview-fortitude-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quickview-prime-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quickview-predator-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quickview-quiver-content p {
   margin-top: 0;
   color: #333;
   font-size: 0.8rem;
@@ -1481,7 +1619,7 @@ ________________________________________________________________________________
   color: rgb(124,147,157);
 }
 
-.quick-view .quickview-content {
+.quick-view .quickview-mathews-content {
   padding: 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -1489,7 +1627,77 @@ ________________________________________________________________________________
   overflow: auto;
 }
 
-.quickview-content img {
+.quick-view .quickview-bowtech-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
+.quick-view .quickview-fortitude-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
+.quick-view .quickview-prime-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
+.quick-view .quickview-predator-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
+.quick-view .quickview-quiver-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
+.quickview-mathews-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.quickview-bowtech-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.quickview-fortitude-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.quickview-prime-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.quickview-predator-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.quickview-quiver-content img {
 	width: 50%;
 	height: auto;
 	margin-right: 1rem;
@@ -1554,6 +1762,7 @@ ________________________________________________________________________________
 /* -------------------- Source: http://stackoverflow.com/a/5809186 */
 /*https://codepen.io/ericrasch/pen/zjDBx*/
 
+/*code from https://css-tricks.com/functional-css-tabs-revisited/*/
 .selectors {
 	display: inline-block;
 }
@@ -1579,7 +1788,7 @@ ________________________________________________________________________________
    padding: 5px 10px;
    text-overflow: ellipsis;
    white-space: nowrap;
-   width: 7rem;
+   width: 5.45rem;
 }
 
 #size-selector {
@@ -1606,13 +1815,130 @@ ________________________________________________________________________________
    width: 7rem;
 }
 
+#side-selector {
+   -webkit-appearance: button;
+   -webkit-border-radius: 1px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), 
+   -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: 0.7rem;
+   margin: 1rem;
+   margin-top: 0.2rem;
+   margin-left: 0;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 7rem;
+}
+
+#weight-selector {
+   -webkit-appearance: button;
+   -webkit-border-radius: 1px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), 
+   -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: 0.7rem;
+   margin: 1rem;
+   margin-top: 0.2rem;
+   margin-left: 0;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 5.7rem;
+}
+
+#length-selector {
+   -webkit-appearance: button;
+   -webkit-border-radius: 1px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), 
+   -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: 0.7rem;
+   margin: 1rem;
+   margin-top: 0.2rem;
+   margin-left: 0;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 5.7rem;
+}
+
 label {
 	display: block;
     margin-bottom: 0.2rem;
     font-size: 0.8rem;
 }
 
-.quickview-tabs {
+.quickview-mathews-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.quickview-bowtech-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.quickview-fortitude-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.quickview-prime-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.quickview-predator-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.quickview-quiver-tabs {
   position: relative;
   display: inline-block;   
   min-height: 12rem; /* This part sucks */
@@ -1633,6 +1959,7 @@ label {
   position: relative;
   left: 1px; 
   color: white;
+  cursor: pointer;
 }
 
 .tab [type=radio] {
