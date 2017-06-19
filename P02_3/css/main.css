@@ -1508,6 +1508,16 @@ ________________________________________________________________________________
   font-weight: normal;
 }
 
+.quickview-display-content h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
 .quickview-mathews-content h3 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -1568,6 +1578,16 @@ ________________________________________________________________________________
   font-weight: normal;
 }
 
+.quickview-display-content h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
 .quickview-mathews-content p {
   margin-top: 0;
   color: #333;
@@ -1599,6 +1619,12 @@ ________________________________________________________________________________
 }
 
 .quickview-quiver-content p {
+  margin-top: 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.quickview-display-content p {
   margin-top: 0;
   color: #333;
   font-size: 0.8rem;
@@ -1667,6 +1693,14 @@ ________________________________________________________________________________
   overflow: auto;
 }
 
+.quick-view .quickview-display-content {
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-height: 95%;
+  overflow: auto;
+}
+
 .quickview-mathews-content img {
 	width: 50%;
 	height: auto;
@@ -1698,6 +1732,12 @@ ________________________________________________________________________________
 }
 
 .quickview-quiver-content img {
+	width: 50%;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.quickview-display-content img {
 	width: 50%;
 	height: auto;
 	margin-right: 1rem;
@@ -1939,6 +1979,15 @@ label {
 }
 
 .quickview-quiver-tabs {
+  position: relative;
+  display: inline-block;   
+  min-height: 12rem; /* This part sucks */
+  clear: both;
+  margin: 0;
+  width: 20.75rem;
+}
+
+.quickview-display-tabs {
   position: relative;
   display: inline-block;   
   min-height: 12rem; /* This part sucks */

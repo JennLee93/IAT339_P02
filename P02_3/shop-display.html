@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+		<title>Shop</title>
+		
+		<meta charset="utf-8"> <!-- character set, no matter what language it will make sure the characters are correct -->
+	    
+	    <!-- viewport code from downloaded class examples -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+	<body>
+		<!-- I learned this in lecture -->
+		<section id="home">
+			<nav class="box">
+				<div class="box-item-nav-home">
+					<a href="index.html">
+					
+					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+					
+					<a class="nav-home" href="index.html">THE ARCHER</a>
+
+					<a class="account" href="account.html">
+						<span class="lnr lnr-user box-item-icons"></span>
+					</a>
+
+					<span class="lnr lnr-cart box-item-icons"></span>
+
+					<span class="lnr lnr-magnifier box-item-icons"></span>
+				</div>
+			</nav>
+		</section>
+
+		<nav class="box"> <!-- put it on the top and sets it to navigation -->
+			<a class="nav-main box-item-nav" href="shop.html">SHOP</a>	
+    		<a class="nav-main box-item-nav" href="create.html">CREATE</a>
+			<a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+		</nav>
+
+		<div class="box">
+			<section id="create-nav">
+				<h1>THE ARCHER STORE</h1>
+				<a class="create-nav" href="shop.html">BOWS</a>
+				<a class="create-nav-item" href="shop-arrows.html">ARROWS</a>
+				<a class="create-nav-item" href="shop-quiver.html">QUIVERS & CASES</a>
+				<a class="create-nav-item" href="shop-display.html">DISPLAY CASES</a>
+			</section>
+		</div>
+			
+		<section id="shop-bow">
+		<!-- Hunting Arrows -->
+			<div class="shop-titles">
+				<h4>DISPLAY CASES</h4>
+			</div>
+
+			<div class="box">
+				
+				<!-- display 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-display">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/VarietyDisplay.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-display">
+							<figcaption>24 Bow Grid Display | $399</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<!-- code from https://codepen.io/imprakash/pen/GgNMXO -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-display">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+
+					<div id="quickview-display" class="overlay">
+						<div class="quick-view">
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="quickview-display-content">
+								<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/VarietyDisplay.jpg" alt="shop">
+								<h2>24 Bow Grid Display</h2>
+								<h3>$399</h3>
+
+								<!-- https://codepen.io/ericrasch/pen/zjDBx -->
+								<div class="selectors">
+									<label for="quantity-selector">Qty:</label>
+									<select id="quantity-selector">
+									  <option>Select</option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option> 				
+									</select>
+								</div>
+
+								<!-- code from https://css-tricks.com/functional-css-tabs-revisited/ -->
+								<div class="quickview-quiver-tabs">
+								    
+								   <div class="tab">
+								       <input type="radio" id="display-detail" name="tab-group-1" checked>
+								       <label for="display-detail">Details</label>
+								       
+								       <div class="content">
+								           A perfect display when you need to present the greatest number of bows (long bow, recurve and compound) using only about 3 sq. feet of floor space. Grid Bow Display comes with 12 brackets (4- 12" and 8 -7") that are movable and interchangeable so you may design the display to fit the style of bows that you want to show or sell.
+								       </div> 
+								   </div>
+								    
+								   <div class="tab">
+								       <input type="radio" id="display-review" name="tab-group-1">
+								       <label for="display-review">Reviews</label>
+								       
+								       <div class="content">
+								           No reviews yet
+								       </div> 
+								   </div>								    
+								</div>
+
+								<div class="quickview-nav">
+									<a class="quick-view-nav" href="#added-wishlist">Add to Wishlist</a>
+									<a class="cart-nav" href="#added">Add to Cart</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="added" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your cart
+							</div>
+						</div>
+					</div>
+
+					<div id="added-wishlist" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your wishlist
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<!-- display 1 ends -->
+
+
+				<!-- display 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-display">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/CrossbowDisplay.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-display">
+							<figcaption>12 Crossbow Grid Display | $374</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-display">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- display 2 ends -->
+
+
+				<!-- display 3 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-display">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/WoodDisplay.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-display">
+							<figcaption>Bow & Arrow Rack Kit | $44</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-display">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- display 3 ends -->
+
+
+				<!-- display 4 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-display">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/CustomDisplay.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-display">
+							<figcaption>Sequoyah 2 Bow Cabinet | $600</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-display">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- display 4 ends -->
+
+			</div>
+		</section>
+
+		<div class="box">
+			<div class="footer">
+				<a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+	    		<a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+				<a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+				<p>© 2017 The Archer, Inc. All Rights Reserved</p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
