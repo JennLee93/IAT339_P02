@@ -2,7 +2,7 @@
 
 <html lang="en"> <!-- sets language to english -->
 	<head>
-    	<title>Account</title>
+    	<title>Cart</title>
 
     	<meta charset="utf-8">
  		
@@ -30,11 +30,11 @@
                     <a class="nav-home" href="index.html">THE ARCHER</a>
 
                     <a class="account" href="account.html">
-                        <span id="icon-pressed" class="lnr lnr-user box-item-icons"></span>
+                        <span class="lnr lnr-user box-item-icons"></span>
                     </a>
 
                     <a class="shopping-cart" href="shopping-cart.html">
-                        <span class="lnr lnr-cart box-item-icons"></span>
+                        <span id="icon-pressed" class="lnr lnr-cart box-item-icons"></span>
                     </a>
 
                     <span class="lnr lnr-magnifier box-item-icons"></span>
@@ -48,43 +48,45 @@
             <a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
         </nav>
 
-    	<section>
-    		<div class="box">
-    			<div class="square-form box-shape-container">
-
-                    <section id="account-nav">
-                        <h1>YOUR ACCOUNT</h1>
-
-                        <nav class="box">
-                            <a class="account-nav-item box-item-nav" href="account.html">ORDER HISTORY</a>
-                            <a class="account-nav-item box-item-nav" href="account-info.html">ACCOUNT INFO</a>
-                            <a class="account-nav-item box-item-nav" href="account-shipping.html">SHIPPING & BILLING</a>
-                        </nav>
-                        
-                    </section>
-
-                    <section id="order-history">
-                        <h3>PENDING ORDERS</h3>
-                            <div class="info-block">
-                                <p>You have no pending orders at this time.</p>
-                            </div>
-                    
-
-                        <h3>PAST ORDERS</h3>
-                            <div class="order-details">
-                                <h4>March 9, 2017  |  Total: $447.99  |  Order #: 89576638  | <a href="#">Invoice</a></h4>
-                            </div>
-                            <div class="info-block">
-                                <a target="_blank" href="http://www.kenwith-archers.org.uk/images/compound.jpg">
-                                <img class="bow-compound box-item-create-placeholder" src="http://www.sfu.ca/~jal32/IAT339/Placeholder%20Images/placeholder-square.jpg" alt="Placeholder">
-                                </a>
-                                <h4>Compound Bow - Model 4: $399.99</h4>
-                                    <p>In condimentum est eu mollis placerat. Phasellus sed ultrices est. Vestibulum semper egestas odio. Vestibulum eget mi sed nisi molestie mattis ac in nunc.</p>
-                            </div>
-                    </section>
-       			</div>
-    		</div>
+        <section id="account-nav">
+            <h1>SHOPPING CART</h1>
     	</section>
+
+        <section id="checkout-header">
+            <div class="box">
+                <div class="checkout">
+                    <h1>My Cart</h1>
+                    <a href="shop.html" class="continue-nav">Continue Shopping</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="first-item">
+            <div class="box">
+                    <img class="checkout-first" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/LadyWhitetailHunter.png" alt="checkout">
+
+                    <h2>Lady Whitetail Hunter</h2>
+                    <h3>ITEM # 2812</h3>
+
+                    <h6>$399</h6>
+                    <a href="#checkout-header" class="delete-nav" checked>Remove</a>
+
+                    <h4>1</h4>
+                    <h5> x $399</h5>
+
+                    <a href="#checkout" class="checkout-nav">Checkout</a>
+            </div>
+        </section>
+
+            <div id="checkout" class="overlay">
+                <div class="added-view">
+                    <h2>Success</h2>
+                    <a class="close" href="#checkout-header">&times;</a>
+                    <div class="checkout-content">
+                        Thank you for your purchase! An order confirmation will be sent to your email.
+                    </div>
+                </div>
+            </div>
 
         <div class="box">
             <div class="footer">

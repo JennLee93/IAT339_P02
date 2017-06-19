@@ -76,6 +76,10 @@
     flex: 1 1 15%;
 }
 
+.continue-nav {
+    flex: 1 1 auto;
+}
+
 
 /*allows css to request information about the web browser*/
 /*if the width of the web browser is less than 30em then we add new rules*/
@@ -85,7 +89,7 @@
     .box-item-home-new, .box-item-create-placeholder, .box-item-shop, .create-nav, 
     .create-nav-item, .account-nav, .account-nav-item, .box-item-icons, .box-item-sitemap, 
     .create-crossbow-container, .box-shape-container, .create-form-container, 
-    .hidden-box, .box-item-gallery-compound {
+    .hidden-box, .box-item-gallery-compound, .continue-nav {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }

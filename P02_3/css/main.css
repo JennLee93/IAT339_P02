@@ -137,7 +137,21 @@ section {
   }
 
 .nav-main:active, .nav-main:focus, .nav-main:hover {
-    color: rgb(52,73,94); /* darker blue */
+	color: rgb(52,73,94); /* darker blue */
+	background-color: #ccc;
+}
+
+#pressed {
+	color: rgb(52,73,94); /* darker blue */
+	background-color: #ccc;
+}
+
+#icon-pressed {
+	color: #8c8c8c;
+}
+
+#footer-pressed {
+	color: #8c8c8c;
 }
 
 /* _________________________________________________________________________________
@@ -337,6 +351,10 @@ ________________________________________________________________________________
 	color: white;
 }
 
+.box-item-icons:active, .box-item-icons:focus, .box-item-icons:hover {
+	color: #8c8c8c;
+}
+
 .lnr-user {
 	position: absolute;
 	top: 2.7rem;
@@ -344,7 +362,7 @@ ________________________________________________________________________________
 	font-size: 1.4rem;
 }
 
-.account {
+.account, .shopping-cart {
 	padding: 0;
 	margin: 0;
 }
@@ -1170,6 +1188,9 @@ ________________________________________________________________________________
 
 	image mapping properties begins
 _________________________________________________________________________________ */
+.create-crossbow-container {
+	margin-bottom: 10rem;
+}
 
 .create-crossbow-container img {
   width: 50%;  
@@ -1223,10 +1244,9 @@ ________________________________________________________________________________
 #crossbow-switch:checked ~ .custom-panel { 
 	position: absolute; 
 	left: 192px;
-	top: 501.5px;
+	top: 535px;
 	opacity: 1;
 }
-
 
 .custom-panel {
 	position: absolute;
@@ -1251,7 +1271,7 @@ ________________________________________________________________________________
 
 .hidden-box {
 	position: absolute;
-	top: 679px;
+	top: 711px;
 	left: 192px;
 
 	z-index: 2;
@@ -1796,6 +1816,10 @@ ________________________________________________________________________________
   .added-view {
     width: 70%;
   }
+
+  .checkout-view {
+    width: 70%;
+  }
 }
 
 /* -------------------- Select Box Styles: stackoverflow.com Method */
@@ -2045,3 +2069,230 @@ label {
 
 	pop-up properties ends
 _________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________
+
+	checkout properties begins
+	styling inspiration for the checkout page 
+		from https://codepen.io/alex_rodrigues/pen/ABGdg
+_________________________________________________________________________________ */
+
+
+.checkout {
+	display: inline-block;
+	width: 80%;
+	height: auto;
+	border-top: 0.5px solid #ccc;
+	border-bottom: 0.5px solid #ccc;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.checkout h1 {
+	position: absolute;
+	padding: 0;
+	font-size: 1.5rem;
+    color: rgb(92, 92, 92);
+    margin-top: -0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+#first-item {
+	margin-bottom: 10rem;
+}
+
+/*for name of the product*/
+#first-item h2 {
+	position: absolute;
+	padding: 0;
+	font-size: 1rem;
+    color: rgb(92, 92, 92);
+    margin-left: 18.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+/*for item number*/
+#first-item h3 {
+	position: absolute;
+	padding: 0;
+	font-size: 0.7rem;
+    color: rgb(92, 92, 92);
+    margin-left: 18.5rem;
+    margin-top: 2.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+/*for quantity*/
+#first-item h4 {
+	position: absolute;
+	padding: 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	font-size: 0.7rem;
+    color: rgb(92, 92, 92);
+    margin-left: 18.5rem;
+    margin-top: 4rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+    border: 0.5px solid #ccc;
+}
+
+/*for x price*/
+#first-item h5 {
+	position: absolute;
+	padding: 0;
+	font-size: 0.7rem;
+    color: rgb(92, 92, 92);
+    margin-left: 21rem;
+    margin-top: 4.4rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+/*for price larger font*/
+#first-item h6 {
+	position: absolute;
+	padding: 0;
+	font-size: 1rem;
+    color: rgb(92, 92, 92);
+    margin-left: 63.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+.continue-nav {
+	position: relative;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 10rem;
+    float: right;
+}
+
+.continue-nav:hover, .continue-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+.checkout-first {
+	margin-left: 10rem;
+	width: 7.5rem;
+	height: 7.5rem;
+	border: 0.5px solid #ccc;
+}
+
+.delete-nav {
+	position: absolute;
+    padding: 0.65em 0.65em;
+    color: #F2F2F2;
+    background-color: #7C939D;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+    cursor: pointer;
+
+    width: 4rem;
+    margin-left: 63.05rem;
+    margin-top: 4.05rem;
+}
+
+.delete-nav:hover, .delete-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+.checkout-view {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  height: 25%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  text-align: center;
+}
+
+.checkout-view h2 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+
+  color: rgb(92, 92, 92);
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+}
+
+.checkout-view .close {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  transition: all 200ms;
+  font-size: 30px;
+  text-decoration: none;
+  color: #333;
+  padding: 0;
+}
+
+.checkout-view .close:hover {
+  color: rgb(124,147,157);
+}
+
+.checkout-view .checkout-content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.checkout-content {
+	font-size: 0.8rem;
+}
+
+.checkout-nav {
+	position: absolute;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 10rem;
+    margin-left: 60rem;
+    margin-top: 12rem;
+}
+
+.checkout-nav:hover, .checkout-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+/* _________________________________________________________________________________
+
+	checkout properties ends
+_________________________________________________________________________________ */
+
+
