@@ -479,6 +479,15 @@ ________________________________________________________________________________
 	margin-left: 1rem;
 	letter-spacing: 0.15rem;
 }
+/* Thank you font */
+.square-form h5 {
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: rgb(0, 185, 192);
+	margin:0;
+	margin-left: 1rem;
+	letter-spacing: 0.15rem;
+}
 
 .square-form p {
 	color: rgb(140, 140, 140);
@@ -514,7 +523,6 @@ ________________________________________________________________________________
 	margin-left: 1rem;
 	font-size: 0.8rem;
 	color: rgb(140, 140, 140);
-	border-color: black;
 }
 
 
@@ -524,6 +532,7 @@ ________________________________________________________________________________
 	margin-left: 1rem;
 	font-size: 0.8rem;
 	color: rgb(140, 140, 140);
+
 }
 
 .submit-button{
@@ -684,16 +693,33 @@ ________________________________________________________________________________
     font-size: 16px;
     font-weight: lighter;
     cursor: pointer;
-
+    margin-top: 1rem;
+    margin-right: 1rem;
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     float:right;
-    margin-top: 20%;
-    margin-right: 20%;
-    
 }
 
-c
+.edit-button:active, .edit-button:focus, .edit-button:hover { 
+    background-color: rgb(140, 140, 140); 
+    border: 0.5px solid rgb(140, 140, 140); 
+    color: white; 
+    padding: 4px 15px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    font-weight: lighter; 
+ 
+    -webkit-transition: background-color 0.5s ease-out; 
+    transition: background-color 0.5s ease-out; 
+} 
+
+.text-field-account{
+	margin:1rem;
+	color: rgb(92,92,92);
+	font-size: 0.8rem;
+}
 /* _________________________________________________________________________________
 
 	account pages properties ends 
