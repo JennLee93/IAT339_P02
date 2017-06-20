@@ -718,7 +718,20 @@ ________________________________________________________________________________
 .text-field-account{
 	margin:1rem;
 	color: rgb(92,92,92);
-	font-size: 0.8rem;
+	font-size: 0.8rem;	
+}
+
+.account-labels{
+	margin-left: 1rem;
+	margin-top: 1rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: rgb(92, 92, 92);
+	letter-spacing: 0.15rem;
+}
+
+.form-address{
+	margin-bottom: 1rem;
 }
 /* _________________________________________________________________________________
 
