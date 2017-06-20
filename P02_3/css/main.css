@@ -447,7 +447,7 @@ ________________________________________________________________________________
 .square-form {
 	display: inline-block;
 	width: 45rem;
-	height: 60rem;
+	height: 65rem;
 	border: 0.5px solid rgb(124,147,157);
 	background-color: rgb(245,245,245);
 	margin-left: 7rem;
@@ -494,6 +494,79 @@ ________________________________________________________________________________
 /* _________________________________________________________________________________
 
 	purchasing-info page properties ends 
+_________________________________________________________________________________ */
+
+/* _________________________________________________________________________________
+
+	contact us page properties begin 
+_________________________________________________________________________________ */
+.contact-form{
+	width:45%;
+}
+
+.contact-block{
+	width:25rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.text-field {
+	margin-left: 1rem;
+	font-size: 0.8rem;
+	color: rgb(140, 140, 140);
+	border-color: black;
+}
+
+
+#comment-box{
+	width: 25rem;
+	height: 10rem;
+	margin-left: 1rem;
+	font-size: 0.8rem;
+	color: rgb(140, 140, 140);
+}
+
+.submit-button{
+	background-color: white;
+    border: 0.5px solid rgb(140, 140, 140);
+    border-radius: 3px;
+    color: rgb(124,147,157);
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+    cursor: pointer;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.submit-button-box{
+	margin: 1rem;
+
+}
+
+.submit-button:active, .submit-button:focus, .submit-button:hover {
+    background-color: rgb(140, 140, 140);
+    border: 0.5px solid rgb(140, 140, 140);
+    color: white;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+
+/* _________________________________________________________________________________
+
+	contact us page properties ends
 _________________________________________________________________________________ */
 
 /* _________________________________________________________________________________
@@ -620,20 +693,7 @@ ________________________________________________________________________________
     
 }
 
-.edit-button:active, .edit-button:focus, .edit-button:hover {
-    background-color: rgb(140, 140, 140);
-    border: 0.5px solid rgb(140, 140, 140);
-    color: white;
-    padding: 4px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: lighter;
-
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-}
+c
 /* _________________________________________________________________________________
 
 	account pages properties ends 
