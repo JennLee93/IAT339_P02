@@ -68,22 +68,13 @@
                         <div class="container">
                         <h3>SHIPPING ADDRESSES</h3>
                             <div class="bloc info-button-block">
-
-                                <form class="form-address">
-                                    <label class="account-labels">Recipient Name:</label>
-                                        <input type="text" class="text-field" placeholder="Katniss Everdeen">
-                                    <label class="account-labels">Address Line 1:</label>
-                                        <input type="text" class="text-field" placeholder="6677 Apocalypse Avenue">
-                                    <label class="account-labels">Address Line 2:</label>
-                                        <input type="text" class="text-field">
-                                    <label class="account-labels">City:</label>
-                                        <input type="text" class="text-field" placeholder="Vancouver">
-                                    <label class="account-labels">Postal Code:</label>
-                                        <input type="text" class="text-field" size="7" placeholder="V0E 0E0">
-                                </form>
-
+                                <p>Katniss Everdeen
+                                <br>6677 Apocalypse Avenue
+                                <br>Vancouver, CANADA
+                                <br>V0E 0E0 
+                                </p>
                                     <div class="bloc button-block small">
-                                        <a class="edit-button" href="account-shipping.html">Save</a>
+                                        <a class="edit-button" href="account-edit-address1.html">Edit</a>
                                     </div>
                             </div>
                            
@@ -104,18 +95,58 @@
                         <div class="container">
                         <h3>PAYMENT METHODS</h3>
                             <div class="bloc info-button-block">
-                                <p>Type:Visa
-                                <br>Card Number: ************2350
-                                <br>Expiration Date: 12/2051
-                                <br>Name on Card: Katniss Everdeen
-                                <br>Billing address:
-                                <br>Katniss Everdeen
-                                <br>6677 Apocalypse Avenue
-                                <br>Vancouver, CANADA
-                                <br>V0E 0E0 
-                                </p>
+                                <form class="form-address">
+                                    <label class="account-labels">Type of Card:</label>
+                                        <div class="drop-list-box">
+                                            <select class="account-drop-list">
+                                                <option value="visa">Visa</option>
+                                            </select>
+                                        </div>
+                                    <label class="account-labels">Card Number:</label>
+                                        <input type="text" class="text-field" maxlength="4" size="4"> 
+                                        <h6>-</h6>
+                                        <input type="text" class="text-field" maxlength="4" size="4">
+                                         <h6>-</h6> 
+                                        <input type="text" class="text-field" maxlength="4" size="4">
+                                         <h6>-</h6> 
+                                        <input type="text" class="text-field" maxlength="4" size="4">
+                                    <label class="account-labels">Expiration Date:</label>
+                                        <div class="drop-list-box">
+                                            <select class="account-drop-list">
+                                                <option value="12">12</option>
+                                            </select>
+                                            <h6>/</h6>
+                                            <select class="account-drop-list">
+                                                <option value="2051">2051</option>
+                                            </select>
+                                        </div>
+                                    <label class="account-labels">Name on Card:</label>
+                                        <input type="text" class="text-field" placeholder="Katniss Everdeen">
+                                    
+                                    <label class="account-labels">*Saved Address:</label>
+                                        <div class="drop-list-box">
+                                            <select class="account-drop-list">
+                                                <option value="katniss everdeen">Katniss Everdeen</option>
+                                            </select>
+                                        </div>
+                                    <label class="account-labels">OTHER</label>
+                                    <label class="account-labels">Address Line 1:</label>
+                                        <input type="text" class="text-field" placeholder="6677 Apocalypse Avenue">
+                                    <label class="account-labels">Address Line 2:</label>
+                                        <input type="text" class="text-field">
+                                    <label class="account-labels">City:</label>
+                                        <input type="text" class="text-field" placeholder="Vancouver">
+                                    <label class="account-labels">Postal Code:</label>
+                                        <input type="text" class="text-field" size="7" placeholder="V0E 0E0">
+                                    <label class="account-labels">Country:</label>
+                                        <div class="drop-list-box">
+                                            <select class="account-drop-list">
+                                                <option value="canada">Canada</option>
+                                            </select>
+                                        </div>
+                                </form>
                                     <div class="bloc button-block small">
-                                        <a class="edit-button" href="account-edit-payment.html">Edit</a>
+                                        <a class="edit-button" href="account-shipping.html">Save</a>
                                     </div>
                             </div>
                         </div>

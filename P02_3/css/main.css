@@ -447,7 +447,7 @@ ________________________________________________________________________________
 .square-form {
 	display: inline-block;
 	width: 45rem;
-	height: 65rem;
+	height: 82rem;
 	border: 0.5px solid rgb(124,147,157);
 	background-color: rgb(245,245,245);
 	margin-left: 7rem;
@@ -487,6 +487,15 @@ ________________________________________________________________________________
 	margin:0;
 	margin-left: 1rem;
 	letter-spacing: 0.15rem;
+}
+
+.square-form h6 {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: rgb(92, 92, 92);
+	margin:0;
+	display: inline-block;
+	text-align: right;
 }
 
 .square-form p {
@@ -732,6 +741,15 @@ ________________________________________________________________________________
 
 .form-address{
 	margin-bottom: 1rem;
+}
+
+.drop-list-box{
+	margin-left: 1rem;
+}
+.account-drop-list{
+	color: rgb(92,92,92);
+	font-size: 0.8rem;
+
 }
 /* _________________________________________________________________________________
 
