@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 
 <html lang="en"> <!-- sets language to english -->
-	<head>
-    	<title>Account</title>
+    <head>
+        <title>Account</title>
 
-    	<meta charset="utf-8">
- 		
- 		<!-- viewport code from downloaded class examples -->
- 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <!-- viewport code from downloaded class examples -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+        <link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
  -->
-		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+        <link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
  -->
-  		<link rel="stylesheet" href="css/flex-grid.css">
+        <link rel="stylesheet" href="css/flex-grid.css">
 
- 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-	</head>
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    </head>
 
-  	<body>
+    <body>
 
         <section id="home">
             <nav class="box">
@@ -48,16 +48,16 @@
             <a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
         </nav>
 
-    	<section>
-    		<div class="box">
-    			<div class="square-form box-shape-container">
+        <section>
+            <div class="box">
+                <div class="square-form box-shape-container">
 
                     <section id="account-nav">
                         <h1>YOUR ACCOUNT</h1>
 
                         <nav class="box">
                             <a class="account-nav-item box-item-nav" href="account.html">ORDER HISTORY</a>
-                            <a class="account-nav-item box-item-nav" href="account-info.html">ACCOUNT INFO</a>
+                            <a id="account-pressed" class="account-nav-item box-item-nav" href="account-info.html">ACCOUNT INFO</a>
                             <a class="account-nav-item box-item-nav" href="account-shipping.html">SHIPPING & BILLING</a>
                         </nav>
                         
@@ -66,45 +66,54 @@
                     <section id="account-info">
                         <div class="container">
                             <h3>NAME</h3>
-                                <div class="bloc info-button-block">
-                                <p>Katniss</p>
-                                    <div class="bloc button-block small">
-                                        <a class="edit-button" href="account-edit-name.html">Edit</a>
-                                    </div>
-                                </div>
+                            <div bloc info-button-block>
+                              <!-- code from https://www.w3schools.com/css/tryit.asp?filename=trycss_forms -->
+                              <form action="/action_page.php">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Example: Rachel">
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Example: Green">
+                              </form>
+                            </div>
                         </div>
+
                         <div class="container">
                             <h3>EMAIL</h3>
-                                <div class="bloc info-button-block">
-                                <p>kateverdeen123@gmail.com</p>
-                                    <div class="bloc button-block small">
-                                        <a class="edit-button" href="account-edit-email.html">Edit</a>
-                                    </div>
-                                </div>
+                            <div bloc info-button-block>
+                              <form action="/action_page.php">
+                                <input type="text" id="email" name="email" placeholder="Example: rgreen@gmail.com">
+                              </form>
+                            </div>
                         </div>
+
                         <div class="container">
                             <h3>PHONE NUMBER</h3>
-                                <div class="bloc info-button-block">
-                                    <input type="text" class="text-field-account" placeholder="(555)-555-5555">
-                                    <div class="bloc button-block small">
-                                        <a class="edit-button" href="account-info.html">Save</a>
-                                    </div>
 
-                                </div>
+                            <div bloc info-button-block>
+                              <form action="/action_page.php">
+                                <input type="text" id="email" name="email" placeholder="Example: (555)555-5555">
+                              </form>
+                            </div>
                         </div>
+
                         <div class="container">
                             <h3>PASSWORD</h3>
-                                <div class="bloc info-button-block">
-                                <p>********</p>
-                                    <div class="bloc button-block small">
-                                        <a class="edit-button" href="account-edit-password.html">Edit</a>
-                                    </div>
-                                </div>
+                            <div bloc info-button-block>
+                              <form action="/action_page.php">
+                                <input type="text" id="email" name="email" placeholder="Must contain at least 8 characters">
+                              </form>
+                            </div>
                         </div>
+
+                        <div class="save-info">
+                            <a class="saveinfo" href="account-info.html">Save</a>
+                        </div>
+
                     </section>
-       			</div>
-    		</div>
-    	</section>
+                </div>
+            </div>
+        </section>
 
         <div class="box">
             <div class="footer">
@@ -116,5 +125,5 @@
             </div>
         </div>
 
-	  </body>
+      </body>
 </html>

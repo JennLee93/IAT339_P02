@@ -495,14 +495,14 @@ ________________________________________________________________________________
 .square-form {
 	display: inline-block;
 	width: 45rem;
-	height: 82rem;
+	height: auto;
 	border: 0.5px solid rgb(124,147,157);
 	background-color: rgb(245,245,245);
 	margin-left: 7rem;
 	margin-right: 7rem;
 	margin-top: 7rem;
 	margin-bottom: 7rem;
-	padding-top: 3rem;
+	padding-top: 1.5rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
 	padding-bottom: 3rem;
@@ -515,7 +515,7 @@ ________________________________________________________________________________
 .square-form h3 {
 	font-size: 1rem;
 	color: rgb(92, 92, 92);
-	margin-top: 3rem;
+	margin-top: 2rem;
 	margin-bottom: 3rem;
 	letter-spacing: 0.15rem;
 }
@@ -639,7 +639,6 @@ ________________________________________________________________________________
 
 	account pages properties begin 
 _________________________________________________________________________________ */
-
 #account-nav h1 {
 	color: rgb(52,73,94);
 	font-size: 1.5rem; 
@@ -657,13 +656,25 @@ ________________________________________________________________________________
 	letter-spacing: 0.05rem; 
 	padding: 0;
 	text-align: center;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
 
 .account-nav-item:hover, .account-nav-item:active {
     color: rgb(52,73,94); /* darker blue */
 }
 
-.container .bloc{
+#account-pressed {
+    color: rgb(52,73,94); /* darker blue */
+}
+
+.container h3 {
+	padding-left: 0;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.bloc {
 	background-color: #ffffff;
 	border-color: #d6d6d6;
 	border-width:1.0px;
@@ -671,20 +682,45 @@ ________________________________________________________________________________
 	border-right-width: 0;
 	border-left-width: 0;
 	position: absolute;
+
+	height: 3rem;
 }
 
-.container .bloc .small{
-	min-height:auto;
-	min-width:auto;
-	width:10%;
-	height:100%;
+#street, #apt, #city, #province, #postal,
+#card, #card-name, #card-num, #cvc {
+	margin-bottom: 0;
 }
 
-.container .info-button-block{
-	position:relative;
+.address-bloc {
+	background-color: #ffffff;
+	border-color: #d6d6d6;
+	border-width:1.0px;
+	border-style: solid;
+	border-right-width: 0;
+	border-left-width: 0;
+	position: absolute;
+
+	height: 7rem;
 }
 
-.container .button-block{
+.pay-bloc {
+	background-color: #ffffff;
+	border-color: #d6d6d6;
+	border-width:1.0px;
+	border-style: solid;
+	border-right-width: 0;
+	border-left-width: 0;
+	position: absolute;
+
+	height: 12rem;
+}
+
+.info-button-block{
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.button-block{
 	border-width: 0;
 	position: absolute;
 	right: 0;
@@ -704,8 +740,12 @@ ________________________________________________________________________________
 }
 
 .order-details h4 { 
-	text-align: left;
 	font-size: 0.8rem;
+}
+
+#order-history h3 { 
+	text-align: left;
+	margin-left: 0rem;
 }
 
 .order-details a { 
@@ -717,13 +757,12 @@ ________________________________________________________________________________
   overflow:hidden;
   display:block;
   background-color: #ffffff;
-  border-color: #d6d6d6;
+  border-color: #ccc;
   border-width:2px;
   border-style: solid;
   border-right-width: 0;
   border-left-width: 0;
-  position: relative;
-    
+  position: relative;    
 }
 
 .info-block img{
@@ -738,39 +777,35 @@ ________________________________________________________________________________
   
 }
 
-.edit-button{
-	background-color: white;
-    border: 0.5px solid rgb(140, 140, 140);
-    border-radius: 3px;
-    color: rgb(124,147,157);
-    padding: 4px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: lighter;
-    cursor: pointer;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    float:right;
+.info-title h3 {
+	margin-left: -1rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 }
 
-.edit-button:active, .edit-button:focus, .edit-button:hover { 
-    background-color: rgb(140, 140, 140); 
-    border: 0.5px solid rgb(140, 140, 140); 
-    color: white; 
-    padding: 4px 15px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
-    font-weight: lighter; 
- 
-    -webkit-transition: background-color 0.5s ease-out; 
-    transition: background-color 0.5s ease-out; 
-} 
+.edit-button{
+	display: inline-block;
+	position: relative;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    padding: 0.75em 0.75em;
+    color: #333333;
+    background-color: #F2F2F2;
+    border: 0.5px solid #34495E;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.edit-button:hover, .learn-bow-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
 
 .text-field-account{
 	margin:1rem;
@@ -794,11 +829,122 @@ ________________________________________________________________________________
 .drop-list-box{
 	margin-left: 1rem;
 }
+
 .account-drop-list{
 	color: rgb(92,92,92);
 	font-size: 0.8rem;
-
 }
+
+input[type=text], select {
+	font-size: 0.7rem;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.saveinfo {
+	display: inline-block;
+	margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.saveinfo:hover, .saveinfo:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+.order-first {
+	position: relative;
+	width: 7.5rem;
+	height: 7.5rem;
+	border: 0.5px solid #ccc;
+}
+
+#order-item {
+	margin-bottom: 10rem;
+}
+
+.order-info {
+	display: block;
+}
+
+/*for name of the product*/
+#order-item h2 {
+	position: relative;
+	padding: 0;
+	font-size: 1rem;
+    color: rgb(92, 92, 92);
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+/*for item number*/
+#order-item h3 {
+	position: absolute;
+	padding: 0;
+	font-size: 0.7rem;
+    color: rgb(92, 92, 92);
+    margin-top: -0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+/*for quantity*/
+#order-item h4 {
+	position: absolute;
+	padding: 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	font-size: 0.7rem;
+    color: rgb(92, 92, 92);
+    margin-top: 2rem;
+    margin-left: 0;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+    border: 0.5px solid #ccc;
+}
+
+/*for x price*/
+#order-item h5 {
+	position: absolute;
+	padding: 0;
+	font-size: 0.7rem;
+    color: rgb(92, 92, 92);
+    margin-left: 2.5rem;
+    margin-top: 2.4rem;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
+/*for price larger font*/
+#order-item h6 {
+	position: absolute;
+	padding: 0;
+	font-size: 1rem;
+    color: rgb(92, 92, 92);
+    margin-top: 0;
+    letter-spacing: 0.15rem;
+    font-weight: normal;
+}
+
 /* _________________________________________________________________________________
 
 	account pages properties ends 
