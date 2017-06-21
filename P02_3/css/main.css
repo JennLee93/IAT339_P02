@@ -437,7 +437,55 @@ ________________________________________________________________________________
 	about page properties ends 
 _________________________________________________________________________________ */
 
+/* _________________________________________________________________________________
 
+	citations page properties begins 
+_________________________________________________________________________________ */
+
+.square-form-citations {
+	display: inline-block;
+	width: 45rem;
+	height: 165rem;
+	border: 0.5px solid rgb(124,147,157);
+	background-color: rgb(245,245,245);
+	margin-left: 7rem;
+	margin-right: 7rem;
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+	padding-top: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-bottom: 3rem;
+}
+
+.square-form-citations h3 {
+	font-size: 1rem;
+	color: rgb(92, 92, 92);
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	letter-spacing: 0.15rem;
+}
+
+.square-form-citations h4 {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: rgb(92, 92, 92);
+	margin-left: 1rem;
+	letter-spacing: 0.15rem;
+}
+
+
+.square-form-citations p {
+	color: rgb(140, 140, 140);
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	font-size: 0.8rem;
+}
+
+/* _________________________________________________________________________________
+	
+	citations page properties ends 
+_________________________________________________________________________________ */
 
 /* _________________________________________________________________________________
 
