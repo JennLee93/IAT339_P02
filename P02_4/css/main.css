@@ -1761,14 +1761,27 @@ ________________________________________________________________________________
 	width: 2rem;
 	height: 2rem;
 	left: 6%;
+	top: 40%;
 	margin: 0;
 	background-color: #34495E;
 	border: 0.5px solid white;
 }
 
+.visible-custom-panel label, .custom-panel label {
+	position: absolute;
+	text-decoration: none;
+	color: #5c5c5c;
+	top: 45.2%;
+	left: 13.6%;
+	font-size: 0.6rem;
+	z-index: 1;
+	cursor: pointer;
+}
+
 .colour-selector-2 {
 	position: absolute;
 	left: 13%;
+	top: 40%;
 	width: 2rem;
 	height: 2rem;
 	background-color: white;
