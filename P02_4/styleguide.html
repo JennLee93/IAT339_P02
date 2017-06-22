@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+    	<title>Style Guide</title>
+
+    	<meta charset="utf-8">
+ 		
+ 		<!-- viewport code from downloaded class examples -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/styleguide.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+  	<body>
+
+		<section id="home">
+			<nav class="box">
+				<div class="box-item-nav-home">
+					<a href="index.html">
+					
+					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+					
+					<a class="nav-home" href="index.html">THE ARCHER</a>
+
+					<a class="account" href="account.html">
+						<span class="lnr lnr-user nav-icons"></span>
+					</a>
+
+					<a class="shopping-cart" href="shopping-cart.html">
+						<span class="lnr lnr-cart nav-icons"></span>
+					</a>
+
+<!-- 					<span class="lnr lnr-magnifier box-item-icons"></span>
+ -->				</div>
+			</nav>
+		</section>
+
+		<nav class="box"> <!-- put it on the top and sets it to navigation -->
+			<a class="nav-main box-item-nav" href="shop.html">SHOP</a>	
+    		<a class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+			<a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+		</nav>
+
+		<!-- this style guide template from class -->
+    	<h1>Style Guide</h1>
+
+    	<nav>
+      
+      	<p>
+        	Go to:
+        	<a href="#interactive_elements">Interactive Elements</a>,
+        	<a href="#text_elements">Text Elements</a>,
+        	<a href="#combined_elements">Combined Elements</a>,
+        	<a href="#aesthetic_elements">Aesthetic Elements</a>
+      	</p>
+
+    	</nav>
+
+
+	    <!-- INTERACTIVE ELEMENTS SECTION // -->
+	    <section id="interactive_elements">
+
+	      <!-- Default Button styling section -->
+	      <section>
+
+	        <h2>Navigation Button</h2>
+
+	        <h3>CSS selector:</h3>
+	        <p>.button-nav</p>
+
+	        <h3>Sample code:</h3>
+	       	<div class="box">
+		        <code class="box-item-code">
+	        		&lt;a href="#" class="button"&gt;CREATE&lt;/a&gt;
+	        	</code>
+	        </div>
+
+	        <h3>Rendered element:</h3>
+	        <a class="button-nav" href="#">CREATE</a>
+
+	      </section>
+
+	      <!-- In-text Link styling section -->
+	      <section>
+	        <h2>In-text link</h2>
+
+	        <h3>CSS selector:</h3>
+	        <p>.text-link</p>
+
+	       	<h3>Sample code:</h3>
+	       	<div class="box">
+		        <code class="box-item-code">
+	        		&lt;p&gt; This is what an &lt;a href="#"&gt; in-text link &lt;/a&gt; looks like  &lt;/p&gt;
+	        	</code>
+	        </div> 
+
+	        <h3>Rendered element:</h3>
+	        <p> This is what an <a href="#">in-text link</a> looks like</p>
+	      </section>
+
+	      <!-- Submit/Reset Button styling section -->
+	      <section>
+	        <h2>Submit/Reset Buttons</h2>
+			
+			<h3>CSS selector:</h3>
+	        <p>.submit-button | .disabled-submit-button</p>
+
+	       	<h3>Sample code:</h3>
+	       	<div class="box">
+		       	<code class="box-item-code">
+	        		&lt;button class="submit-button"&gt; Submit &lt;/button&gt;
+	        	</code> and 
+
+	  	    	<code class="box-item-code">
+	  	    		&lt;button class="disabled-submit-button"&gt; Submit &lt;/button&gt;
+	  	    	</code> 
+	  	    </div>
+
+	        <h3>Rendered element:</h3>
+	        <button class="submit-button">Submit</button>
+			<button class="disabled-submit-button">Submit</button>
+	      </section>
+
+	      <!-- Text Input styling section -->
+	      <section>
+	        <h2>Text Input Field</h2>
+
+	        <h3>CSS selector:</h3>
+	        <p>input[type=text] | input[type=text]:focus</p>
+
+	       	<h3>Sample code:</h3>
+	       	<div class="box">
+		       	<code class="box-item-code">
+		       		&lt;input type="text" name="search" placeholder="Search.."&gt;
+	        	</code> 
+	  	    </div>
+
+	        <h3>Rendered element:</h3>
+	        <!-- code from https://www.w3schools.com/howto/howto_css_animated_search.asp -->
+	        <input type="text" name="search" placeholder="Search..">
+
+	      </section>
+
+	    </section>
+	    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+	    <!-- TEXT ELEMENTS SECTION // -->
+	    <section id="text_elements">
+
+	      <!-- Headings styling section -->
+	      <section>
+	        <h2>Headings</h2>
+
+	       	<h3>CSS selector:</h3>
+	        <p>.content-h1</p>
+	        
+	        <h3>Sample code:</h3>
+	       	<div class="box">
+		        <code class="box-item-code">
+	        		&lt;h1 class="content-h1"&gt;Font-Weight: 700 | Size: 2.5rem | Letter-spacing: 0.02rem | Color: rgb(52,73,94)&lt;/h1&gt;
+	        	</code>
+	        </div>
+
+	        <h3>Rendered element:</h3>
+			<h1 class="content-h1">Font-Weight: 700 | Size: 2.5rem | Letter-spacing: 0.02rem | Color: rgb(52,73,94)</h1>
+
+
+			<h3>CSS selector:</h3>
+	        <p>.content-h2</p>
+	        
+	        <h3>Sample code:</h3>
+	       	<div class="box">
+		        <code class="box-item-code">
+	        		&lt;h2 class="content-h2"&gt;Font-Weight: 500 | Size: 1.5rem | Letter-spacing: 0.01rem | Color: rgb(140, 140, 140)&lt;/h2&gt;
+	        	</code>
+	        </div>
+
+	        <h3>Rendered element:</h3>
+			<h2 class="content-h2">Font-Weight: 500 | Size: 1.5rem | Letter-spacing: 0.01rem | Color: rgb(140, 140, 140)</h2>
+
+
+			<h3>CSS selector:</h3>
+	        <p>.content-h3</p>
+	        
+	        <h3>Sample code:</h3>
+	        <div class="box">
+		        <code class="box-item-code">
+	        		&lt;h3 class="content-h3"&gt;Font-Weight: 300 | Size: 1rem | Letter-spacing: 0.005rem | Color: rgb(124,147,157)&lt;/h3&gt;
+	        	</code>
+	        </div>
+
+	        <h3>Rendered element:</h3>
+			<h3 class="content-h3">Font-Weight: 300 | Size: 1rem | Letter-spacing: 0.005rem | Color: rgb(124,147,157)</h3>
+	      </section>
+
+	      <!-- Paragraph styling section -->
+	      <section>
+	        <h2>Paragraphs</h2>
+
+	       	<h3>CSS selector:</h3>
+	        <p>p</p>
+	        
+	        <h3>Sample code:</h3>
+	        <div class="box">
+		        <code class="box-item-code">
+	        		&lt;p&gt;Font-Weight: 100 | Size: 1rem | Letter-spacing: 0.007rem&lt;/p&gt;
+	        	</code>
+	        </div>
+
+	        <h3>Rendered element:</h3>
+			<p>Font-Weight: 100 | Size: 1rem | Letter-spacing: 0.007rem</p>
+	      </section>
+
+	      <!-- Bulleted Lists styling section -->
+	      <section>
+	        <h2>Bulleted Lists</h2>
+
+	       	<h3>CSS selector:</h3>
+	        <p>.bullet-list</p>
+	        
+	        <h3>Sample code:</h3>
+	        <div class="box">
+		        <code class="box-item-code">
+		        	&lt;ul class="bullet-list"&gt;
+		        		&lt;li&gt; Compound Bow &lt;/li&gt;
+		        		&lt;li&gt; Longbow &lt;/li&gt;
+		        		&lt;li&gt; Recurve Bow &lt;/li&gt;
+		        		&lt;li&gt; Crossbow &lt;/li&gt;
+		        	&lt;/ul&gt;
+		        </code>
+		    </div>
+
+	        <h3>Rendered element:</h3>
+
+	        <!-- code from https://www.w3schools.com/css/css_list.asp -->
+	        <ul class="bullet-list">
+  				<li>Compound Bow</li>
+  				<li>Longbow</li>
+  				<li>Recurve Bow</li>
+  				<li>Crossbow</li>
+			</ul>
+
+	      </section>
+
+	      <!-- Numbered Lists styling section -->
+	      <section>
+	        <h2>Numbered Lists</h2>
+
+	      	<h3>CSS selector:</h3>
+	        <p>.faq</p>
+	        
+	        <h3>Sample code:</h3>
+	        
+	        <div class="box">
+		        <code class="box-item-code">
+		        &lt;dl class="faq"&gt;
+
+					&lt;dt>Do you ship to BC?&lt;/dt&gt;
+					&lt;dd>Yes, currently we are able to ship to all of North America.&lt;/dd&gt;
+		
+				&lt;/dl&gt;
+		        </code>
+	        </div>
+
+	        <h3>Rendered element:</h3>
+
+	        <!-- code from https://css-tricks.com/numbering-in-style/ -->
+	        <dl class="faq">
+
+				<dt>Do you ship to BC?</dt>
+				<dd>Yes, currently we are able to ship to all of North America.</dd>
+	
+				<dt>What material can arrowheads be made of?</dt>
+				<dd>Arrowheads, which were historically made of flint, bone, horn, bronze, or hardwood, are now commonly made of steel.</dd>
+	
+				<dt>What is the difference between longbows, recurve bows, and crossbows?</dt>
+				<dd>The most basic type of bow, called a long-bow, is formed from an essentially straight shaft. Additional power and stability are achieved by recurved bows, which have permanent curves that make the bow's back concave at each end. Even more power can be achieved with a compound bow, a mechanically assisted device that attaches the bowstring to a system of pulleys rather than to the tips of the bow.</dd>
+	
+			</dl>
+	      </section>
+
+	    </section>
+	    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+	    <!-- COMBINED ELEMENTS SECTION // -->
+	    <section id="combined_elements">
+
+	      <!-- Main Nav styling section -->
+	      <section>
+	        <h2>Main Navigation</h2>
+
+	       	<h3>CSS selector:</h3>
+	        <p>.nav-main</p>
+	        
+	        <h3>Sample code:</h3>
+	        <div class="box">
+		        <code class="box-item-code">
+	        		&lt;nav&gt;
+						&lt;a class="nav-main box-item-nav" href="index.html"&gt;Home&lt;/a&gt;
+					&lt;/nav&gt;
+				</code>
+		    </div>
+
+	        <h3>Rendered element:</h3>
+
+			<nav class="box"> <!-- put it on the top and sets it to navigation -->
+				<a class="nav-main box-item-nav" href="index.html">HOME</a>
+				<a class="nav-main box-item-nav" href="styleguide.html">STYLE GUIDE</a>
+				<a class="nav-main box-item-nav" href="wireframes.html">WIREFRAMES</a>	
+	    		<a class="nav-main box-item-nav" href="citations.html">CITATIONS</a>
+			</nav>
+	      </section>
+
+	      <!-- Product Listings styling section -->
+	      <section>
+	        <h2>Product Listing</h2>
+
+	       	<h3>CSS selector:</h3>
+	        <p>.box-item-compound | .desc</p>
+	        
+	        <h3>Sample code:</h3>
+	        <div class="box">
+		        <code class="box-item-code">
+			    	&lt;a target="_blank" href="http://www.kenwith-archers.org.uk/images/compound.jpg"&gt;
+			      	&lt;img src="http://www.kenwith-archers.org.uk/images/compound.jpg" alt="Compound"&gt;
+			    	&lt;/a&gt;
+
+			    	&lt;div class="desc"&gt;Compound $$$$
+			    		&lt;span class="lnr lnr-heart"&gt;&lt;/span>
+			    	&lt;/div&gt;
+				</code>
+			</div>
+
+	        <h3>Rendered element:</h3>
+
+			<!-- code from https://www.w3schools.com/css/css3_images.asp -->
+			<div class="box">
+			  	<div class="box-item-gallery-compound">
+			    	<a target="_blank" href="http://www.kenwith-archers.org.uk/images/compound.jpg">
+			      	<img src="http://www.kenwith-archers.org.uk/images/compound.jpg" alt="Compound">
+			    	</a>
+
+			    	<div class="desc">Compound $$$$
+			    		<span class="lnr lnr-heart"></span>
+			    	</div>
+			  	</div>
+
+			  	<div class="box-item-gallery-arrows">
+			    	<a target="_blank" href="https://s-media-cache-ak0.pinimg.com/736x/20/2e/1a/202e1a99cf96523b5dde650526be75cd.jpg">
+			      	<img src="https://s-media-cache-ak0.pinimg.com/736x/20/2e/1a/202e1a99cf96523b5dde650526be75cd.jpg" alt="Metal Tip Arrow">
+			    	</a>
+			    
+			    	<div class="desc">Metal Tip Arrows $$$$
+			    		<span class="lnr lnr-heart"></span>
+			    	</div>
+			  	</div>
+
+			  	<div class="box-item-gallery-crossbow">
+			    	<a target="_blank" href="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg">
+			      	<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow">
+			    	</a>
+			    
+			    	<div class="desc">Crossbow $$$$
+			    		<span class="lnr lnr-heart"></span>
+			    	</div>
+			  	</div>
+
+			  	<div class="box-item-gallery-quiver">
+			    	<a target="_blank" href="https://s-media-cache-ak0.pinimg.com/736x/44/a9/ce/44a9ce8a594ac53f1a40280885d636f9.jpg">
+			      	<img src="https://s-media-cache-ak0.pinimg.com/736x/44/a9/ce/44a9ce8a594ac53f1a40280885d636f9.jpg" alt="Quiver">
+			    	</a>
+			    
+			    	<div class="desc">Quiver $$$$
+			    		<span class="lnr lnr-heart"></span>
+			    	</div>
+			  	</div>
+			</div>
+
+	      </section>
+
+	      <!-- Image Mapping styling section -->
+	      <!-- code from https://www.w3schools.com/tags/tag_area.asp -->
+	      <section>
+	      	<h2>Image Mapping</h2>
+	      	<h3>CSS selector:</h3>
+	        	<p>.map-container</p>
+	        
+	        <h3>Sample code:</h3>
+	        	<div class="box">
+			        <code class="box-item-code">
+			        &lt;div class="map-container"&gt;
+		      			&lt;img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map"&gt;
+<!-- 		      			&lt;map name="crossbow-map"&gt;
+			      			&lt;area shape="rect" coords="155, 3, 100, 50" href="#"&gt;	
+			      		&lt;/map&gt;	 -->
+			      		&lt;input type="checkbox" id="switch" /&gt;  
+		      		&lt;/div&gt;
+			        </code>
+			    </div>
+
+	      	<h3>Rendered element:</h3>
+	      	<div class="box">
+	      		<div class="box-item-map-container">
+	      			<!-- code from https://www.w3schools.com/tags/tag_area.asp -->
+	      			<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map">
+<!-- 	      			<map name="crossbow-map">
+		      			<area class="rect" shape="rect" coords="155, 3, 100, 50">	
+		      		</map>	 -->	
+		      		<!-- code from https://codepen.io/CreativeJuiz/pen/BiHzp -->
+		      		<input type="checkbox" id="switch" />      			
+	      		</div>
+	      	</div>
+	      </section>
+
+	    </section>
+	    <!-- // COMBINED ELEMENTS SECTION -->
+
+	   	
+	   	<!-- AESTHETICS ELEMENTS SECTION // -->
+	    <section id="aesthetic_elements">
+
+	      <!-- Colour Palette styling section -->
+	      <section>
+
+	        <h2>Colour Palette</h2>
+	        <div class="box">
+	        	<!-- gray -->
+	        	<div class="gray1 box-item-colours">
+	        		<p>#C8C8C8</p> 
+	        		<p>(200,200,200)</p>
+	        	</div>
+
+	        	<div class="gray2 box-item-colours">
+	        		<p>#8c8c8c</p> 
+	        		<p>(140, 140, 140)</p>
+	        	</div>
+
+	        	<div class="gray3 box-item-colours">
+	        		<p>#5c5c5c</p>
+	        		<p>(92, 92, 92)</p>
+	        	</div>
+
+	        	<!-- tinted gray -->
+	        	<div class="tinted1 box-item-colours">
+	        		<p>#95A5A6</p> 
+	        		<p>(149,165,166)</p>
+	        	</div>
+
+	        	<div class="tinted2 box-item-colours">
+	        		<p>#7F8C8D</p> 
+	        		<p>(127,140,141)</p>
+	        	</div>
+
+	        	<div class="tinted3 box-item-colours">
+	        		<p>#7C939D</p> 
+	        		<p>(124,147,157)</p>
+	        	</div>
+
+	        	<!-- blue -->
+	        	<div class="blue1 box-item-colours">
+	        		<p>#A3BECA</p> 
+	        		<p>(163,190,202)</p>
+	        	</div>
+
+	        	<div class="blue2 box-item-colours">
+	        		<p>#5C6D7E</p> 
+	        		<p>(92,109,126)</p>
+	        	</div>
+
+	        	<div class="blue3 box-item-colours">
+	        		<p>#34495E</p> 
+	        		<p>(52,73,94)</p>
+	        	</div>
+
+	        </div>
+
+	      </section>
+
+	      <!-- Icon styling section -->
+	      <section>
+	        <h2>Icons</h2>
+
+	       	<h3>CSS selector:</h3>
+	        <p>.lnr-user | .lnr-heart | .lnr-cart | .lnr-magnifier | .lnr-menu | .lnr-chevron-up | .lnr-chevron-down | .lnr-chevron-left | .lnr-chevron-right | .lnr-cross-circle</p>
+	        
+	        <h3>Sample code:</h3>
+	       	<div class="box">
+		        <code class="box-item-code">
+					&lt;span class="lnr lnr-user"&gt; Profile&lt;/span&gt;
+				</code>
+			</div>
+
+	        <h3>Rendered element:</h3>
+
+	        <div class="box">
+
+			<!-- code from https://www.w3schools.com/css/css_image_gallery.asp -->
+				<span class="lnr lnr-user box-item-icons"> Profile</span>
+
+				<span class="lnr lnr-heart box-item-icons"> Favourite</span>
+
+				<span class="lnr lnr-cart box-item-icons"> Cart</span>
+
+				<span class="lnr lnr-magnifier box-item-icons"> Search</span>
+
+				<span class="lnr lnr-menu box-item-icons"> Menu</span>
+
+				<span class="lnr lnr-chevron-up box-item-icons"> Up</span>
+
+				<span class="lnr lnr-chevron-down box-item-icons"> Down</span>
+
+				<span class="lnr lnr-chevron-left box-item-icons"> Left</span>
+
+				<span class="lnr lnr-chevron-right box-item-icons"> Right</span>
+
+				<span class="lnr lnr-cross-circle box-item-icons"> Close</span>
+		    </div>
+	      </section>
+
+	    </section>
+	    <!-- // AESTHETICS ELEMENTS SECTION -->
+
+		<div class="box">
+			<div class="footer">
+				<a class="first-nav-footer box-item-footer-nav" href="about.html">About Us</a>
+	    		<a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+
+	    		<a id="footer-pressed" class="nav-footer box-item-footer-nav" href="styleguide.html">Style Guide</a>
+				<a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+				<p>© 2017 The Archer, Inc. All Rights Reserved</p>
+			</div>
+		</div>
+
+	  </body>
+</html>

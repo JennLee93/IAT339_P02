@@ -10,7 +10,6 @@
 
 body {
     font-family: Verdana, Arial, sans-serif; /* citation: https://www.w3schools.com/css/css_font.asp */
-    padding: 1rem;
 }
 
 section:not([id]) {
@@ -47,6 +46,173 @@ h1 {
   line-height: 3rem;
   margin-top: 3rem;
 }
+
+#home {
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  background-color: rgb(52,73,94);
+}
+
+.box-item-nav-home {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-home { /* . means class */
+    color: white; /* grey-blue */
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    text-decoration: none; /* gets rid of the underline */
+    transition: background-color 0.5s;
+  position: relative;
+  top: 0.4rem;
+  }
+
+.nav-home:active, .nav-home:focus, .nav-home:hover {
+    color: white; 
+}
+
+.nav-main { /* . means class */
+  display: inline-block;
+    text-align: center;
+    color: rgb(124,147,157); /* grey-blue */
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    text-decoration: none; /* gets rid of the underline */
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    transition: background-color 0.5s;
+    border-right: 0.5px solid rgb(214,214,214); /* light grey */
+    border-left: 0.5px solid rgb(214,214,214); /* light grey */
+    border-bottom: 0.5px solid rgb(214,214,214); /* light grey */ 
+    border-top: 0.5px solid rgb(214,214,214); /* light grey */
+    width: 33.33%;  
+  }
+
+.nav-main:active, .nav-main:focus, .nav-main:hover {
+  color: rgb(52,73,94); /* darker blue */
+  background-color: #ccc;
+}
+
+/* _________________________________________________________________________________
+
+  code from https://codepen.io/secondfret/pen/GoqLK
+_________________________________________________________________________________ */
+
+.logo {
+  position: relative;
+  top: 0.7rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  padding: 0;
+}
+/* _________________________________________________________________________________
+
+  nav properties ends 
+_________________________________________________________________________________ */
+
+
+/* _________________________________________________________________________________
+
+  footer properties begins 
+_________________________________________________________________________________ */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(200,200,200, 0.6);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.6rem;
+  color: rgb(52,73,94);
+  position: relative;
+  margin-top: 0;
+  padding-top: 0.5rem;
+  padding-right: 0;
+  padding-left: 0;
+  border-top: 0.5px solid rgba(200,200,200, 1); /* light grey */
+  width: 34%;
+  left: 33%;
+}
+
+.first-nav-footer {
+  margin-left: 2rem;
+}
+
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(52,73,94);
+  margin-right: 2rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0;
+  margin-top: 1rem;
+}
+
+.footer a:hover, .footer a:focus, .footer a:active {
+  color: #8c8c8c;
+}
+
+#footer-pressed {
+  color: #8c8c8c;
+}
+
+/* _________________________________________________________________________________
+
+  footer properties ends 
+_________________________________________________________________________________ */
+
+
+/* _________________________________________________________________________________
+
+  icon nav properties begin 
+_________________________________________________________________________________ */
+
+.nav-icons {
+  color: white;
+}
+
+.nav-icons:active, .nav-icons:focus, .nav-icons:hover {
+  color: #8c8c8c;
+}
+
+.account {
+  position: absolute;
+  top: 2.7rem;
+  right: 2rem;
+  font-size: 1.4rem;
+}
+
+.account, .shopping-cart {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.shopping-cart {
+  position: absolute;
+  top: 2.7rem;
+  right: 5rem;
+  font-size: 1.4rem;
+}
+
+/*.lnr-magnifier {
+  position: absolute;
+  top: 2.7rem;
+  right: 8rem;
+  font-size: 1.4rem;
+}*/
+/* _________________________________________________________________________________
+
+  icon nav properties ends 
+_________________________________________________________________________________ */
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -390,12 +556,12 @@ https://css-tricks.com/examples/NumberedFAQ/ */
 
 
 /* ////////// icon properties begins ////////// */
-.box-item-icons {
+/*.box-item-icons {
   padding: .5rem;
   margin: 0.5rem;
   border: 1px solid rgb(140, 140, 140);
   font-size: 1.2rem;
   text-align: center;
-}
+}*/
 /* ////////// icon properties ends ////////// */
 

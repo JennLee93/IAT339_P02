@@ -80,8 +80,8 @@ section {
 	padding-right: 0;
 	padding-left: 0;
 	border-top: 0.5px solid rgba(200,200,200, 1); /* light grey */
-	width: 24.5%;
-	left: 37.72%;
+	width: 34%;
+	left: 33%;
 }
 
 .footer a {
@@ -89,6 +89,12 @@ section {
 	text-decoration: none;
 	color: rgb(52,73,94);
 	padding-bottom: 0.5rem;
+	padding-top: 0;
+	margin-top: 1rem;
+}
+
+.footer a:hover, .footer a:focus, .footer a:active {
+	color: #8c8c8c;
 }
 
 #home {
@@ -396,6 +402,11 @@ ________________________________________________________________________________
 
 	about page properties begins 
 _________________________________________________________________________________ */
+
+#about-desc {
+	margin-top: 6rem;
+	margin-bottom: 7rem;
+}
 
 .profile {
 	font-size: 1.5rem;
