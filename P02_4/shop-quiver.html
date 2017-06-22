@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+		<title>Shop</title>
+		
+		<meta charset="utf-8"> <!-- character set, no matter what language it will make sure the characters are correct -->
+	    
+	    <!-- viewport code from downloaded class examples -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+	<body>
+		<!-- I learned this in lecture -->
+		<section id="home">
+			<nav class="box">
+				<div class="box-item-nav-home">
+					<a href="index.html">
+					
+					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+					
+					<a class="nav-home" href="index.html">THE ARCHER</a>
+
+					<a class="account" href="account.html">
+						<span class="lnr lnr-user box-item-icons"></span>
+					</a>
+
+					<a class="shopping-cart" href="shopping-cart.html">
+						<span class="lnr lnr-cart box-item-icons"></span>
+					</a>
+
+<!-- 					<span class="lnr lnr-magnifier box-item-icons"></span>
+ -->				</div>
+			</nav>
+		</section>
+
+		<nav class="box"> <!-- put it on the top and sets it to navigation -->
+			<a id="pressed" class="nav-main box-item-nav" href="shop.html">SHOP</a>	
+    		<a class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+			<a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+		</nav>
+
+		<div class="box">
+			<section id="create-nav">
+				<h1>THE ARCHER STORE</h1>
+				<a class="create-nav" href="shop.html">BOWS</a>
+				<a class="create-nav-item" href="shop-arrows.html">ARROWS</a>
+				<a id="shop-pressed" class="create-nav-item" href="shop-quiver.html">QUIVERS & CASES</a>
+				<a class="create-nav-item" href="shop-display.html">DISPLAY CASES</a>
+			</section>
+		</div>
+			
+		<section id="shop-bow">
+		<!-- Hunting Arrows -->
+			<div class="shop-titles">
+				<h4>QUIVERS</h4>
+			</div>
+
+			<div class="box">
+				
+				<!-- field quiver begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/FieldQuiver.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>Field Quiver | $69</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<!-- code from https://codepen.io/imprakash/pen/GgNMXO -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+
+					<div id="quickview-quiver" class="overlay">
+						<div class="quick-view">
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="quickview-quiver-content">
+								<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/FieldQuiver.jpg" alt="shop">
+								<h2>Water Resistant Field Quiver</h2>
+								<h3>$69</h3>
+
+								<!-- https://codepen.io/ericrasch/pen/zjDBx -->
+								<div class="selectors">
+									<label for="quantity-selector">Qty:</label>
+									<select id="quantity-selector">
+									  <option>Select</option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option> 				
+									</select>
+								</div>
+
+								<div class="selectors">
+									<label for="side-selector">Right-Left</label>
+									<select id="side-selector">
+									  <option>Select</option>
+									  <option>Right-Handed</option>
+									  <option>Left-Handed</option>
+									</select>
+								</div>
+
+								<!-- code from https://css-tricks.com/functional-css-tabs-revisited/ -->
+								<div class="quickview-quiver-tabs">
+								    
+								   <div class="tab">
+								       <input type="radio" id="quiver-detail" name="tab-group-1" checked>
+								       <label for="quiver-detail">Details</label>
+								       
+								       <div class="content">
+								           The Carbon Express Field Quiver provides a light &slim frame to increase comfort and mobility. A 3-stage carbon arrow divider allows for 3 unique arrow compartments. Sleeve pockets provide easy access storage for score cards, kickstand, and other archery essentials. Water-Resistant PVC-Backed Fabric.
+								       </div> 
+								   </div>
+								    
+								   <div class="tab">
+								       <input type="radio" id="quiver-review" name="tab-group-1">
+								       <label for="quiver-review">Reviews</label>
+								       
+								       <div class="content">
+								           No reviews yet
+								       </div> 
+								   </div>								    
+								</div>
+
+								<div class="quickview-nav">
+									<a class="quick-view-nav" href="#added-wishlist">Add to Wishlist</a>
+									<a class="cart-nav" href="#added">Add to Cart</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="added" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your cart
+							</div>
+						</div>
+					</div>
+
+					<div id="added-wishlist" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your wishlist
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<!-- field quiver ends -->
+
+
+				<!-- target quiver begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/TargetQuiver.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>Target Quiver | $74</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- target quiver ends -->
+
+
+				<!-- leather quiver 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/EliteLeatherQuiver.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>Elite Side Quiver | $118</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- leather quiver 1 ends -->
+
+
+				<!-- leather quiver 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/NeetLeatherQuiver.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>NT 2300 Side Quiver | $159</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- leather quiver 2 ends -->
+
+
+			<!-- Crossbow Cases -->
+			<div class="shop-titles">
+				<h4>CROSSBOW CASES</h4>
+			</div>
+
+				<!-- case 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/SlimLineCrossbowCase.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>CX Slim Line | $139</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- case 1 ends -->
+
+
+				<!-- case 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/EmbroideredCrossbowCase.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>Soft Case | $89</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- target 2 ends -->
+
+
+				<!-- case 3 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/CrossbowCase.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>i-Series Breakdown | $329</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- case 3 ends -->
+
+
+				<!-- case 4 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-quiver">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/HardCrossbowCase.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-quiver">
+							<figcaption>ATA 8010 | $389</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-quiver">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- case 4 ends -->
+
+			</div>
+		</section>
+
+		<div class="box">
+			<div class="footer">
+				<a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+	    		<a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+				<a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+				<p>© 2017 The Archer, Inc. All Rights Reserved</p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

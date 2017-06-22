@@ -1,0 +1,222 @@
+/*code learned in class*/
+.box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-item-nav {
+	flex: 1 1 auto;
+}
+
+.box-item-nav-home {
+	flex: 1 1 auto;
+}
+
+.box-item-footer-nav {
+  flex: 1 1 auto;
+}
+
+.box-item-profile {
+  flex: 1 1 auto;
+}
+
+.box-item-home-new {
+  flex: 1 1 100%;
+}
+
+.box-item-create {
+  flex: 1 1 auto;
+}
+
+.box-item-shop {
+  flex: 1 1 auto;
+}
+
+.create-nav {
+  flex: 1 1 auto;
+}
+
+.create-nav-item {
+  flex: 1 1 auto;
+}
+
+.account-nav {
+  flex: 1 1 auto;
+}
+
+.account-nav-item {
+  flex: 1 1 auto;
+}
+
+.box-item-icons {
+  	flex: 1 1 auto;
+}
+
+.box-item-sitemap {
+    flex: 1 1 auto;
+}
+
+.create-crossbow-container {
+    flex: 1 1 auto;
+}
+
+.box-shape-container {
+    flex: 1 1 auto;
+}
+
+.create-form-container {
+    flex: 1 1 auto;
+}
+
+.hidden-box {
+    flex: 1 1 auto;
+}
+
+.box-item-gallery-compound {
+    flex: 1 1 15%;
+}
+
+.continue-nav {
+    flex: 1 1 auto;
+}
+
+
+/*allows css to request information about the web browser*/
+/*if the width of the web browser is less than 30em then we add new rules*/
+@media (max-width: 30em) {
+  	/*rule to change the behaviour*/
+  	.box-item-nav, .box-item-nav-home, .box-item-footer-nav, .box-item-profile, 
+    .box-item-home-new, .box-item-create, .box-item-shop, .create-nav, 
+    .create-nav-item, .account-nav, .account-nav-item, .box-item-icons, .box-item-sitemap, 
+    .create-crossbow-container, .box-shape-container, .create-form-container, 
+    .hidden-box, .box-item-gallery-compound, .continue-nav {
+    /*if we get to a certain size then just become the width of the whole page*/
+    flex: 0 0 100%; 
+  }
+
+	input[type=text]:focus {
+    	width: 50%;
+	}
+
+  .lnr-magnifier, .lnr-user, .lnr-cart {
+    position: absolute;
+    margin-top: 2rem;
+  }
+
+  .box-item-icons {
+    margin-right: 6.96rem;
+  }
+
+  .box-item-footer-nav {
+    width: auto;
+    height:auto;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer p {
+    width: auto;
+    left: 0;
+    margin-left: 2.7rem;
+    margin-right: 2.7rem;
+  }
+
+  .create-form-container {
+    margin: 0;
+  }
+
+  .square-form {
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .square-form h3 {
+    font-size: 0.79rem;
+  }
+
+  .square-form h4 {
+    font-size: 0.75rem;
+  }
+
+  .create-form {
+    height: auto;
+    padding-bottom: 5rem;
+  }
+
+  #create-nav h1 {
+    margin-left: 5rem;
+    padding: 0;
+  }
+
+  .create-nav, .create-nav-item {
+    margin-left: 4rem;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .box-item-create {
+    margin: 0;
+    width: 100%;
+  }
+
+  .caption-compound figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-longbow figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-recurve figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-crossbow figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-broadhead figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-field figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-fixed figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .caption-mech figcaption {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+
+@media (max-width: 79em) {
+    /*rule to change the behaviour*/
+    .create-form {
+      margin: 0;
+    }
+  }
+

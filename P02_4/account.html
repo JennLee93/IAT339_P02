@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+    	<title>Account</title>
+
+    	<meta charset="utf-8">
+ 		
+ 		<!-- viewport code from downloaded class examples -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+  	<body>
+
+        <section id="home">
+            <nav class="box">
+                <div class="box-item-nav-home">
+                    <a href="index.html">
+                    
+                    <img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+                    
+                    <a class="nav-home" href="index.html">THE ARCHER</a>
+
+                    <a class="account" href="account.html">
+                        <span id="icon-pressed" class="lnr lnr-user box-item-icons"></span>
+                    </a>
+
+                    <a class="shopping-cart" href="shopping-cart.html">
+                        <span class="lnr lnr-cart box-item-icons"></span>
+                    </a>
+
+<!--                     <span class="lnr lnr-magnifier box-item-icons"></span>
+ -->                </div>
+            </nav>
+        </section>
+
+        <nav class="box"> <!-- put it on the top and sets it to navigation -->
+            <a class="nav-main box-item-nav" href="shop.html">SHOP</a>  
+            <a class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+            <a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+        </nav>
+
+    	<section>
+    		<div class="box">
+    			<div class="square-form box-shape-container">
+
+                    <section id="account-nav">
+                        <h1>YOUR ACCOUNT</h1>
+
+                        <nav class="box">
+                            <a id="account-pressed" class="account-nav-item box-item-nav" href="account.html">ORDER HISTORY</a>
+                            <a class="account-nav-item box-item-nav" href="account-info.html">ACCOUNT INFO</a>
+                            <a class="account-nav-item box-item-nav" href="account-shipping.html">SHIPPING & BILLING</a>
+                        </nav>
+                        
+                    </section>
+
+                    <section id="order-history">
+                        <h3>PENDING ORDERS</h3>
+                            <div class="info-block">
+                                <p>You have no pending orders at this time.</p>
+                            </div>
+                    
+
+                        <h3>PAST ORDERS</h3>
+                            <div class="order-details">
+                                <h4>March 9, 2017  |  Total: $447.99  |  Order #: 89576638  | <a href="#">Invoice</a></h4>
+                            </div>
+
+                        <section id="order-item">
+                            <div class="info-block">
+                                <div class="box">
+                                    <img class="order-first" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/LadyWhitetailHunter.png" alt="checkout">
+
+                                    <div class="order-info">
+                                    <h2>Lady Whitetail Hunter</h2>
+                                    <h3>ITEM # 2812</h3>
+
+                                    <h6>$399</h6>
+
+                                    <h4>1</h4>
+                                    <h5> x $399</h5>
+                                    </div>
+
+                                    <a href="#checkout" class="checkout-nav">Checkout</a>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+       			</div>
+    		</div>
+    	</section>
+
+        <div class="box">
+            <div class="footer">
+                <a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+                <a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+                <a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+                <p>© 2017 The Archer, Inc. All Rights Reserved</p>
+            </div>
+        </div>
+
+	  </body>
+</html>

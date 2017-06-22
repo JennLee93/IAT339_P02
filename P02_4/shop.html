@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+		<title>Shop</title>
+		
+		<meta charset="utf-8"> <!-- character set, no matter what language it will make sure the characters are correct -->
+	    
+	    <!-- viewport code from downloaded class examples -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+	<body>
+		<!-- I learned this in lecture -->
+		<section id="home">
+			<nav class="box">
+				<div class="box-item-nav-home">
+					<a href="index.html">
+					
+					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+					
+					<a class="nav-home" href="index.html">THE ARCHER</a>
+
+					<a class="account" href="account.html">
+						<span class="lnr lnr-user box-item-icons"></span>
+					</a>
+
+					<a class="shopping-cart" href="shopping-cart.html">
+						<span class="lnr lnr-cart box-item-icons"></span>
+					</a>
+
+<!-- 					<span class="lnr lnr-magnifier box-item-icons"></span>
+ -->				</div>
+			</nav>
+		</section>
+
+		<nav class="box"> <!-- put it on the top and sets it to navigation -->
+			<a id="pressed" class="nav-main box-item-nav" href="shop.html">SHOP</a>	
+    		<a class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+			<a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+		</nav>
+
+		<div class="box">
+			<section id="create-nav">
+				<h1>THE ARCHER STORE</h1>
+				<a id="shop-pressed" class="create-nav" href="shop.html">BOWS</a>
+				<a class="create-nav-item" href="shop-arrows.html">ARROWS</a>
+				<a class="create-nav-item" href="shop-quiver.html">QUIVERS & CASES</a>
+				<a class="create-nav-item" href="shop-display.html">DISPLAY CASES</a>
+			</section>
+		</div>
+			
+		<section id="shop-bow">
+		<!-- COMPOUND BOWS -->
+			<div class="shop-titles">
+				<h4>COMPOUND BOWS</h4>
+			</div>
+
+			<div class="box">
+
+				<!-- compound bow 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/MathewsHalon32.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Mathews Halon 32 | $1099</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<!-- code from https://codepen.io/imprakash/pen/GgNMXO -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+
+					<div id="quickview-mathews" class="overlay">
+						<div class="quick-view">
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="quickview-mathews-content">
+								<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/MathewsHalon32.jpg" alt="shop">
+								<h2>Mathews Halon 32 Compound Bow</h2>
+								<h3>$1099</h3>
+
+								<!-- https://codepen.io/ericrasch/pen/zjDBx -->
+								<div class="selectors">
+									<label for="quantity-selector">Qty:</label>
+									<select id="quantity-selector">
+									  <option>Select</option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option> 				
+									</select>
+								</div>
+
+								<div class="selectors">
+									<label for="size-selector">Size:</label>
+									<select id="size-selector">
+									  <option>Select</option>
+									  <option>5-inch</option>
+									  <option>6-inch</option>
+									  <option>7-inch</option>				
+									</select>
+								</div>
+
+								<!-- code from https://css-tricks.com/functional-css-tabs-revisited/ -->
+								<div class="quickview-mathews-tabs">
+								    
+								   <div class="tab">
+								       <input type="radio" id="mathews-detail" name="tab-group-1" checked>
+								       <label for="mathews-detail">Details</label>
+								       
+								       <div class="content">
+								           The six-inch model is capable of generating arrow speeds up to 343fps, weighs a shade under 4.75 pounds, and employs the CROSSCENTRIC cam. This innovative cam design allows partially concentric string payout and utilizes AVS technology to produce an awesome draw cycle and a high degree of shot-to-shot accuracy.
+								       </div> 
+								   </div>
+								    
+								   <div class="tab">
+								       <input type="radio" id="mathews-review" name="tab-group-1">
+								       <label for="mathews-review">Reviews</label>
+								       
+								       <div class="content">
+								           No reviews yet
+								       </div> 
+								   </div>								    
+								</div>
+
+								<div class="quickview-nav">
+									<a class="quick-view-nav" href="#added-wishlist">Add to Wishlist</a>
+									<a class="cart-nav" href="#added">Add to Cart</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="added" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your cart
+							</div>
+						</div>
+					</div>
+
+					<div id="added-wishlist" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your wishlist
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<!-- compound bow 1 ends -->
+
+
+				<!-- compound bow 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-bowtech">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/BowtechReign6.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-bowtech">
+							<figcaption>Bowtech Reign 6 | $1049</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-bowtech">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+
+					<div id="quickview-bowtech" class="overlay">
+						<div class="quick-view">
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="quickview-bowtech-content">
+								<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/BowtechReign6.jpg" alt="shop">
+								<h2>Bowtech Reign 6 Compound Bow</h2>
+								<h3>$1049</h3>
+
+								<!-- https://codepen.io/ericrasch/pen/zjDBx -->
+								<div class="selectors">
+									<label for="quantity-selector">Qty:</label>
+									<select id="quantity-selector">
+									  <option>Select</option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option> 				
+									</select>
+								</div>
+
+								<div class="selectors">
+									<label for="weight-selector">Weights</label>
+									<select id="weight-selector">
+									  <option>Select</option>
+									  <option>50 pounds</option>
+									  <option>60 pounds</option>
+									  <option>70 pounds</option>				
+									</select>
+								</div>
+
+								<div class="selectors">
+									<label for="length-selector">Lengths</label>
+									<select id="length-selector">
+									  <option>Select</option>
+									  <option>25 inches</option>
+									  <option>26 inches</option>
+									  <option>27 inches</option>	
+									  <option>28 inches</option>
+									  <option>29 inches</option>
+									  <option>30 inches</option>	
+									  <option>31 inches</option>		
+									</select>
+								</div>
+
+								<div class="quickview-bowtech-tabs">
+								    
+								   <div class="tab">
+								       <input type="radio" id="bowtech-details" name="tab-group-1" checked>
+								       <label for="bowtech-details">Details</label>
+								       
+								       <div class="content">
+								           Reign 6 has 350fps arrow speeds and loads of technology like the PowerShift Flip Disc, Micro Sync, and OverDrive Binary Cams. This 4.3-pound flagship is also designed with Outrigger offset weights to ensure perfect balance when fully accessorized.
+								       </div> 
+								   </div>
+								    
+								   <div class="tab">
+								       <input type="radio" id="bowtech-reviews" name="tab-group-1">
+								       <label for="bowtech-reviews">Reviews</label>
+								       
+								       <div class="content">
+								           No reviews yet
+								       </div> 
+								   </div>								    
+								</div>
+
+								<div class="quickview-nav">
+									<a class="quick-view-nav" href="#added-wishlist">Add to Wishlist</a>
+									<a class="cart-nav" href="#added">Add to Cart</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="added" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your cart
+							</div>
+						</div>
+					</div>
+
+					<div id="added-wishlist" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your wishlist
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<!-- compound bow 2 ends -->
+
+
+				<!-- compound bow 3 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-fortitude">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/CabelasFortitude.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-fortitude">
+							<figcaption>Cabelas Fortitude | $600</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-fortitude">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+
+					<div id="quickview-fortitude" class="overlay">
+						<div class="quick-view">
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="quickview-fortitude-content">
+								<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/CabelasFortitude.jpg" alt="shop">
+								<h2>Cabelas Fortitude Compound Bow</h2>
+								<h3>$600</h3>
+
+								<div class="selectors">
+									<label for="quantity-selector">Qty:</label>
+									<select id="quantity-selector">
+									  <option>Select</option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option> 				
+									</select>
+								</div>
+
+								<div class="quickview-fortitude-tabs">
+								    
+								   <div class="tab">
+								       <input type="radio" id="fortitude-details" name="tab-group-1" checked>
+								       <label for="fortitude-details">Details</label>
+								       
+								       <div class="content">
+								           The new 32-inch Fortitude, which employs a Synchronized Binary Cam system to ensure flawless nock travel and the expected accuracy that goes with it. Sold complete with a three-pin sight, Octane Hostage Max rest, quiver, rope sling, stabilizer, nock loop and even a carbon peep.
+								       </div> 
+								   </div>
+								    
+								   <div class="tab">
+								       <input type="radio" id="fortitude-reviews" name="tab-group-1">
+								       <label for="fortitude-reviews">Reviews</label>
+								       
+								       <div class="content">
+								           No reviews yet
+								       </div> 
+								   </div>								    
+								</div>
+
+								<div class="quickview-nav">
+									<a class="quick-view-nav" href="#added-wishlist">Add to Wishlist</a>
+									<a class="cart-nav" href="#added">Add to Cart</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="added" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your cart
+							</div>
+						</div>
+					</div>
+
+					<div id="added-wishlist" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your wishlist
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<!-- compound bow 3 ends -->
+
+
+				<!-- compound bow 4 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-prime">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/PrimeCentergy.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-prime">
+							<figcaption>Prime Centergy | $1200</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-prime">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+
+					<div id="quickview-prime" class="overlay">
+						<div class="quick-view">
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="quickview-prime-content">
+								<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/PrimeCentergy.jpg" alt="shop">
+								<h2>Prime Centergy Compound Bow</h2>
+								<h3>$1200</h3>
+
+								<div class="selectors">
+									<label for="quantity-selector">Qty:</label>
+									<select id="quantity-selector">
+									  <option>Select</option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option> 				
+									</select>
+								</div>
+
+								<div class="selectors">
+									<label for="weight-selector">Weights</label>
+									<select id="weight-selector">
+									  <option>Select</option>
+									  <option>40 pounds</option>
+									  <option>50 pounds</option>
+									  <option>60 pounds</option>
+									  <option>70 pounds</option>
+									  <option>80 pounds</option>				
+									</select>
+								</div>
+
+								<div class="selectors">
+									<label for="length-selector">Lengths</label>
+									<select id="length-selector">
+									  <option>Select</option>
+									  <option>24.5 inches</option>
+									  <option>26 inches</option>
+									  <option>27 inches</option>	
+									  <option>28 inches</option>
+									  <option>29 inches</option>
+									  <option>30 inches</option>	
+									  <option>31 inches</option>		
+									</select>
+								</div>
+
+								<div class="quickview-prime-tabs">
+								    
+								   <div class="tab">
+								       <input type="radio" id="prime-details" name="tab-group-1" checked>
+								       <label for="prime-details">Details</label>
+								       
+								       <div class="content">
+								           Has a Center Balanced Targeting System that is anchored by the 82X aluminum riser. This riser sports a new feature called the “Swerve”, which is a strategically designed curve in the riser that helps eliminate lateral movement during the draw cycle. In simple terms, that means you’ll hit more bulls-eyes with it. The 33-inch Centergy can fire arrows downrange at 333fps.
+								       </div> 
+								   </div>
+								    
+								   <div class="tab">
+								       <input type="radio" id="prime-reviews" name="tab-group-1">
+								       <label for="prime-reviews">Reviews</label>
+								       
+								       <div class="content">
+								           No reviews yet
+								       </div> 
+								   </div>								    
+								</div>
+
+								<div class="quickview-nav">
+									<a class="quick-view-nav" href="#added-wishlist">Add to Wishlist</a>
+									<a class="cart-nav" href="#added">Add to Cart</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="added" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your cart
+							</div>
+						</div>
+					</div>
+
+					<div id="added-wishlist" class="overlay">
+						<div class="added-view">
+							<h2>Success</h2>
+							<a class="close" href="#compound-title">&times;</a>
+							<div class="added-content">
+								Item has been added to your wishlist
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<!-- compound bow 4 ends -->
+
+			<!-- LONG BOWS -->
+			<div class="shop-titles">
+				<h4>LONG BOWS</h4>
+			</div>
+
+				<!-- longbow 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/FredBearMontana.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Fred Bear Montana | $399</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- longbow 1 ends -->
+
+
+				<!-- longbow 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Frontier68.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Frontier 68" | $189</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- longbow 2 ends -->
+
+
+				<!-- longbow 3 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/MohawkHybrid.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Hybrid Take-Down | $489</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- longbow 3 ends -->
+
+
+				<!-- longbow 4 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Striker60.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Striker Bows 60" | $749</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- longbow 4 ends -->
+
+
+			<!-- RECURVE BOWS -->
+			<div class="shop-titles">
+				<h4>RECURVE BOWS</h4>
+			</div>
+
+				<!-- recurve 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Magnum52.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Magnum 52" | $479</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- recurve 1 ends -->
+
+
+				<!-- recurve 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Takedown.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Takedown Hoyt | $799</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- recurve 2 ends -->
+
+
+				<!-- recurve 3 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Martin62.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Martin 62" Scorpion | $649</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- recurve 3 ends -->
+
+
+				<!-- recurve 4 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Mag48.jpg" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Super Mag 48" | $379</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- recurve 4 ends -->
+
+
+			<!-- CROSSBOWS -->
+			<div class="shop-titles">
+				<h4>CROSSBOWS</h4>
+			</div>
+
+				<!-- crossbow 1 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Ghost420.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Ghost 420 | $1199</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- crossbow 1 ends -->
+
+
+				<!-- crossbow 2 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/LadyWhitetailHunter.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Lady Whitetail Hunter | $399</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- crossbow 2 ends -->
+
+
+				<!-- crossbow 3 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/Recruit.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Recruit Recurve | $199</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- crossbow 3 ends -->
+
+
+				<!-- crossbow 4 begins -->
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#quickview-mathews">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/WildcatC7.png" alt="shop">
+						</a>
+						<a class="shop-bow" href="#quickview-mathews">
+							<figcaption>Wildcat C7 | $399</figcaption> 
+						</a>
+					</figure>
+
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#quickview-mathews">Quick View</a>
+						<a class="cart-nav" href="#added">Add to Cart</a>
+					</div>
+			  	</div>
+				<!-- crossbow 4 ends -->
+			</div>
+		</section>
+
+		<div class="box">
+			<div class="footer">
+				<a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+	    		<a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+				<a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+				<p>© 2017 The Archer, Inc. All Rights Reserved</p>
+			</div>
+		</div>
+
+	</body>
+
+</html>

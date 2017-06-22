@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+    	<title>Cart</title>
+
+    	<meta charset="utf-8">
+ 		
+ 		<!-- viewport code from downloaded class examples -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+  	<body>
+
+        <section id="home">
+            <nav class="box">
+                <div class="box-item-nav-home">
+                    <a href="index.html">
+                    
+                    <img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+                    
+                    <a class="nav-home" href="index.html">THE ARCHER</a>
+
+                    <a class="account" href="account.html">
+                        <span class="lnr lnr-user box-item-icons"></span>
+                    </a>
+
+                    <a class="shopping-cart" href="shopping-cart.html">
+                        <span id="icon-pressed" class="lnr lnr-cart box-item-icons"></span>
+                    </a>
+
+<!--                     <span class="lnr lnr-magnifier box-item-icons"></span>
+ -->                </div>
+            </nav>
+        </section>
+
+        <nav class="box"> <!-- put it on the top and sets it to navigation -->
+            <a class="nav-main box-item-nav" href="shop.html">SHOP</a>  
+            <a class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+            <a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+        </nav>
+
+        <section id="account-nav">
+            <h1>SHOPPING CART</h1>
+    	</section>
+
+        <section id="checkout-header">
+            <div class="box">
+                <div class="checkout">
+                    <h1>My Cart</h1>
+                    <a href="shop.html" class="continue-nav">Continue Shopping</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="first-item">
+            <div class="box">
+                    <img class="checkout-first" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/LadyWhitetailHunter.png" alt="checkout">
+
+                    <h2>Lady Whitetail Hunter</h2>
+                    <h3>ITEM # 2812</h3>
+
+                    <h6>$399</h6>
+                    <a href="#checkout-header" class="delete-nav" checked>Remove</a>
+
+                    <h4>1</h4>
+                    <h5> x $399</h5>
+
+                    <a href="#checkout" class="checkout-nav">Checkout</a>
+            </div>
+        </section>
+
+            <div id="checkout" class="overlay">
+                <div class="added-view">
+                    <h2>Success</h2>
+                    <a class="close" href="#checkout-header">&times;</a>
+                    <div class="checkout-content">
+                        Thank you for your purchase! An order confirmation will be sent to your email.
+                    </div>
+                </div>
+            </div>
+
+        <div class="box">
+            <div class="footer">
+                <a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+                <a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+                <a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+                <p>© 2017 The Archer, Inc. All Rights Reserved</p>
+            </div>
+        </div>
+
+	  </body>
+</html>

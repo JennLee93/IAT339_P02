@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+	<head>
+		<title>Create</title>
+		
+		<meta charset="utf-8"> <!-- character set, no matter what language it will make sure the characters are correct -->
+	    
+	    <!-- viewport code from downloaded class examples -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+		<link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+  		<link rel="stylesheet" href="css/flex-grid.css">
+
+ 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	</head>
+
+	<body>
+		<!-- I learned this in lecture -->
+		<section id="home">
+			<nav class="box">
+				<div class="box-item-nav-home">
+					<a href="index.html">
+					
+					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+					
+					<a class="nav-home" href="index.html">THE ARCHER</a>
+
+					<a class="account" href="account.html">
+						<span class="lnr lnr-user box-item-icons"></span>
+					</a>
+
+					<a class="shopping-cart" href="shopping-cart.html">
+						<span class="lnr lnr-cart box-item-icons"></span>
+					</a>
+
+<!-- 					<span class="lnr lnr-magnifier box-item-icons"></span>
+ -->				</div>
+			</nav>
+		</section>
+
+		<nav class="box"> <!-- put it on the top and sets it to navigation -->
+			<a class="nav-main box-item-nav" href="shop.html">SHOP</a>	
+    		<a id="pressed" class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+			<a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+		</nav>
+
+		<div class="box">
+			<section id="create-nav">
+				<h1>CREATE YOUR OWN</h1>
+				<a id="shop-pressed" class="create-nav" href="create.html">BOWS</a>
+				<a class="create-nav-item" href="create-arrows.html">ARROWS</a>
+				<a class="create-nav-item" href="create-quivers.html">QUIVERS</a>
+				<a class="create-nav-item" href="create-display.html">DISPLAY CASES</a>
+			</section>
+		</div>
+			
+		<!-- Section for sitemap -->
+		<section>
+	      	<div class="box">
+	      		<div class="create-crossbow-container">
+	      		
+	      			<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map">
+	      			<p>*click any part of the crossbow to customize</p>
+		      		
+		      		<!-- code from https://codepen.io/CreativeJuiz/pen/BiHzp and https://codepen.io/shahbokhari/pen/uDahz-->
+		      		
+		      		<input class="switch" type="checkbox" id="crossbow-switch" /> 
+		      		<div class="hover-switch"></div>
+
+		      		<div class="hidden-box"></div>
+
+		      		<!-- <input class="switch-blue" type="checkbox" id="blue-switch" />
+		      		<input class="switch-none" type="checkbox" id="none-switch" /> -->
+
+					<div class="custom-panel">
+			      		<div class="create-form create-form-container">
+							<h3>Scope | Colour</h3>
+							<a href="create-crossbow.html"><h4>Done ></h4></a>
+
+								<a href="create-blue-crossbow.html#create-nav">
+									<div class="colour-selector-1"></div></a>
+
+								<a href="create-nocolour-crossbow.html#create-nav">
+									<div class="colour-selector-2"></div></a>
+						</div>
+					</div>
+	      		</div>
+	      	</div>
+		</section>
+
+		<div class="box">
+			<div class="footer">
+				<a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+	    		<a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+				<a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+				<p>© 2017 The Archer, Inc. All Rights Reserved</p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

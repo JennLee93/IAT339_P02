@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- sets language to english -->
+    <head>
+        <title>Account</title>
+
+        <meta charset="utf-8">
+        
+        <!-- viewport code from downloaded class examples -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/normalize.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+        <link rel="stylesheet" href="css/main.css"> <!-- tells the page that the css file is relevant to this html page
+ -->
+        <link rel="stylesheet" href="css/flex-grid.css">
+
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    </head>
+
+    <body>
+
+        <section id="home">
+            <nav class="box">
+                <div class="box-item-nav-home">
+                    <a href="index.html">
+                    
+                    <img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+                    
+                    <a class="nav-home" href="index.html">THE ARCHER</a>
+
+                    <a class="account" href="account.html">
+                        <span id="icon-pressed" class="lnr lnr-user box-item-icons"></span>
+                    </a>
+
+                    <a class="shopping-cart" href="shopping-cart.html">
+                        <span class="lnr lnr-cart box-item-icons"></span>
+                    </a>
+
+<!--                     <span class="lnr lnr-magnifier box-item-icons"></span>
+ -->                </div>
+            </nav>
+        </section>
+
+        <nav class="box"> <!-- put it on the top and sets it to navigation -->
+            <a class="nav-main box-item-nav" href="shop.html">SHOP</a>  
+            <a class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
+            <a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
+        </nav>
+
+        <section>
+            <div class="box">
+                <div class="square-form box-shape-container">
+
+                    <section id="account-nav">
+                        <h1>YOUR ACCOUNT</h1>
+
+                        <nav class="box">
+                            <a class="account-nav-item box-item-nav" href="account.html">ORDER HISTORY</a>
+                            <a class="account-nav-item box-item-nav" href="account-info.html">ACCOUNT INFO</a>
+                            <a id="account-pressed" class="account-nav-item box-item-nav" href="account-shipping.html">SHIPPING & BILLING</a>
+                        </nav>
+                        
+                    </section>
+
+                    <section id="account-info">
+                        <div class="container">
+                            <h3>Shipping Address</h3>
+                            <div editpay-bloc info-button-block>
+                              <!-- code from https://www.w3schools.com/css/tryit.asp?filename=trycss_forms -->
+                              <form action="/action_page.php">
+                                <input type="text" id="street" name="street" placeholder="Street address">
+                                <input type="text" id="apt" name="apt" placeholder="Example: Apt# (if applicable)">
+                                <input type="text" id="city" name="city" placeholder="City">
+                                <input type="text" id="province" name="city" placeholder="Province">
+                                <input type="text" id="postal" name="postal" placeholder="Postal Code">
+                                <input type="text" id="country" name="country" placeholder="Country">
+                              </form>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <h3>Billing Address</h3>
+                            <div editpay-bloc info-button-block>
+                              <form action="/action_page.php">
+                                <input type="text" id="street" name="street" placeholder="Street address">
+                                <input type="text" id="apt" name="apt" placeholder="Example: Apt# (if applicable)">
+                                <input type="text" id="city" name="city" placeholder="City">
+                                <input type="text" id="province" name="city" placeholder="Province">
+                                <input type="text" id="postal" name="postal" placeholder="Postal Code">
+                                <input type="text" id="country" name="country" placeholder="Country">
+                              </form>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <h3>Payment Method</h3>
+                            <div editpay-bloc info-button-block>
+                              <form action="/action_page.php">
+                                <input type="text" id="card" name="card" placeholder="Card Type">
+                                <input type="text" id="card-name" name="card-name" placeholder="Cardholder's Name">
+                                <input type="text" id="card-num" name="card-num" placeholder="Card Number">
+                                <input type="text" id="cvc" name="cvc" placeholder="3-digit CVC">
+                                <input type="text" id="date" name="date" placeholder="Epiration Date">
+                              </form>
+                            </div>
+                        </div>
+
+                        <div class="save-info">
+                            <a class="saveinfo" href="account-shipping.html">Save</a>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <div class="box">
+            <div class="footer">
+                <a class="nav-footer box-item-footer-nav" href="about.html">About Us</a>
+                <a class="nav-footer box-item-footer-nav" href="purchasing-info.html">Purchasing Info</a>
+                <a class="nav-footer box-item-footer-nav" href="citations.html">Citations</a>
+
+                <p>© 2017 The Archer, Inc. All Rights Reserved</p>
+            </div>
+        </div>
+
+      </body>
+</html>
