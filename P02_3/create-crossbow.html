@@ -37,24 +37,24 @@
 						<span class="lnr lnr-cart box-item-icons"></span>
 					</a>
 
-					<span class="lnr lnr-magnifier box-item-icons"></span>
-				</div>
+<!-- 					<span class="lnr lnr-magnifier box-item-icons"></span>
+ -->				</div>
 			</nav>
 		</section>
 
 		<nav class="box"> <!-- put it on the top and sets it to navigation -->
 			<a class="nav-main box-item-nav" href="shop.html">SHOP</a>	
-    		<a id="pressed" class="nav-main box-item-nav" href="create.html">CREATE</a>
+    		<a id="pressed" class="nav-main box-item-nav" href="create.html">CREATE YOUR OWN</a>
 			<a class="nav-main box-item-nav" href="contact.html">CONTACT US</a>
 		</nav>
 
 		<div class="box">
 			<section id="create-nav">
-				<h1>CREATE YOUR OWN | crossbow</h1>
-				<a class="create-nav" href="create.html">BOWS</a>
+				<h1>CREATE YOUR OWN</h1>
+				<a id="shop-pressed" class="create-nav" href="create.html">BOWS</a>
 				<a class="create-nav-item" href="create-arrows.html">ARROWS</a>
-				<a class="create-nav-item" href="#">QUIVERS</a>
-				<a class="create-nav-item" href="#">DISPLAY CASES</a>
+				<a class="create-nav-item" href="create-quivers.html">QUIVERS</a>
+				<a class="create-nav-item" href="create-display.html">DISPLAY CASES</a>
 			</section>
 		</div>
 			
@@ -62,43 +62,30 @@
 		<section>
 	      	<div class="box">
 	      		<div class="create-crossbow-container">
-	      		<!-- <p>Click any part of the crossbow to customize</p> -->
-	      			<!-- code from https://www.w3schools.com/tags/tag_area.asp -->
+	      		
 	      			<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map">
-
-	      			<!-- <p>Click any part of the crossbow to customize</p> -->
-	      			
-<!-- 	      			<map name="crossbow-map">
-		      			<area class="rect" shape="rect" coords="155, 3, 100, 50">	
-		      		</map>	 -->	
+	      			<p>*click any part of the crossbow to customize</p>
 		      		
 		      		<!-- code from https://codepen.io/CreativeJuiz/pen/BiHzp and https://codepen.io/shahbokhari/pen/uDahz-->
-		      		<input type="checkbox" id="crossbow-switch" /> 	
+		      		
+		      		<input class="switch" type="checkbox" id="crossbow-switch" /> 
+		      		<div class="hover-switch"></div>
 
 		      		<div class="hidden-box"></div>
-					<nav class="custom-panel">
+
+		      		<input class="switch-blue" type="checkbox" id="blue-switch" />
+		      		<input class="switch-none" type="checkbox" id="none-switch" />
+
+					<div class="custom-panel">
 			      		<div class="create-form create-form-container">
 							<h3>Scope | Colour</h3>
-							<h4>Next ></h4>
-								<div class="colour-selector-1">
-									<div class="colour-selector-2">
-										<div class="colour-selector-3">
-											<div class="colour-selector-4">
-												<div class="colour-selector-5"></div>
-											</div>
-										</div>
-									</div>
-								</div>
+							<a href="create-crossbow.html"><h4>Done ></h4></a>
 
-								<div class="colour-selector-6">
-									<div class="colour-selector-7">
-										<div class="colour-selector-8">
-											<div class="colour-selector-9"></div>
-										</div>
-									</div>
+								<div class="colour-selector-1">
+									<div class="colour-selector-2"></div>
 								</div>
 						</div>
-					</nav>
+					</div>
 	      		</div>
 	      	</div>
 		</section>

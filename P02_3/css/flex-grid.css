@@ -24,7 +24,7 @@
   flex: 1 1 100%;
 }
 
-.box-item-create-placeholder {
+.box-item-create {
   flex: 1 1 auto;
 }
 
@@ -86,7 +86,7 @@
 @media (max-width: 30em) {
   	/*rule to change the behaviour*/
   	.box-item-nav, .box-item-nav-home, .box-item-footer-nav, .box-item-profile, 
-    .box-item-home-new, .box-item-create-placeholder, .box-item-shop, .create-nav, 
+    .box-item-home-new, .box-item-create, .box-item-shop, .create-nav, 
     .create-nav-item, .account-nav, .account-nav-item, .box-item-icons, .box-item-sitemap, 
     .create-crossbow-container, .box-shape-container, .create-form-container, 
     .hidden-box, .box-item-gallery-compound, .continue-nav {
@@ -158,7 +158,7 @@
     text-align: center;
   }
 
-  .box-item-create-placeholder {
+  .box-item-create {
     margin: 0;
     width: 100%;
   }
