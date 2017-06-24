@@ -84,6 +84,10 @@
     flex: 1 1 auto;
 }
 
+.box-item-code {
+    flex: 1 1 auto;
+}
+
 
 /*allows css to request information about the web browser*/
 /*if the width of the web browser is less than 30em then we add new rules*/
@@ -93,7 +97,7 @@
     .box-item-home-new, .box-item-create, .box-item-shop, .create-nav, 
     .create-nav-item, .account-nav, .account-nav-item, .box-item-icons, .box-item-sitemap, 
     .create-crossbow-container, .box-shape-container, .create-form-container, 
-    .hidden-box, .box-item-gallery-compound, .continue-nav {
+    .hidden-box, .box-item-gallery-compound, .continue-nav, .box-item-code {
     /*if we get to a certain size then just become the width of the whole page*/
     flex: 0 0 100%; 
   }
@@ -107,13 +111,29 @@
     margin-top: 2rem;
   }
 
+  .footer {
+    height: auto;
+  }
+
+  .footer a, .footer p {
+    width: 100%;
+  }
+
+  .box-item-home-new {
+    width: 100%;
+  }
+
+  #learn-quiver, #learn-bow, #learn-arrow {
+    margin-left:0;
+  }
+
   .box-item-icons {
     margin-right: 6.96rem;
   }
 
   .box-item-footer-nav {
     width: auto;
-    height:auto;
+    height: auto;
     text-align: center;
     margin: 0;
   }

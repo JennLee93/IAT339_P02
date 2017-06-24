@@ -25,7 +25,7 @@
 				<div class="box-item-nav-home">
 					<a href="index.html">
 					
-					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo"></a>
+					<img class="logo" src="http://www.sfu.ca/~jal32/IAT339/Images/logo.png" alt="logo" width="824" height="771"></a>
 					
 					<a class="nav-home" href="index.html">THE ARCHER</a>
 
@@ -49,11 +49,11 @@
 		</nav>
 
 		<!-- this style guide template from class -->
-    	<h1>Style Guide</h1>
+    	<h1 id="sg-title">Style Guide</h1>
 
     	<nav>
       
-      	<p>
+      	<p id="goto">
         	Go to:
         	<a href="#interactive_elements">Interactive Elements</a>,
         	<a href="#text_elements">Text Elements</a>,
@@ -84,6 +84,7 @@
 
 	        <h3>Rendered element:</h3>
 	        <a class="button-nav" href="#">CREATE</a>
+	        <a class="delete-nav" href="#" checked>Remove</a>
 
 	      </section>
 
@@ -199,7 +200,7 @@
 	        </div>
 
 	        <h3>Rendered element:</h3>
-			<h3 class="content-h3">Font-Weight: 300 | Size: 1rem | Letter-spacing: 0.005rem | Color: rgb(124,147,157)</h3>
+			<h3 class="content-h3">Font-Weight: 300 | Size: 1rem | Letter-spacing: 0.15rem | Color: rgb(92, 92, 92)</h3>
 	      </section>
 
 	      <!-- Paragraph styling section -->
@@ -315,10 +316,9 @@
 	        <h3>Rendered element:</h3>
 
 			<nav class="box"> <!-- put it on the top and sets it to navigation -->
-				<a class="nav-main box-item-nav" href="index.html">HOME</a>
-				<a class="nav-main box-item-nav" href="styleguide.html">STYLE GUIDE</a>
-				<a class="nav-main box-item-nav" href="wireframes.html">WIREFRAMES</a>	
-	    		<a class="nav-main box-item-nav" href="citations.html">CITATIONS</a>
+				<a class="nav-main box-item-nav" href="index.html">SHOP</a>
+				<a class="nav-main box-item-nav" href="styleguide.html">CREATE YOUR OWN</a>
+				<a class="nav-main box-item-nav" href="wireframes.html">CONTACT US</a>	
 			</nav>
 	      </section>
 
@@ -332,66 +332,101 @@
 	        <h3>Sample code:</h3>
 	        <div class="box">
 		        <code class="box-item-code">
-			    	&lt;a target="_blank" href="http://www.kenwith-archers.org.uk/images/compound.jpg"&gt;
-			      	&lt;img src="http://www.kenwith-archers.org.uk/images/compound.jpg" alt="Compound"&gt;
-			    	&lt;/a&gt;
+			    	&lt;figure class="shop-caption"&gt;
+						&lt;a class="shop-bow" href="#element"&gt;
+							&lt;img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/MathewsHalon32.jpg" alt="shop" width="640" height="640"&gt;
+						&lt;/a&gt;
+						&lt;a class="shop-bow" href="#element"&gt;
+							&lt;figcaption&gt;Mathews Halon 32 | $1099&lt;/figcaption&gt; 
+						&lt;/a&gt;
+					&lt;/figure&gt;
 
-			    	&lt;div class="desc"&gt;Compound $$$$
-			    		&lt;span class="lnr lnr-heart"&gt;&lt;/span>
-			    	&lt;/div&gt;
+					&lt;div class="box-shopping-nav"&gt;
+						&lt;a class="quick-view-nav" href="#element"&gt;Quick View&lt;/a&gt;
+						&lt;a class="cart-nav" href="#element">Add to Cart&lt;/a&gt;
+					&lt;/div&gt;
 				</code>
 			</div>
 
-	        <h3>Rendered element:</h3>
+	        <h3 id="element">Rendered element:</h3>
 
 			<!-- code from https://www.w3schools.com/css/css3_images.asp -->
 			<div class="box">
-			  	<div class="box-item-gallery-compound">
-			    	<a target="_blank" href="http://www.kenwith-archers.org.uk/images/compound.jpg">
-			      	<img src="http://www.kenwith-archers.org.uk/images/compound.jpg" alt="Compound">
-			    	</a>
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#element">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/MathewsHalon32.jpg" alt="shop" width="640" height="640">
+						</a>
+						<a class="shop-bow" href="#element">
+							<figcaption>Mathews Halon 32 | $1099</figcaption> 
+						</a>
+					</figure>
 
-			    	<div class="desc">Compound $$$$
-			    		<span class="lnr lnr-heart"></span>
-			    	</div>
-			  	</div>
+			    	<!-- section for item pop up -->
+					<!-- code from https://codepen.io/imprakash/pen/GgNMXO -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#element">Quick View</a>
+						<a class="cart-nav" href="#element">Add to Cart</a>
+					</div>
+				</div>
 
-			  	<div class="box-item-gallery-arrows">
-			    	<a target="_blank" href="https://s-media-cache-ak0.pinimg.com/736x/20/2e/1a/202e1a99cf96523b5dde650526be75cd.jpg">
-			      	<img src="https://s-media-cache-ak0.pinimg.com/736x/20/2e/1a/202e1a99cf96523b5dde650526be75cd.jpg" alt="Metal Tip Arrow">
-			    	</a>
-			    
-			    	<div class="desc">Metal Tip Arrows $$$$
-			    		<span class="lnr lnr-heart"></span>
-			    	</div>
-			  	</div>
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#element">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/BowtechReign6.jpg" alt="shop" width="640" height="640">
+						</a>
+						<a class="shop-bow" href="#element">
+							<figcaption>Bowtech Reign 6 | $1049</figcaption> 
+						</a>
+					</figure>
 
-			  	<div class="box-item-gallery-crossbow">
-			    	<a target="_blank" href="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg">
-			      	<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow">
-			    	</a>
-			    
-			    	<div class="desc">Crossbow $$$$
-			    		<span class="lnr lnr-heart"></span>
-			    	</div>
-			  	</div>
+			    	<!-- section for item pop up -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#element">Quick View</a>
+						<a class="cart-nav" href="#element">Add to Cart</a>
+					</div>
+				</div>
 
-			  	<div class="box-item-gallery-quiver">
-			    	<a target="_blank" href="https://s-media-cache-ak0.pinimg.com/736x/44/a9/ce/44a9ce8a594ac53f1a40280885d636f9.jpg">
-			      	<img src="https://s-media-cache-ak0.pinimg.com/736x/44/a9/ce/44a9ce8a594ac53f1a40280885d636f9.jpg" alt="Quiver">
-			    	</a>
-			    
-			    	<div class="desc">Quiver $$$$
-			    		<span class="lnr lnr-heart"></span>
-			    	</div>
-			  	</div>
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#element">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/CabelasFortitude.jpg" alt="shop" width="640" height="640">
+						</a>
+						<a class="shop-bow" href="#element">
+							<figcaption>Cabelas Fortitude | $600</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#element">Quick View</a>
+						<a class="cart-nav" href="#element">Add to Cart</a>
+					</div>
+				</div>
+
+				<div class="box-item-gallery-compound">
+ 					<figure class="shop-caption">
+						<a class="shop-bow" href="#element">
+							<img class="shop-compound box-item-shop" src="http://www.sfu.ca/~jal32/IAT339/Images/Shop/PrimeCentergy.jpg" alt="shop" width="640" height="640">
+						</a>
+						<a class="shop-bow" href="#element">
+							<figcaption>Prime Centergy | $1200</figcaption> 
+						</a>
+					</figure>
+
+			    	<!-- section for item pop up -->
+					<div class="box-shopping-nav">
+						<a class="quick-view-nav" href="#element">Quick View</a>
+						<a class="cart-nav" href="#element">Add to Cart</a>
+					</div>
+				</div>
 			</div>
 
 	      </section>
 
 	      <!-- Image Mapping styling section -->
 	      <!-- code from https://www.w3schools.com/tags/tag_area.asp -->
-	      <section>
+<!-- 	      <section>
 	      	<h2>Image Mapping</h2>
 	      	<h3>CSS selector:</h3>
 	        	<p>.map-container</p>
@@ -401,9 +436,6 @@
 			        <code class="box-item-code">
 			        &lt;div class="map-container"&gt;
 		      			&lt;img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map"&gt;
-<!-- 		      			&lt;map name="crossbow-map"&gt;
-			      			&lt;area shape="rect" coords="155, 3, 100, 50" href="#"&gt;	
-			      		&lt;/map&gt;	 -->
 			      		&lt;input type="checkbox" id="switch" /&gt;  
 		      		&lt;/div&gt;
 			        </code>
@@ -412,16 +444,11 @@
 	      	<h3>Rendered element:</h3>
 	      	<div class="box">
 	      		<div class="box-item-map-container">
-	      			<!-- code from https://www.w3schools.com/tags/tag_area.asp -->
 	      			<img src="http://deadbullseye.com/wp-content/uploads/2016/02/Barnett-Recruit-Compound-730x430.jpg" alt="Crossbow" usemap="crossbow-map">
-<!-- 	      			<map name="crossbow-map">
-		      			<area class="rect" shape="rect" coords="155, 3, 100, 50">	
-		      		</map>	 -->	
-		      		<!-- code from https://codepen.io/CreativeJuiz/pen/BiHzp -->
 		      		<input type="checkbox" id="switch" />      			
 	      		</div>
 	      	</div>
-	      </section>
+	      </section> -->
 
 	    </section>
 	    <!-- // COMBINED ELEMENTS SECTION -->
@@ -452,15 +479,6 @@
 	        	</div>
 
 	        	<!-- tinted gray -->
-	        	<div class="tinted1 box-item-colours">
-	        		<p>#95A5A6</p> 
-	        		<p>(149,165,166)</p>
-	        	</div>
-
-	        	<div class="tinted2 box-item-colours">
-	        		<p>#7F8C8D</p> 
-	        		<p>(127,140,141)</p>
-	        	</div>
 
 	        	<div class="tinted3 box-item-colours">
 	        		<p>#7C939D</p> 
@@ -468,15 +486,6 @@
 	        	</div>
 
 	        	<!-- blue -->
-	        	<div class="blue1 box-item-colours">
-	        		<p>#A3BECA</p> 
-	        		<p>(163,190,202)</p>
-	        	</div>
-
-	        	<div class="blue2 box-item-colours">
-	        		<p>#5C6D7E</p> 
-	        		<p>(92,109,126)</p>
-	        	</div>
 
 	        	<div class="blue3 box-item-colours">
 	        		<p>#34495E</p> 
@@ -492,7 +501,7 @@
 	        <h2>Icons</h2>
 
 	       	<h3>CSS selector:</h3>
-	        <p>.lnr-user | .lnr-heart | .lnr-cart | .lnr-magnifier | .lnr-menu | .lnr-chevron-up | .lnr-chevron-down | .lnr-chevron-left | .lnr-chevron-right | .lnr-cross-circle</p>
+	        <p>.lnr-user | .lnr-cart | .lnr-magnifier | .lnr-chevron-right</p>
 	        
 	        <h3>Sample code:</h3>
 	       	<div class="box">
@@ -508,23 +517,12 @@
 			<!-- code from https://www.w3schools.com/css/css_image_gallery.asp -->
 				<span class="lnr lnr-user box-item-icons"> Profile</span>
 
-				<span class="lnr lnr-heart box-item-icons"> Favourite</span>
-
 				<span class="lnr lnr-cart box-item-icons"> Cart</span>
 
 				<span class="lnr lnr-magnifier box-item-icons"> Search</span>
 
-				<span class="lnr lnr-menu box-item-icons"> Menu</span>
-
-				<span class="lnr lnr-chevron-up box-item-icons"> Up</span>
-
-				<span class="lnr lnr-chevron-down box-item-icons"> Down</span>
-
-				<span class="lnr lnr-chevron-left box-item-icons"> Left</span>
-
 				<span class="lnr lnr-chevron-right box-item-icons"> Right</span>
 
-				<span class="lnr lnr-cross-circle box-item-icons"> Close</span>
 		    </div>
 	      </section>
 

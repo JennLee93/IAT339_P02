@@ -47,6 +47,12 @@ h1 {
   margin-top: 3rem;
 }
 
+#interactive_elements, #text_elements, #sg-title, #combined_elements, 
+#goto, #aesthetic_elements {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 #home {
   margin-bottom: 0rem;
   padding-top: 1rem;
@@ -59,14 +65,14 @@ h1 {
   text-align: center;
 }
 
-.nav-home { /* . means class */
+.nav-home { 
     color: white; /* grey-blue */
     font-size: 2rem;
     letter-spacing: 0.3rem;
     text-decoration: none; /* gets rid of the underline */
     transition: background-color 0.5s;
-  position: relative;
-  top: 0.4rem;
+    position: relative;
+    top: 0.4rem;
   }
 
 .nav-home:active, .nav-home:focus, .nav-home:hover {
@@ -85,10 +91,7 @@ h1 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     transition: background-color 0.5s;
-    border-right: 0.5px solid rgb(214,214,214); /* light grey */
-    border-left: 0.5px solid rgb(214,214,214); /* light grey */
-    border-bottom: 0.5px solid rgb(214,214,214); /* light grey */ 
-    border-top: 0.5px solid rgb(214,214,214); /* light grey */
+    border: 0.5px solid rgb(214,214,214); /* light grey */
     width: 33.33%;  
   }
 
@@ -221,19 +224,40 @@ ________________________________________________________________________________
 /* Styling for the navigation button */
 .button-nav {
     display: inline-block;
-    padding: 0.5em 0.75em;
+    padding: 0.65em 0.65em;
     color: #F2F2F2;
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
+    font-size: 0.7rem;
 }
 
 .button-nav:hover, .button-nav:focus {
     background-color: #5E6C72;
+}
+
+.delete-nav {
+    display: inline-block;
+    padding: 0.65em 0.65em;
+    color: #F2F2F2;
+    background-color: #7C939D;
+    border-radius: 0em;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+    cursor: pointer;
+
+    width: 4rem;
+}
+
+.delete-nav:hover, .delete-nav:focus {
+    background-color: #5E6C72;
+    color: white;
 }
 
 /* Styling for the Submit/Reset Button */
@@ -250,7 +274,6 @@ ________________________________________________________________________________
     font-weight: lighter;
     cursor: pointer;
 
-    -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
 }
 
@@ -277,29 +300,6 @@ ________________________________________________________________________________
     border: 0.5px solid rgb(92, 92, 92);
     cursor: not-allowed;
     font-weight: lighter;
-}
-
-.nav-main { /* . means class */
-    text-align: center;
-    color: rgb(163,190,202); /* grey-blue */
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    text-decoration: none; /* gets rid of the underline */
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    transition: background-color 0.5s;
-    border-right: 0.5px solid rgb(214,214,214); /* light grey */
-  }
-
-.nav-main:active, .nav-main:focus, .nav-main:hover {
-    color: rgb(52,73,94); /* darker blue */
-}
-
-/*code from https://codepen.io/secondfret/pen/GoqLK*/
-.nav-main:last-child {
-    border-right: none;
 }
 
 /*code from https://www.w3schools.com/howto/howto_css_animated_search.asp*/
@@ -333,10 +333,10 @@ input[type=text]:focus {
 }
 
 .content-h3 {
-    color: rgb(124,147,157);
-    font-size: 1.5rem;
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 0.005rem;
+    letter-spacing: 0.15rem;
 }
 
 /*code from https://www.w3schools.com/css/css_list.asp*/
@@ -377,94 +377,141 @@ https://css-tricks.com/examples/NumberedFAQ/ */
   padding-left: 65px;
 }
 
+/* ________________________________________________________________________________
+
+  shop compound begins 
+  code obtained from week 5 lecture example on positioning and responsive images
+__________________________________________________________________________________ */
 /*code from https://www.w3schools.com/css/css3_images.asp*/
-.box-item-gallery {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
 
 .box-item-gallery-compound {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;
-}
-
-.box-item-gallery-arrows {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;
-}
-
-.box-item-gallery-crossbow {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;
-}
-
-.box-item-gallery-quiver {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    height: 60%;
-    margin: 0.5rem;
-}
-
-.box-item-gallery:hover .box-item-gallery-compound {
-    border: 1px solid #777;
-}
-
-.box-item-gallery:hover .box-item-gallery-arrows {
-    border: 1px solid #777;
-}
-
-.box-item-gallery:hover .box-item-gallery-crossbow {
-    border: 1px solid #777;
-}
-
-.box-item-gallery:hover .box-item-gallery-quiver {
-    border: 1px solid #777;
-}
-
-.box-item-gallery img {
-    width: 100%;
-    height: auto;
+    margin: 1rem;
 }
 
 .box-item-gallery-compound img {
     width: 100%;
     height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border: 1px solid #ccc;
+  padding: 0;
+    float: left;
+    margin-left: 0;
+    border: 0.5px solid #ccc;
 }
 
-.box-item-gallery-arrows img {
+.box-item-gallery-compound img:hover  {
+    border: 0.5px solid black;
+}
+
+.shop-caption {
+  position: relative;
+  margin: 0;
+}
+
+.shop-compound img {
     width: 100%;
     height: auto;
+    padding: 0;
 }
 
-.box-item-gallery-crossbow img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
+/*code from https://www.w3schools.com/css/css3_images.asp*/
+#shop-bow {
+    margin: 1rem;
+    margin-bottom: 3rem;
 }
 
-.box-item-gallery-quiver img {
-    width: 100%;
-    height: auto;
+.shop-bow {
+  padding: 0;
 }
 
-.desc {
-    padding: 10px;
-    text-align: left;
+/*
+  A reminder that a space between the two selectors below '.caption-inside' and 'figcaption' indicates only 'figcaptions' that are children of '.caption-inside' elements will be styled as specified
+*/
+.shop-caption figcaption {
+  /*
+    Positioning an element as 'absolute' sets it to be positioned absolutely to the last parent element with a positioning set (other then static).
+
+    As <figcaption> is the child of .caption-inside, which is positioned relative, <figcaption> is then positioned absolutely to .caption-inside based on the top, right, bottom, and left values set.
+  */
+  position: absolute;
+  /*
+    By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
+  */
+  bottom: 0.5rem;
+  top: 12.5rem;
+  padding-top: 0.75rem;
+  padding-right: 0.25rem;
+  /*
+    To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
+  */
+  width: 200px;
+  height: 30px;
+  color: white;
+  text-align: right;
+  font-size: 0.8rem;
+  background-color: rgba(92, 92, 92, 0.8);
+
+  margin-right: 3rem;
+  margin-bottom: 3rem;
 }
 
-.desc span:hover {
-    color: red;
+.quickview-nav {
+  display: inline-block;
+  float: right;
+  margin-right: 1.6rem;
 }
+
+.quick-view-nav {
+  display: inline-block;
+  margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 0.93rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  /*-webkit-transition: background-color 0.5s ease-out;*/
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.quick-view-nav:hover, .quick-view-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+
+.cart-nav {
+  display: inline-block;
+  margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75em 0.75em;
+    color: #F2F2F2;
+    background-color: #333333;
+    border-radius: 0em;
+    text-decoration: none;
+  /*-webkit-transition: background-color 0.5s ease-out;*/
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+
+    width: 7rem;
+}
+
+.cart-nav:hover, .cart-nav:focus {
+    background-color: #5E6C72;
+    color: white;
+}
+/* _________________________________________________________________________________
+
+  shop compound ends
+  shop pages properties ends 
+_________________________________________________________________________________ */
 
 /* ////////// colour properties begins ////////// */
 .box-item-icons {
@@ -502,24 +549,8 @@ https://css-tricks.com/examples/NumberedFAQ/ */
   background-color: rgb(92, 92, 92);
 }
 
-.tinted1 {
-  background-color: rgb(149,165,166);
-}
-
-.tinted2 {
-  background-color: rgb(127,140,141);
-}
-
 .tinted3 {
   background-color: rgb(124,147,157);
-}
-
-.blue1 {
-  background-color: rgb(163,190,202);
-}
-
-.blue2 {
-  background-color: rgb(92,109,126);
 }
 
 .blue3 {
@@ -553,15 +584,4 @@ https://css-tricks.com/examples/NumberedFAQ/ */
  left: 1rem;
 }
 /* ////////// image mapping properties ends ////////// */
-
-
-/* ////////// icon properties begins ////////// */
-/*.box-item-icons {
-  padding: .5rem;
-  margin: 0.5rem;
-  border: 1px solid rgb(140, 140, 140);
-  font-size: 1.2rem;
-  text-align: center;
-}*/
-/* ////////// icon properties ends ////////// */
 
