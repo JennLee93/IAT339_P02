@@ -69,6 +69,7 @@ section {
 	padding-top: 1rem;
 	font-size: 0.9rem;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .footer p {
@@ -119,7 +120,7 @@ section {
  	top: 0.4rem;
   }
 
-.nav-home:active, .nav-home:focus, .nav-home:hover {
+.nav-home:hover, .nav-home:focus, .nav-home:active {
     color: white; 
 }
 
@@ -139,7 +140,7 @@ section {
     width: 33.33%;  
   }
 
-.nav-main:active, .nav-main:focus, .nav-main:hover {
+.nav-main:hover, .nav-main:focus, .nav-main:active {
 	color: rgb(52,73,94); /* darker blue */
 	background-color: #ccc;
 }
@@ -189,7 +190,7 @@ ________________________________________________________________________________
 .new {
 	position: relative;
 	display: block;
-   	height: 408px;
+   	width: 100%;
 }
 
 #updates {
@@ -228,7 +229,6 @@ ________________________________________________________________________________
     background-color: #F2F2F2;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -248,7 +248,6 @@ ________________________________________________________________________________
     background-color: #F2F2F2;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -268,7 +267,6 @@ ________________________________________________________________________________
     background-color: #F2F2F2;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -277,11 +275,9 @@ ________________________________________________________________________________
     width: 7rem;
 }
 
-#learn-arrow
-
-.learn-bow-nav:hover, .learn-bow-nav:focus, 
-.learn-arrow-nav:hover, .learn-arrow-nav:focus,
-.learn-quiver-nav:hover, .learn-quiver-nav:focus {
+.learn-bow-nav:hover, .learn-bow-nav:focus, .learn-bow-nav:active  
+.learn-arrow-nav:hover, .learn-arrow-nav:focus, .learn-arrow-nav:active 
+.learn-quiver-nav:hover, .learn-quiver-nav:focus, .learn-quiver-nav:active {
     background-color: #5E6C72;
     color: white;
 }
@@ -320,14 +316,6 @@ ________________________________________________________________________________
 	font-weight: 300;
 }
 
-/*#update-arrow-para p {
-	text-align: left;
-	margin-right: 8rem;
-	color: rgb(124,147,157);
-	font-size: 0.8rem;
-	padding-left: 0.5rem;
-}*/
-
 .shop-now-nav {
 	display: inline-block;
     margin-right: 1rem;
@@ -338,7 +326,6 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -367,7 +354,7 @@ ________________________________________________________________________________
 	color: white;
 }
 
-.box-item-icons:active, .box-item-icons:focus, .box-item-icons:hover {
+.box-item-icons:active, .box-item-icons:hover, .box-item-icons:focus {
 	color: #8c8c8c;
 }
 
@@ -390,12 +377,12 @@ ________________________________________________________________________________
 	font-size: 1.4rem;
 }
 
-.lnr-magnifier {
+/*.lnr-magnifier {
 	position: absolute;
 	top: 2.7rem;
 	right: 8rem;
 	font-size: 1.4rem;
-}
+}*/
 /* _________________________________________________________________________________
 
 	icon nav properties ends 
@@ -557,7 +544,7 @@ ________________________________________________________________________________
 .square-form h5 {
 	font-size: 0.9rem;
 	font-weight: 500;
-	color: rgb(0, 185, 192);
+	color: #34495E;
 	margin:0;
 	margin-left: 1rem;
 	letter-spacing: 0.15rem;
@@ -615,7 +602,6 @@ ________________________________________________________________________________
 	margin-left: 1rem;
 	font-size: 0.8rem;
 	color: rgb(140, 140, 140);
-
 }
 
 .submit-button{
@@ -779,28 +765,14 @@ ________________________________________________________________________________
 	padding: 0;
 }
 
-.info-block {
+.info-block, .purchase-info-block {
   overflow:hidden;
   display:block;
   background-color: #ffffff;
-  border-color: #ccc;
-  border-width:2px;
-  border-style: solid;
+  border: 2px solid #ccc;
   border-right-width: 0;
   border-left-width: 0;
   position: relative;    
-}
-
-.info-block img{
-  width:100px;
-  height:100px;
-  margin:15px;
-  float:left;
-  display: flex;
-  box-shadow: 0 4px 9px 0 rgba(0,0,0,0.2);
-  border-radius: 2px;
-  border-width: 2px;
-  
 }
 
 .info-title h3 {
@@ -899,8 +871,9 @@ input[type=text], select {
 
 .order-first {
 	position: relative;
-	width: 7.5rem;
-	height: 7.5rem;
+	width: 15%;
+	height: 15%;
+	margin: 1rem;
 	border: 0.5px solid #ccc;
 }
 
@@ -1775,7 +1748,6 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -1799,7 +1771,6 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -2206,14 +2177,6 @@ ________________________________________________________________________________
 }
 
 #quantity-selector {
-/*   -webkit-appearance: button;
-   -webkit-border-radius: 1px;
-   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-   -webkit-padding-end: 20px;
-   -webkit-padding-start: 2px;
-   -webkit-user-select: none;*/
-   background-image: url(http://i62.tinypic.com/15xvbd5.png); 
-   /*-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
    background-position: center;
    background-repeat: no-repeat;
    border: 1px solid #AAA;
@@ -2230,14 +2193,6 @@ ________________________________________________________________________________
 }
 
 #size-selector {
-/*   -webkit-appearance: button;
-   -webkit-border-radius: 1px;
-   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-   -webkit-padding-end: 20px;
-   -webkit-padding-start: 2px;
-   -webkit-user-select: none;*/
-   background-image: url('http://i62.tinypic.com/15xvbd5.png'); 
-   /*-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
    background-position: center;
    background-repeat: no-repeat;
    border: 1px solid #AAA;
@@ -2254,14 +2209,6 @@ ________________________________________________________________________________
 }
 
 #side-selector {
-/*   -webkit-appearance: button;
-   -webkit-border-radius: 1px;
-   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-   -webkit-padding-end: 20px;
-   -webkit-padding-start: 2px;
-   -webkit-user-select: none;*/
-   background-image: url('http://i62.tinypic.com/15xvbd5.png'); 
-   /*-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
    background-position: center;
    background-repeat: no-repeat;
    border: 1px solid #AAA;
@@ -2278,14 +2225,6 @@ ________________________________________________________________________________
 }
 
 #weight-selector {
-/*   -webkit-appearance: button;
-   -webkit-border-radius: 1px;
-   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-   -webkit-padding-end: 20px;
-   -webkit-padding-start: 2px;
-   -webkit-user-select: none;*/
-   background-image: url('http://i62.tinypic.com/15xvbd5.png'); 
-   /*-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
    background-position: center;
    background-repeat: no-repeat;
    border: 1px solid #AAA;
@@ -2302,14 +2241,6 @@ ________________________________________________________________________________
 }
 
 #length-selector {
-/*   -webkit-appearance: button;
-   -webkit-border-radius: 1px;
-   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-   -webkit-padding-end: 20px;
-   -webkit-padding-start: 2px;
-   -webkit-user-select: none;*/
-   background-image: url('http://i62.tinypic.com/15xvbd5.png'); 
-   /*-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
    background-position: center;
    background-repeat: no-repeat;
    border: 1px solid #AAA;
@@ -2480,6 +2411,14 @@ ________________________________________________________________________________
 	margin-bottom: 10rem;
 }
 
+.itemcheckout {
+	position: relative;
+	width: 65%;
+	display: inline-block;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
 /*for name of the product*/
 #first-item h2 {
 	position: absolute;
@@ -2487,7 +2426,7 @@ ________________________________________________________________________________
 	font-size: 1rem;
     color: rgb(92, 92, 92);
     margin-left: 18.5rem;
-    margin-top: 0.5rem;
+    top: 0;
     letter-spacing: 0.15rem;
     font-weight: normal;
 }
@@ -2499,7 +2438,7 @@ ________________________________________________________________________________
 	font-size: 0.7rem;
     color: rgb(92, 92, 92);
     margin-left: 18.5rem;
-    margin-top: 2.2rem;
+    top: 2.2rem;
     letter-spacing: 0.15rem;
     font-weight: normal;
 }
@@ -2513,7 +2452,7 @@ ________________________________________________________________________________
 	font-size: 0.7rem;
     color: rgb(92, 92, 92);
     margin-left: 18.5rem;
-    margin-top: 4rem;
+    top: 4rem;
     letter-spacing: 0.15rem;
     font-weight: normal;
     border: 0.5px solid #ccc;
@@ -2526,7 +2465,7 @@ ________________________________________________________________________________
 	font-size: 0.7rem;
     color: rgb(92, 92, 92);
     margin-left: 21rem;
-    margin-top: 4.4rem;
+    top: 4.2rem;
     letter-spacing: 0.15rem;
     font-weight: normal;
 }
@@ -2537,8 +2476,8 @@ ________________________________________________________________________________
 	padding: 0;
 	font-size: 1rem;
     color: rgb(92, 92, 92);
-    margin-left: 63.5rem;
-    margin-top: 0.5rem;
+    margin-left: 62.3rem;
+    top: 0.5rem;
     letter-spacing: 0.15rem;
     font-weight: normal;
 }
@@ -2550,7 +2489,6 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -2560,15 +2498,15 @@ ________________________________________________________________________________
     float: right;
 }
 
-.continue-nav:hover, .continue-nav:focus {
+.continue-nav:hover, .continue-nav:focus, .continue-nav:active {
     background-color: #5E6C72;
     color: white;
 }
 
 .checkout-first {
 	margin-left: 10rem;
-	width: 7.5rem;
-	height: 7.5rem;
+	width: 15%;
+	height: auto;
 	border: 0.5px solid #ccc;
 }
 
@@ -2579,7 +2517,6 @@ ________________________________________________________________________________
     background-color: #7C939D;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -2587,11 +2524,11 @@ ________________________________________________________________________________
     cursor: pointer;
 
     width: 4rem;
-    margin-left: 63.05rem;
-    margin-top: 4.05rem;
+    margin-left: 44rem;
+    margin-top: 5rem;
 }
 
-.delete-nav:hover, .delete-nav:focus {
+.delete-nav:hover, .delete-nav:focus, .delete-nav:active {
     background-color: #5E6C72;
     color: white;
 }
@@ -2648,18 +2585,17 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
     font-size: 0.7rem;
 
     width: 10rem;
-    margin-left: 60rem;
+    margin-left: 41rem;
     margin-top: 12rem;
 }
 
-.checkout-nav:hover, .checkout-nav:focus {
+.checkout-nav:hover, .checkout-nav:focus, .checkout-nav:active {
     background-color: #5E6C72;
     color: white;
 }

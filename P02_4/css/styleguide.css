@@ -1,5 +1,5 @@
 /* 
-  STYLE GUIDE only for styleguide.html -------------------
+  STYLE GUIDE -------------------
 */
 
 /* sizes things based on the extent of margins borders and everything */
@@ -39,10 +39,10 @@ section code {
 
 h1 {
   color: rgb(52,73,94);
-  font-size: 2.5rem; /* em is a proportional unit but proportional to its parent size */
+  font-size: 2.5rem; 
   font-weight: 700;
-  letter-spacing: 0.02rem; /*code from https://www.w3schools.com/cssref/pr_text_letter-spacing.asp*/
-  margin-bottom: 0; /* 0 doesnt require units because it will always be 0 */
+  letter-spacing: 0.02rem; 
+  margin-bottom: 0;
   line-height: 3rem;
   margin-top: 3rem;
 }
@@ -73,6 +73,7 @@ h1 {
     transition: background-color 0.5s;
     position: relative;
     top: 0.4rem;
+    left: 1rem;
   }
 
 .nav-home:active, .nav-home:focus, .nav-home:hover {
@@ -108,6 +109,7 @@ ________________________________________________________________________________
 .logo {
   position: relative;
   top: 0.7rem;
+  left: -1rem;
   width: 2.7rem;
   height: 2.7rem;
   padding: 0;
@@ -188,8 +190,8 @@ ________________________________________________________________________________
 
 .account {
   position: absolute;
-  top: 2.7rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
   font-size: 1.4rem;
 }
 
@@ -201,8 +203,8 @@ ________________________________________________________________________________
 
 .shopping-cart {
   position: absolute;
-  top: 2.7rem;
-  right: 5rem;
+  top: 0;
+  right: 0;
   font-size: 1.4rem;
 }
 
@@ -513,15 +515,37 @@ ________________________________________________________________________________
   shop pages properties ends 
 _________________________________________________________________________________ */
 
-/* ////////// colour properties begins ////////// */
 .box-item-icons {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border: 1px solid rgb(140, 140, 140);
-  font-size: 1.2rem;
-  text-align: center;
+  color: white;
 }
-/* ////////// colour properties ends ////////// */
+
+.box-item-icons:active, .box-item-icons:hover, .box-item-icons:focus {
+  color: #8c8c8c;
+}
+
+.lnr-user {
+  position: absolute;
+  top: 2.7rem;
+  right: 2rem;
+  font-size: 1.4rem;
+}
+
+.account, .shopping-cart {
+  padding: 0;
+  margin: 0;
+}
+
+.lnr-cart {
+  position: absolute;
+  top: 2.7rem;
+  right: 5rem;
+  font-size: 1.4rem;
+}
+
+
+
+
+
 .box-item-colours {
   color: white;
   text-align: center;

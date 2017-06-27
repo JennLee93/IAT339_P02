@@ -21,7 +21,7 @@
 }
 
 .box-item-home-new {
-  flex: 1 1 100%;
+  flex: 1 1 auto;
 }
 
 .box-item-create {
@@ -121,14 +121,148 @@
 
   .box-item-home-new {
     width: 100%;
+    height: 50%;
+  }
+
+  #bow-title, #arrow-title, #quiver-title {
+    margin-left: 2rem;
+    width: 15rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
+  }
+
+  #bow-title {
+    margin-top: 1.5rem;
+  }
+
+  #arrow-title {
+    margin-top: 4.5rem;
+  }
+
+  #quiver-title {
+    margin-top: 4.5rem;
   }
 
   #learn-quiver, #learn-bow, #learn-arrow {
-    margin-left:0;
+    margin-left: 0;
+  }
+
+  .learn-bow-nav, .learn-arrow-nav, .learn-quiver-nav {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
+    width: 5rem;
+  }
+
+  .learn-bow-nav {
+    margin-top: 5rem;
+  }
+
+  .learn-arrow-nav {
+    margin-top: 6.5rem;
+  }
+
+  .learn-quiver-nav {
+    margin-top: 7.5rem;
   }
 
   .box-item-icons {
-    margin-right: 6.96rem;
+    position: absolute;
+    left: 42.8%;
+    margin-left: 0;
+    padding: 0;
+    width: 0;
+  }
+
+  .lnr-user {
+    margin-left: 2rem;
+  }
+
+  .account, .shopping-cart {
+    margin: 0;
+    padding: 0;
+  }
+
+  .checkout {
+    width: 100%;
+    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .checkout-first {
+    margin-left: 1.5rem;
+    width: 35%;
+    height: auto;
+    border: 0.5px solid #ccc;
+  }
+
+
+  #first-item {
+    margin-top: 7rem;
+    margin-bottom: 12rem;
+  }
+
+  #first-item h2 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+
+  #first-item h3 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+  }
+
+  #first-item h4 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  #first-item h5 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 3.5rem;
+    margin-top: 2.2rem;
+  }
+
+  #first-item h6 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
+
+  .itemcheckout {
+    width: 100%;
+    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .delete-nav {
+    display: block;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    width: 5rem;
+  }
+
+  .checkout-nav {
+    display: block;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    width: 5rem;
+    padding: 0.65em 0.65em;
+  }
+
+  .added-view h2 {
+    margin-top: 0.3rem;
   }
 
   .box-item-footer-nav {
@@ -157,6 +291,65 @@
     margin-bottom: 0;
   }
 
+  .square-form-citations {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-right: 0.5rem;
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .square-form-citations p {
+    font-size: 0.5rem;
+  }
+
+  #accountpage, #contactpage, #citationspage {
+    margin-bottom: 0;
+  }
+
+  .purchase-info-block {
+    height: 10rem;
+    padding: 0.7rem;
+  }
+
+  .order-first {
+    width: 35%;
+    height: 35%;
+  }
+
+  .order-info {
+    display: inline-block;
+    width: 50%;
+    margin-top: 0.7rem;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  #order-item h2 {
+    font-size: 0.8rem;
+  }
+
+  #order-item h3 {
+    font-size: 0.6rem;
+  }
+
+  #order-item h4 {
+    margin-top: 1.7rem;
+    padding: 0.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #order-item h5 {
+    margin-top: 1.84rem;
+  }
+
+  #order-item h6 {
+    font-size: 0.8rem;
+  }
+
   .square-form h3 {
     font-size: 0.79rem;
   }
@@ -165,20 +358,120 @@
     font-size: 0.75rem;
   }
 
+  .contact-form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-field {
+    margin: 0;
+  }
+
+  #comment-box {
+    width: 20rem;
+    height: 10rem;
+    margin: 0;
+  }
+
+  .contact-block {
+    width:100%;
+  }
+
   .create-form {
     height: auto;
     padding-bottom: 5rem;
   }
 
   #create-nav h1 {
-    margin-left: 5rem;
     padding: 0;
   }
 
   .create-nav, .create-nav-item {
-    margin-left: 4rem;
+    width: 100%;
     padding: 0;
     display: block;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  #shop-bow {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .box-item-gallery-compound {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .quickview-mathews-content, .quickview-bowtech-content,
+  .quickview-fortitude-content, .quickview-prime-content,
+  .quickview-predator-content, .quickview-quiver-content, 
+  .quickview-display-content {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .quickview-mathews-content img, .quickview-bowtech-content img,
+  .quickview-fortitude-content img, .quickview-prime-content img,
+  .quickview-predator-content img, .quickview-quiver-content img, 
+  .quickview-display-content img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .quickview-mathews-content h2, .quickview-bowtech-content h2,
+  .quickview-fortitude-content h2, .quickview-prime-content h2,
+  .quickview-predator-content h2, .quickview-quiver-content h2, 
+  .quickview-display-content h2 {
+    font-size: 1rem;
+  }
+
+  .quickview-mathews-content h3, .quickview-bowtech-content h3,
+  .quickview-fortitude-content h3, .quickview-prime-content h3,
+  .quickview-predator-content h3, .quickview-quiver-content h3, 
+  .quickview-display-content h3 {
+    font-size: 0.7rem;
+  }
+
+  .quickview-mathews-tab, .quickview-bowtech-tabs, 
+  .quickview-fortitude-tabs, .quickview-prime-tabs, 
+  .quickview-predator-tabs, .quickview-quiver-tabs, 
+  .quickview-display-tabs {
+    position: relative;
+    display: inline-block;   
+    margin: 0;
+  }
+
+  .content {
+    position: absolute;
+    width: 13.7rem;
+    overflow: hidden;
+  }
+
+  .quickview-nav {
+    position: relative;
+    display: block;
+    margin: 0;
+    left: -0.9rem;
+  }
+
+  .quickview-nav a {
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .quick-view-nav, .cart-nav {
+    width: 10rem;
     text-align: center;
   }
 
@@ -233,6 +526,33 @@
     width: 80%;
     margin-left: 0;
     margin-bottom: 2.5rem;
+  }
+
+  #sg-title, #goto {
+    text-align: center;
+  }
+
+  nav #goto {
+    margin-bottom: 2rem;
+  }
+
+  .box-item-code {
+    font-size: 0.7rem;
+  }
+
+  #interactive_elements, #text_elements, #combined_elements, #aesthetic_elements {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #sg-button .delete-nav {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  #sg-button {
+    margin-bottom: 1rem;
   }
 }
 
