@@ -298,7 +298,7 @@ ________________________________________________________________________________
 	padding: 0;
 }
 
-#update-titleh3 {
+#bow-update-titleh3, #arrow-update-titleh3, #quiver-update-titleh3 {
 	color: rgb(92, 92, 92);
 	line-height: 1.5rem;
 	font-size: 1.2rem;
@@ -307,7 +307,7 @@ ________________________________________________________________________________
 	text-align: right;
 }
 
-#update-para {
+#bow-update-para, #arrow-update-para, #quiver-update-para {
 	text-align: left;
 	margin-right: 5rem;
 	color: rgb(124,147,157);
