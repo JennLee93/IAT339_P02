@@ -475,6 +475,15 @@
     text-align: center;
   }
 
+  .viewcart-nav {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 5.8rem;
+    margin-bottom: 2rem;
+
+    width: 5rem;
+  }
+
   .box-item-create {
     margin: 0;
     width: 100%;

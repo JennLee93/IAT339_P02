@@ -184,7 +184,7 @@ ________________________________________________________________________________
   color: white;
 }
 
-.nav-icons:active, .nav-icons:focus, .nav-icons:hover {
+.nav-icons:hover, .nav-icons:focus, .nav-icons:active {
   color: #8c8c8c;
 }
 
@@ -207,21 +207,17 @@ ________________________________________________________________________________
   right: 0;
   font-size: 1.4rem;
 }
-
-/*.lnr-magnifier {
-  position: absolute;
-  top: 2.7rem;
-  right: 8rem;
-  font-size: 1.4rem;
-}*/
 /* _________________________________________________________________________________
 
   icon nav properties ends 
 _________________________________________________________________________________ */
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
+
+
+/* _________________________________________________________________________________
+
+  INTERACTIVE ELEMENTS BEGIN 
+_________________________________________________________________________________ */
 
 /* Styling for the navigation button */
 .button-nav {
@@ -237,7 +233,7 @@ ________________________________________________________________________________
     font-size: 0.7rem;
 }
 
-.button-nav:hover, .button-nav:focus {
+.button-nav:hover, .button-nav:focus, .button-nav:active {
     background-color: #5E6C72;
 }
 
@@ -257,7 +253,7 @@ ________________________________________________________________________________
     width: 4rem;
 }
 
-.delete-nav:hover, .delete-nav:focus {
+.delete-nav:hover, .delete-nav:focus, .delete-nav:active {
     background-color: #5E6C72;
     color: white;
 }
@@ -280,7 +276,7 @@ ________________________________________________________________________________
 }
 
 /* ////////// code from https://www.w3schools.com/css/css3_buttons.asp ////////// */
-.submit-button:active, .submit-button:focus, .submit-button:hover {
+.submit-button:hover, .submit-button:focus, .submit-button:active {
     background-color: rgb(140, 140, 140);
     border: 0.5px solid rgb(140, 140, 140);
     color: white;
@@ -315,10 +311,17 @@ input[type=text] {
 input[type=text]:focus {
     width: 20%;
 }
+/* _________________________________________________________________________________
 
-/* 
-  TEXT ELEMENTS -------------------
-*/
+  INTERACTIVE ELEMENTS ENDS 
+_________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________
+
+  TEXT ELEMENTS BEGIN
+_________________________________________________________________________________ */
 
 .content-h1 {
     color: rgb(52,73,94);
@@ -345,10 +348,17 @@ input[type=text]:focus {
 .bullet-list {
     list-style-type: circle;
 }
+/* _________________________________________________________________________________
 
-/* 
-  COMBINED ELEMENTS -------------------
-*/
+  TEXT ELEMENTS ENDS
+_________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________
+
+  COMBINED ELEMENTS BEGIN
+_________________________________________________________________________________ */
 
 /* code obtained from the inspector of this example 
 https://css-tricks.com/examples/NumberedFAQ/ */
@@ -472,7 +482,6 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -481,7 +490,7 @@ ________________________________________________________________________________
     width: 7rem;
 }
 
-.quick-view-nav:hover, .quick-view-nav:focus {
+.quick-view-nav:hover, .quick-view-nav:focus, .quick-view-nav:active {
     background-color: #5E6C72;
     color: white;
 }
@@ -496,7 +505,6 @@ ________________________________________________________________________________
     background-color: #333333;
     border-radius: 0em;
     text-decoration: none;
-  /*-webkit-transition: background-color 0.5s ease-out;*/
     transition: background-color 0.5s ease-out;
     text-align: center;
     font-weight: 300;
@@ -505,7 +513,7 @@ ________________________________________________________________________________
     width: 7rem;
 }
 
-.cart-nav:hover, .cart-nav:focus {
+.cart-nav:hover, .cart-nav:focus, .cart-nav:active {
     background-color: #5E6C72;
     color: white;
 }
@@ -519,7 +527,7 @@ ________________________________________________________________________________
   color: white;
 }
 
-.box-item-icons:active, .box-item-icons:hover, .box-item-icons:focus {
+.box-item-icons:hover, .box-item-icons:focus, .box-item-icons:active {
   color: #8c8c8c;
 }
 
@@ -541,10 +549,6 @@ ________________________________________________________________________________
   right: 5rem;
   font-size: 1.4rem;
 }
-
-
-
-
 
 .box-item-colours {
   color: white;
@@ -580,32 +584,8 @@ ________________________________________________________________________________
 .blue3 {
   background-color: rgb(52,73,94);
 }
+/* _________________________________________________________________________________
 
-/* ////////// image mapping properties begins ////////// */
-
-.box-item-map-container img{
-  width: 50%;  
-  height: auto;
-}
-
-/*code from https://codepen.io/CreativeJuiz/pen/BiHzp*/
-/* checkbox aspect */
-#switch:not(:checked) {
-  content: '';
-  position: absolute;
-  left: 110px;
-  width: 4em; 
-  height: 3.25em;
-  cursor: pointer;
-  opacity: 0;
-}
-
-#switch:checked {
- position: absolute;
- content: url('http://www.sfu.ca/~jal32/IAT339/Wireframe%20Images/P02/crossbow.jpg'); 
- width: 50%;
- height: 23rem;
- left: 1rem;
-}
-/* ////////// image mapping properties ends ////////// */
+  COMBINED ELEMENTS ENDS
+_________________________________________________________________________________ */
 
