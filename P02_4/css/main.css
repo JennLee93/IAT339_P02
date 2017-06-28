@@ -1528,7 +1528,7 @@ ________________________________________________________________________________
 	width: 100%;
 	padding: 0;
 	z-index: 2;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	color: rgb(92, 92, 92);
 }
 
@@ -1545,7 +1545,6 @@ ________________________________________________________________________________
 .hover-switch {
 	position: absolute;
 	border: 0.5px solid #8c8c8c;
-	position: absolute;
 	top: 3%;
 	left: 23.35%;
 	width: 4.3%; 
@@ -1556,10 +1555,6 @@ ________________________________________________________________________________
 #crossbow-switch:not(:checked) {
 	background-color: rgba(140, 140, 140, 0.6);
 }
-
-/*.create-crossbow-container p {
-	margin-left: 11rem;
-}*/
 
 /*code from https://codepen.io/CreativeJuiz/pen/BiHzp*/
 /* checkbox aspect */
@@ -1613,10 +1608,6 @@ ________________________________________________________________________________
 	background-color: rgba(92, 92, 92, 0.6);
 	
 	transition: all .5s ease-in-out;
-	/*-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-ms-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;*/
 }
 
 .visible-custom-panel {
@@ -1635,10 +1626,6 @@ ________________________________________________________________________________
 	background-color: rgba(92, 92, 92, 0.6);
 	
 	transition: all .5s ease-in-out;
-	/*-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-ms-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;*/
 }
 
 .custom-panel a, .visible-custom-panel a {

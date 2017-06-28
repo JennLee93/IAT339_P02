@@ -480,6 +480,150 @@
     width: 100%;
   }
 
+  .create-crossbow-container img {
+    position: relative;
+    width: 100%;  
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 0.5%;
+    margin-right: 0;
+  }
+
+  .create-crossbow-container {
+    width: 90%;
+    margin-left: -10%;
+    margin-right: 0
+  }
+
+  .create-crossbow-container p {
+    position: absolute;
+    top: -15%;
+    margin-left: 11%;
+    width: 100%;
+    padding: 0;
+    z-index: 2;
+    font-size: 0.9rem;
+    color: rgb(92, 92, 92);
+  }
+
+  .hover-switch {
+    position: absolute;
+    top: 10%;
+    left: 17.5%;
+    width: 8.7%; 
+    height: 11%;
+    cursor: pointer;
+  }
+
+  #crossbow-switch:not(:checked) {
+    position: absolute;
+    top: 10%;
+    left: 17%;
+    width: 8%; 
+    height: 9.5%;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  #crossbow-switch:checked {
+    position: absolute;
+    content: url('http://www.sfu.ca/~jal32/IAT339/Images/Create/crossbow.jpg'); 
+    width: 100%;
+    height: 95%;
+    left: 0.3%;
+    top: 4.5%;
+    z-index: 1;
+  }
+
+  #crossbow-switch:checked ~ .custom-panel { 
+    position: absolute; 
+    top: 54%;
+    left: 0.5%;
+  }
+
+  .custom-panel {
+    position: absolute;
+    top: 70%;
+    left: 0.5%;
+
+    opacity: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 45%;
+  }
+
+  .visible-custom-panel {
+    position: absolute;
+    top: 54%;
+    left: 0.5%;
+
+    opacity: 1;
+    z-index: 1;
+
+    width: 100%;
+    height: 45%;
+  }
+
+  .hidden-box {
+    position: absolute;
+    top: 99%;
+    left: 0.5%;
+
+    z-index: 2;
+    padding: 1.5rem;
+
+    width: 100%;
+    height: 45%;
+  }
+
+  .custom-panel h3, .visible-custom-panel h3 {
+    font-size: 0.8rem;
+    color: white;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .colour-selector-1 {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 10%;
+    top: 40%;
+    margin: 0;
+  }
+
+  .visible-custom-panel label, .custom-panel label {
+    position: absolute;
+    text-decoration: none;
+    color: #5c5c5c;
+    top: 45.2%;
+    left: 20.6%;
+    font-size: 0.6rem;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .colour-selector-2 {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+  }
+
+  .shop-caption figcaption {
+    position: absolute;
+    width: 80%;
+    height: 2rem;
+    margin-left: 0;
+    margin-top: 5rem;
+    font-size: 1rem;
+    bottom: 0.5rem;
+  }
+
   .caption-compound figcaption {
     width: 80%;
     margin-left: 0;
