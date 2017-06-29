@@ -1012,22 +1012,18 @@ ________________________________________________________________________________
 	/*
 		By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
 	*/
-	bottom: 0.5rem;
-	top: 12.5rem;
+	margin-top: 65%;
 	padding-top: 0.75rem;
 	padding-right: 0.25rem;
+	padding-bottom: 0.1rem;
 	/*
 		To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
 	*/
-	width: 200px;
-	height: 30px;
+	width: 72%;
 	color: white;
 	text-align: right;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	background-color: rgba(92, 92, 92, 0.8);
-
-	margin-right: 3rem;
-	margin-bottom: 3rem;
 }
 
 /* _________________________________________________________________________________
